@@ -1,0 +1,267 @@
+{% load i18n %}
+{% load tags %}
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<title>I am Ted Kim</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	body {
+		padding-bottom: 30px;
+	}
+	header {
+		width: 100%; height: 50px; color: white;
+	}
+	header .container {
+		line-height: 50px; vertical-align: middle;
+	}
+	header a, header a:hover {
+		color: #FFFFFF;
+	}
+	header .left {
+		float: left;
+	}
+	header .right {
+		float: right;
+	}
+	.profile-info {
+		margin-top: 20px;
+	}
+	.profile-img {
+		width: 140px; height: 140px; background-color: #eeeeee;
+	}
+	.profile-img img {
+		width: 100%; height: 100%;
+	}
+	.myintro {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.section-title {
+		width: 100%; padding: 15px; background-color: #eeeeee; margin-top: 20px;
+	}
+	.cont-list {
+		margin-top: 10px;
+	}
+	.company-link {
+		margin-left: 10px;
+	}
+	</style>
+</head>
+<body>
+	{% get_current_language as LANGUAGE_CODE %}
+	<header class="bg-primary">
+		<div class="container">
+			<div class="left">I am Ted Kim</div>
+			<div class="right">
+			{% if LANGUAGE_CODE == 'ko' %}
+				<a href="./?lang=en">In English, please.</a>
+			{% else %}
+				<a href="./?lang=ko">한글로 보기</a>
+			{% endif %}
+			</div>
+		</div>
+	</header>
+	<section class="container">
+		<div class="row profile-info">
+			<div class="col-xs-2">
+				<div class="profile-img">
+					<img src="{% static 'img/blog_profile.jpg' %}" />
+				</div>
+			</div>
+			<div class="col-xs-10">
+				<div>{% trans "Ted Kim" %}</div>
+				<div>{% trans "CTO, BigFish Ventures Limited" %}</div>
+				<div class="myintro">{% trans "myintro" %}</div>
+				<div>Email: <a href="mailto:tedkim.developer@gmail.com">tedkim.developer@gmail.com</a></div>
+				<div>Facebook: <a href="https://www.facebook.com/tedkim156" target="_blank">https://www.facebook.com/tedkim156</a></div>
+			</div>
+		</div>
+		<div class="section-title">Today</div>
+		<ul class="cont-list">
+			<li>{% trans "Working" %}
+				<ul>
+					<li>{% trans "Developing LOLO" %}: <a href="https://e-lolo.com" target="_blank">https://e-lolo.com</a></li>
+				</ul>
+			</li>
+			<li>{% trans "Studying" %}
+				<ul>
+					<li>{% trans "Developing CodeBattle" %}: <a href="http://codebattle.online" target="_blank">http://codebattle.online</a></li>
+					<li>{% trans "Studying swift" %}: <a href="https://www.inflearn.com/course/stanford-ios-한글자막-강의/" target="_blank">Link</a></li>
+					<li>{% trans "Modifying my android apps from java to kotlin" %}</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="section-title">Professional Experience</div>
+		<ul class="cont-list">
+			<li>2015.11 ~ Today<a href="http://mgsslc.com" target="_blank" class="company-link">CTO, BigFish Ventures Limited</a>
+				<ul>
+					<li>{% trans "LOLO service" %}
+						<ul>
+							<li>{% trans "Server framework" %}: PYTHON Django</li>
+							<li>{% trans "Web" %}: <a href="https://e-lolo.com" target="_blank">https://e-lolo.com</a></li>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.mgssk.android.lolo" target="_blank">Link</a></li>
+							<li>{% trans "Iphone app" %}: <a href="https://itunes.apple.com/kr/app/%EB%A1%9C%EB%A1%9C/id1104837212?mt=8" target="_blank">Link</a></li>
+							<li>{% trans "Use AWS, Github, Docker" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Ezistics (4PL logistics service)" %}
+						<ul>
+							<li>{% trans "Server framework" %}: PHP Codeigniter</li>
+							<li>{% trans "Use AWS, Github" %}</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>2012.07 ~ 2015.10<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Developer, Neowiz Games</a>
+				<ul>
+					<li>{% trans "HeyBee (free music app)" %}
+						<ul>
+							<li>{% trans "Android app development" %}</li>
+							<li>{% trans "Leading service development by supporting server development" %}</li>
+							<li>{% trans "Server framework" %}: NodeJS</li>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=kr.mplab.android.heybee" target="_blank">Link</a></li>
+							<li>{% trans "Iphone app" %}: <a href="https://itunes.apple.com/kr/app/heibi-hamkke-deul-eo-deo-joh/id967101224" target="_blank">Link</a></li>
+						</ul>
+					</li>
+					<li>{% trans "Hay (Voice messenger app)" %}
+						<ul>
+							<li>{% trans "hay text 1" %}</li>
+							<li>{% trans "Android app development" %}</li>
+							<li>{% trans "hay text 2" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "TapSonic (Rhythm action game)" %}
+						<ul>
+							<li>{% trans "Android app development (out game part)" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "PmangPlus (Social game platform)" %}
+						<ul>
+							<li>{% trans "API and SDK development" %}</li>
+							<li>{% trans "pmangplus text 1" %}</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>2006.07 ~ 2012.06<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Developer, Neowiz Internet</a>
+				<ul>
+					<li>{% trans "YoApp (App recommendation service)" %}
+						<ul>
+							<li>{% trans "API server development" %}</li>
+							<li>{% trans "Server framework" %}: JAVA Spring</li>
+							<li>{% trans "yoapp text 1" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Bugs (Music service)" %}
+						<ul>
+							<li>{% trans "Android app development" %}</li>
+							<li>{% trans "bugs text 1" %}</li>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.neowiz.android.bugs" target="_blank">Link</a></li>
+							<li>{% trans "Iphone app" %}: <a href="https://itunes.apple.com/kr/app/beogseu-bugs/id348555322" target="_blank">Link</a></li>
+						</ul>
+					</li>
+					<li>{% trans "PopConn (Group chatting service)" %}
+						<ul>
+							<li>{% trans "API server development" %}</li>
+							<li>{% trans "Server framework" %}: JAVA Spring</li>
+							<li>{% trans "popconn text 1" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Saycast (Social music broadcast service)" %}
+						<ul>
+							<li>{% trans "Web development" %}: <a href="http://www.saycast.com" target="_blank">http://www.saycast.com</a></li>
+							<li>{% trans "saycast text 1" %}</li>
+							<li>{% trans "Android app development (support)" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Sayclub (Social service)" %}
+						<ul>
+							<li>{% trans "Web development" %}: <a href="http://www.sayclub.com" target="_blank">http://www.sayclub.com</a></li>
+							<li>{% trans "sayclub text 1" %}</li>
+							<li>{% trans "sayclub text 2" %}</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="section-title">Private Experience</div>
+		<ul class="cont-list">
+			<li>{% trans "Private products" %}
+				<ul>
+					<li>{% trans "NoLook keyboard app" %}
+						<ul>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.teuskim.nlkeyboard" target="_blank">Link</a></li>
+							<li>{% trans "nolook text 1" %}</li>
+							<li>{% trans "nolook text 2" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Piano keyboard app" %}
+						<ul>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.teuskim.pianokeyboard" target="_blank">Link</a></li>
+							<li>{% trans "piano text 1" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "SmartBrowser app" %}
+						<ul>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.teuskim.sbrowser" target="_blank">Link</a></li>
+							<li>{% trans "smartbrowser text 1" %}</li>
+							<li>{% trans "smartbrowser text 2" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "TakeFive game" %}
+						<ul>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.teuskim.takefive" target="_blank">Link</a></li>
+							<li>{% trans "takefive text 1" %}</li>
+							<li>{% trans "takefive text 2" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Walkholic app" %}
+						<ul>
+							<li>{% trans "Android app" %}: <a href="https://play.google.com/store/apps/details?id=com.teuskim.fitproj" target="_blank">Link</a></li>
+							<li>{% trans "walkholic text 1" %}</li>
+							<li>{% trans "walkholic text 2" %}</li>
+						</ul>
+					</li>
+					<li>{% trans "Codebattle service" %}
+						<ul>
+							<li>{% trans "Web" %}: <a href="http://codebattle.online" target="_blank">http://codebattle.online</a></li>
+							<li>{% trans "codebattle text 1" %}</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>{% trans "Patent" %}
+				<ul>
+					<li>{% trans "patent text 1" %}</li>
+					<li>{% trans "patent text 2" %}</li>
+				</ul>
+			</li>
+			<li>{% trans "Additional information" %}
+				<ul>
+					<li>{% trans "addinfo text 1" %}</li>
+					<li>{% trans "addinfo text 2" %}</li>
+				</ul>
+			</li>
+			<li>{% trans "Blog" %}
+				<ul>
+					<li>{% trans "Android developer site translation" %}: <a href="http://android-kr.tistory.com" target="_blank">Link</a></li>
+					<li>{% trans "Private diary" %}: <a href="http://blog.naver.com/ktw5724" target="_blank">Link</a></li>
+				</ul>
+			</li>
+			<li>{% trans "Join Mensa" %}</li>
+		</ul>
+		<div class="section-title">Education &amp; Other Experience</div>
+		<ul class="cont-list">
+			<li>2000 ~ 2003 {% trans "Korea University, Computer Science" %}</li>
+			<li>2004 ~ 2006 {% trans "ROTC, the 7th Infantry Division" %}</li>
+		</ul>
+	</section>
+</body>
+</html>

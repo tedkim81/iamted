@@ -1,0 +1,9 @@
+.DS_Store
+.env
+venv
+*.pyc
+staticfiles
+.coverage
+htmlcov
+node_modules
+
