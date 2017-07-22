@@ -27,7 +27,12 @@ msgstr ""
 
 #: app/templates/profile.html:81
 msgid "myintro"
-msgstr "I am a developer. Development is a hobby and a means of livelihood for me."
+msgstr "I am a developer. Development is a hobby and a means of livelihood for me. "
+"I enjoy the joy of seeing the result of the coding. "
+"And I like to talk to developers about development. "
+"So I'm thinking of making a conversation with developers in the near future. "
+"And I am very interested in teaching programming to non-developers these days. "
+"I think that programming is going to become more and more common in the world. "
 
 #: app/templates/profile.html:88
 msgid "Working"
@@ -266,7 +271,7 @@ msgstr ""
 
 #: app/templates/profile.html:242
 msgid "patent text 1"
-msgstr "apply 16 / international 1 / registration 11"
+msgstr "apply 16 / registration 11 / international 1"
 
 #: app/templates/profile.html:243
 msgid "patent text 2"

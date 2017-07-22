@@ -34,23 +34,48 @@
 		margin-top: 20px;
 	}
 	.profile-img {
-		width: 140px; height: 140px; background-color: #eeeeee;
+		width: 140px; height: 140px;
 	}
 	.profile-img img {
-		width: 100%; height: 100%;
+		width: 100%; height: 100%; border-radius: 50%;
+	}
+	.profile-text {
+		margin-top: 20px;
+	}
+	@media all and (min-width:768px) {
+		.profile-info {
+			position: relative;
+		}
+		.profile-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.profile-text {
+			padding-left: 170px;
+		}
 	}
 	.myintro {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 	.section-title {
-		width: 100%; padding: 15px; background-color: #eeeeee; margin-top: 20px;
+		width: 100%; padding: 15px; background-color: #eeeeee; margin-top: 20px; font-weight: bold;
 	}
 	.cont-list {
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 	.company-link {
 		margin-left: 10px;
+	}
+	.cont-li {
+		margin-bottom: 15px;
+	}
+	.text-highlight {
+		font-weight: bold;
+	}
+	.text-big {
+		font-size: 15px;
 	}
 	</style>
 </head>
@@ -58,7 +83,7 @@
 	{% get_current_language as LANGUAGE_CODE %}
 	<header class="bg-primary">
 		<div class="container">
-			<div class="left">I am Ted Kim</div>
+			<div class="left text-big">I am Ted Kim</div>
 			<div class="right">
 			{% if LANGUAGE_CODE == 'ko' %}
 				<a href="./?lang=en">In English, please.</a>
@@ -69,15 +94,13 @@
 		</div>
 	</header>
 	<section class="container">
-		<div class="row profile-info">
-			<div class="col-xs-2">
-				<div class="profile-img">
-					<img src="{% static 'img/blog_profile.jpg' %}" />
-				</div>
+		<div class="profile-info">
+			<div class="profile-img">
+				<img src="{% static 'img/blog_profile.jpg' %}" />
 			</div>
-			<div class="col-xs-10">
-				<div>{% trans "Ted Kim" %}</div>
-				<div>{% trans "CTO, BigFish Ventures Limited" %}</div>
+			<div class="profile-text">
+				<div class="text-highlight">{% trans "Ted Kim" %}</div>
+				<div class="text-highlight">{% trans "CTO, BigFish Ventures Limited" %}</div>
 				<div class="myintro">{% trans "myintro" %}</div>
 				<div>Email: <a href="mailto:tedkim.developer@gmail.com">tedkim.developer@gmail.com</a></div>
 				<div>Facebook: <a href="https://www.facebook.com/tedkim156" target="_blank">https://www.facebook.com/tedkim156</a></div>
@@ -85,12 +108,12 @@
 		</div>
 		<div class="section-title">Today</div>
 		<ul class="cont-list">
-			<li>{% trans "Working" %}
+			<li class="cont-li">{% trans "Working" %}
 				<ul>
 					<li>{% trans "Developing LOLO" %}: <a href="https://e-lolo.com" target="_blank">https://e-lolo.com</a></li>
 				</ul>
 			</li>
-			<li>{% trans "Studying" %}
+			<li class="cont-li">{% trans "Studying" %}
 				<ul>
 					<li>{% trans "Developing CodeBattle" %}: <a href="http://codebattle.online" target="_blank">http://codebattle.online</a></li>
 					<li>{% trans "Studying swift" %}: <a href="https://www.inflearn.com/course/stanford-ios-한글자막-강의/" target="_blank">Link</a></li>
@@ -100,7 +123,7 @@
 		</ul>
 		<div class="section-title">Professional Experience</div>
 		<ul class="cont-list">
-			<li>2015.11 ~ Today<a href="http://mgsslc.com" target="_blank" class="company-link">CTO, BigFish Ventures Limited</a>
+			<li class="cont-li">2015.11 ~ Today<a href="http://mgsslc.com" target="_blank" class="company-link">CTO, BigFish Ventures Limited</a>
 				<ul>
 					<li>{% trans "LOLO service" %}
 						<ul>
@@ -119,7 +142,7 @@
 					</li>
 				</ul>
 			</li>
-			<li>2012.07 ~ 2015.10<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Developer, Neowiz Games</a>
+			<li class="cont-li">2012.07 ~ 2015.10<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Developer, Neowiz Games</a>
 				<ul>
 					<li>{% trans "HeyBee (free music app)" %}
 						<ul>
@@ -150,7 +173,7 @@
 					</li>
 				</ul>
 			</li>
-			<li>2006.07 ~ 2012.06<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Developer, Neowiz Internet</a>
+			<li class="cont-li">2006.07 ~ 2012.06<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Developer, Neowiz Internet</a>
 				<ul>
 					<li>{% trans "YoApp (App recommendation service)" %}
 						<ul>
@@ -193,7 +216,7 @@
 		</ul>
 		<div class="section-title">Private Experience</div>
 		<ul class="cont-list">
-			<li>{% trans "Private products" %}
+			<li class="cont-li">{% trans "Private products" %}
 				<ul>
 					<li>{% trans "NoLook keyboard app" %}
 						<ul>
@@ -237,25 +260,46 @@
 					</li>
 				</ul>
 			</li>
-			<li>{% trans "Patent" %}
+			<li class="cont-li">{% trans "Patent" %}
 				<ul>
-					<li>{% trans "patent text 1" %}</li>
+					<li>{% trans "patent text 1" %}
+						<ul>
+							<li>
+								<a href="https://goo.gl/Hi1P7U" target="_blank">Link</a>,&nbsp;<!-- 등록(국제) -->
+								<a href="https://goo.gl/p3ySdQ" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/Rao33M" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/ZwY8os" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/FWEXMi" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/GQTGSn" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/xJHKam" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/n7Pzgx" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/c9kffb" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/gGA8vw" target="_blank">Link</a>,&nbsp;<!-- 등록 -->
+								<a href="https://goo.gl/HWbjZK" target="_blank">Link</a>,&nbsp;<!-- 등록후 소멸 -->
+								<a href="https://goo.gl/HwR5zu" target="_blank">Link</a>,&nbsp;<!-- 등록후 공개 -->
+								<a href="https://goo.gl/tZzfmc" target="_blank">Link</a>,&nbsp;<!-- 출원 -->
+								<a href="https://goo.gl/F7BmQo" target="_blank">Link</a>,&nbsp;<!-- 출원 -->
+								<a href="https://goo.gl/RZQKSb" target="_blank">Link</a>,&nbsp;<!-- 출원 -->
+								<a href="https://goo.gl/5JSKeF" target="_blank">Link</a><!-- 출원 -->
+							</li>
+						</ul>
+					</li>
 					<li>{% trans "patent text 2" %}</li>
 				</ul>
 			</li>
-			<li>{% trans "Additional information" %}
+			<li class="cont-li">{% trans "Additional information" %}
 				<ul>
 					<li>{% trans "addinfo text 1" %}</li>
 					<li>{% trans "addinfo text 2" %}</li>
 				</ul>
 			</li>
-			<li>{% trans "Blog" %}
+			<li class="cont-li">{% trans "Blog" %}
 				<ul>
 					<li>{% trans "Android developer site translation" %}: <a href="http://android-kr.tistory.com" target="_blank">Link</a></li>
 					<li>{% trans "Private diary" %}: <a href="http://blog.naver.com/ktw5724" target="_blank">Link</a></li>
 				</ul>
 			</li>
-			<li>{% trans "Join Mensa" %}</li>
+			<li class="cont-li">{% trans "Join Mensa" %}</li>
 		</ul>
 		<div class="section-title">Education &amp; Other Experience</div>
 		<ul class="cont-list">
