@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 03:22+0900\n"
+"POT-Creation-Date: 2017-07-24 02:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,297 +18,330 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: app/templates/profile.html:75
+#: app/templates/profile.html:113
 msgid "Ted Kim"
 msgstr "김태우 (Ted Kim)"
 
-#: app/templates/profile.html:76
+#: app/templates/profile.html:114
 msgid "CTO, BigFish Ventures Limited"
 msgstr ""
 
-#: app/templates/profile.html:77
+#: app/templates/profile.html:115
 msgid "myintro"
-msgstr "개발이 취미이자 생계수단인 개발자입니다. 일이던 취미이던 코딩해서 만든 결과물을 보며 얻는 뿌듯함을 즐깁니다. "
-"그리고 개발자들과 개발 관련 대화를 나누는 것을 좋아합니다. 그래서 조만간 개발자들끼리 가볍게 대화를 나누는 모임을 만들어볼까 생각 중입니다. "
-"그리고 요즘은 개발자가 아닌 분들에게 프로그래밍에 대해 전도(?)하는 것에 대해서도 많은 관심을 가지고 있습니다. "
-"프로그래밍이 점점 보편화되어 갈 것이라고 생각하기 때문입니다. "
+msgstr ""
+"개발이 취미이자 생계수단인 개발자입니다. 일이던 취미이던 코딩해서 만든 결과물"
+"을 보며 얻는 뿌듯함을 즐깁니다. 그리고 개발자들과 개발 관련 대화를 나누는 것"
+"을 좋아합니다. 그래서 조만간 개발자들끼리 가볍게 대화를 나누는 모임을 만들어"
+"볼까 생각 중입니다. 그리고 요즘은 개발자가 아닌 분들에게 프로그래밍에 대해 전"
+"도(?)하는 것에 대해서도 많은 관심을 가지고 있습니다. 프로그래밍이 점점 보편화"
+"되어 갈 것이라고 생각하기 때문입니다. "
 
-#: app/templates/profile.html:84
+#: app/templates/profile.html:122
 msgid "Working"
 msgstr "일하는 중"
 
-#: app/templates/profile.html:86
+#: app/templates/profile.html:124
 msgid "Developing LOLO"
 msgstr "로로 개발 중"
 
-#: app/templates/profile.html:89
+#: app/templates/profile.html:127
 msgid "Studying"
 msgstr "공부하는 중"
 
-#: app/templates/profile.html:91
+#: app/templates/profile.html:129
 msgid "Developing CodeBattle"
 msgstr "코드배틀 개발 중"
 
-#: app/templates/profile.html:92
+#: app/templates/profile.html:130
 msgid "Studying swift"
 msgstr "스위프트 공부 중"
 
-#: app/templates/profile.html:93
+#: app/templates/profile.html:131
 msgid "Modifying my android apps from java to kotlin"
 msgstr "안드로이드 앱들을 JAVA에서 KOTLIN으로 변경 및 업데이트 중"
 
-#: app/templates/profile.html:101
+#: app/templates/profile.html:139
 msgid "LOLO service"
 msgstr "로로(LOLO) 서비스 기획 및 개발"
 
-#: app/templates/profile.html:103 app/templates/profile.html:112
-#: app/templates/profile.html:124 app/templates/profile.html:154
-#: app/templates/profile.html:169
+#: app/templates/profile.html:141 app/templates/profile.html:150
+#: app/templates/profile.html:162 app/templates/profile.html:192
+#: app/templates/profile.html:207
 msgid "Server framework"
 msgstr "서버 프레임웍"
 
-#: app/templates/profile.html:104 app/templates/profile.html:230
+#: app/templates/profile.html:142 app/templates/profile.html:268
 msgid "Web"
 msgstr "웹"
 
-#: app/templates/profile.html:105 app/templates/profile.html:125
-#: app/templates/profile.html:162 app/templates/profile.html:196
-#: app/templates/profile.html:203 app/templates/profile.html:209
-#: app/templates/profile.html:216 app/templates/profile.html:223
+#: app/templates/profile.html:143 app/templates/profile.html:163
+#: app/templates/profile.html:200 app/templates/profile.html:234
+#: app/templates/profile.html:241 app/templates/profile.html:247
+#: app/templates/profile.html:254 app/templates/profile.html:261
 msgid "Android app"
 msgstr "안드로이드 앱"
 
-#: app/templates/profile.html:106 app/templates/profile.html:126
-#: app/templates/profile.html:163
+#: app/templates/profile.html:144 app/templates/profile.html:164
+#: app/templates/profile.html:201
 msgid "Iphone app"
 msgstr "아이폰 앱"
 
-#: app/templates/profile.html:107
+#: app/templates/profile.html:145
 msgid "Use AWS, Github, Docker"
 msgstr "AWS, Github, Docker 사용"
 
-#: app/templates/profile.html:110
+#: app/templates/profile.html:148
 msgid "Ezistics (4PL logistics service)"
 msgstr "이지스틱스(4PL 물류 관리 서비스) 기획 및 개발"
 
-#: app/templates/profile.html:113
+#: app/templates/profile.html:151
 msgid "Use AWS, Github"
 msgstr "AWS, Github 사용"
 
-#: app/templates/profile.html:120
+#: app/templates/profile.html:158
 msgid "HeyBee (free music app)"
 msgstr "무료 음악앱, 헤이비(HeyBee) 개발"
 
-#: app/templates/profile.html:122 app/templates/profile.html:132
-#: app/templates/profile.html:160
+#: app/templates/profile.html:160 app/templates/profile.html:170
+#: app/templates/profile.html:198
 msgid "Android app development"
 msgstr "안드로이드 앱 개발"
 
-#: app/templates/profile.html:123
+#: app/templates/profile.html:161
 msgid "Leading service development by supporting server development"
 msgstr "서버 개발 일부를 서포트 함으로써, 전반적인 개발 리딩"
 
-#: app/templates/profile.html:129
+#: app/templates/profile.html:167
 msgid "Hay (Voice messenger app)"
 msgstr "음성 메신저, 헤이(Hay) 개발"
 
-#: app/templates/profile.html:131
+#: app/templates/profile.html:169
 msgid "hay text 1"
-msgstr "사내 별도 TF 조직에서 목소리를 녹음하여 전송하는 방식의 음성 메신저를 개발하여 약 1년정도 운영했으나, 현재는 서비스 종료됨."
+msgstr ""
+"사내 별도 TF 조직에서 목소리를 녹음하여 전송하는 방식의 음성 메신저를 개발하"
+"여 약 1년정도 운영했으나, 현재는 서비스 종료됨."
 
-#: app/templates/profile.html:133
+#: app/templates/profile.html:171
 msgid "hay text 2"
 msgstr "음성 변조 및 합성을 위해 오픈소스 라이브러리를 컨버팅하여 사용함."
 
-#: app/templates/profile.html:136
+#: app/templates/profile.html:174
 msgid "TapSonic (Rhythm action game)"
 msgstr "리듬액션 모바일 게임, 탭소닉(TapSonic) 개발"
 
-#: app/templates/profile.html:138
+#: app/templates/profile.html:176
 msgid "Android app development (out game part)"
 msgstr "안드로이드 탭소닉의 out game 영역 리뉴얼"
 
-#: app/templates/profile.html:141
+#: app/templates/profile.html:179
 msgid "PmangPlus (Social game platform)"
 msgstr "소셜 게임 플랫폼, 피망플러스(PmangPlus) 개발"
 
-#: app/templates/profile.html:143
+#: app/templates/profile.html:181
 msgid "API and SDK development"
 msgstr "피망플러스 API 개발 및 SDK 개발 서포트"
 
-#: app/templates/profile.html:144
+#: app/templates/profile.html:182
 msgid "pmangplus text 1"
 msgstr "이 기간 중 피망플러스 연동하는 모바일 게임들 퍼블리싱 업무 병행"
 
-#: app/templates/profile.html:151
+#: app/templates/profile.html:189
 msgid "YoApp (App recommendation service)"
 msgstr "앱 추천 서비스, 요앱(YoApp) 개발"
 
-#: app/templates/profile.html:153 app/templates/profile.html:168
+#: app/templates/profile.html:191 app/templates/profile.html:206
 msgid "API server development"
 msgstr "API 서버 개발"
 
-#: app/templates/profile.html:155
+#: app/templates/profile.html:193
 msgid "yoapp text 1"
 msgstr "현재는 서비스 종료됨."
 
-#: app/templates/profile.html:158
+#: app/templates/profile.html:196
 msgid "Bugs (Music service)"
 msgstr "대국민 음악 서비스, 벅스(Bugs) 개발"
 
-#: app/templates/profile.html:161
+#: app/templates/profile.html:199
 msgid "bugs text 1"
-msgstr "이 시기에 앱이 웹의 트래픽을 추월했고, 다른 음악앱들의 벤치마킹 대상이었음."
+msgstr ""
+"이 시기에 앱이 웹의 트래픽을 추월했고, 다른 음악앱들의 벤치마킹 대상이었음."
 
-#: app/templates/profile.html:166
+#: app/templates/profile.html:204
 msgid "PopConn (Group chatting service)"
 msgstr "비운의 그룹 채팅 서비스, 팝콘(PopConn) 개발"
 
-#: app/templates/profile.html:170
+#: app/templates/profile.html:208
 msgid "popconn text 1"
-msgstr "WhatsApp이 유행하고 카카오톡이 나오기 전에, 그룹채팅 서비스 개발에 참여함. 클라이언트 개발이 목표보다 지연되면서 카카오톡이 먼저 출시됐고, 늦은 오픈 후에 6개월 정도 운영하다가 서비스 종료됨."
+msgstr ""
+"WhatsApp이 유행하고 카카오톡이 나오기 전에, 그룹채팅 서비스 개발에 참여함. 클"
+"라이언트 개발이 목표보다 지연되면서 카카오톡이 먼저 출시됐고, 늦은 오픈 후에 "
+"6개월 정도 운영하다가 서비스 종료됨."
 
-#: app/templates/profile.html:173
+#: app/templates/profile.html:211
 msgid "Saycast (Social music broadcast service)"
 msgstr "음악방송 서비스, 세이캐스트(Saycast) 개발"
 
-#: app/templates/profile.html:175 app/templates/profile.html:182
+#: app/templates/profile.html:213 app/templates/profile.html:220
 msgid "Web development"
 msgstr "웹 개발"
 
-#: app/templates/profile.html:176
+#: app/templates/profile.html:214
 msgid "saycast text 1"
 msgstr "채팅을 비롯한 웹 서비스 전체 리뉴얼"
 
-#: app/templates/profile.html:177
+#: app/templates/profile.html:215
 msgid "Android app development (support)"
 msgstr "안드로이드 앱 개발 서포트"
 
-#: app/templates/profile.html:180
+#: app/templates/profile.html:218
 msgid "Sayclub (Social service)"
 msgstr "소셜 포털 서비스, 세이클럽(Sayclub) 개발"
 
-#: app/templates/profile.html:183
+#: app/templates/profile.html:221
 msgid "sayclub text 1"
 msgstr "서비스 전반에 걸쳐(채팅, 카페, 홈피, 쪽지 등) 부분적 리뉴얼 업데이트"
 
-#: app/templates/profile.html:184
+#: app/templates/profile.html:222
 msgid "sayclub text 2"
 msgstr "이벤트 및 프로모션 개발"
 
-#: app/templates/profile.html:192
+#: app/templates/profile.html:230
 msgid "Private products"
 msgstr "개인적 개발 활동"
 
-#: app/templates/profile.html:194
+#: app/templates/profile.html:232
 msgid "NoLook keyboard app"
 msgstr "노룩 키보드 개발"
 
-#: app/templates/profile.html:197
+#: app/templates/profile.html:235
 msgid "nolook text 1"
-msgstr "스마트폰의 화면을 보지 않고도 타이핑을 할 수 있게 하고자 개발한 키보드 앱"
+msgstr ""
+"스마트폰의 화면을 보지 않고도 타이핑을 할 수 있게 하고자 개발한 키보드 앱"
 
-#: app/templates/profile.html:198
+#: app/templates/profile.html:236
 msgid "nolook text 2"
 msgstr "입력 방식은 특허 등록되었으며, 국제 특허로도 출원함."
 
-#: app/templates/profile.html:201
+#: app/templates/profile.html:239
 msgid "Piano keyboard app"
 msgstr "피아노 키보드 개발"
 
-#: app/templates/profile.html:204
+#: app/templates/profile.html:242
 msgid "piano text 1"
-msgstr "노룩 키보드가 사용하기 너무 어려워서, 좀더 쉽고 재미있게 타이핑을 하기 위해 개발한 키보드 앱"
+msgstr ""
+"노룩 키보드가 사용하기 너무 어려워서, 좀더 쉽고 재미있게 타이핑을 하기 위해 "
+"개발한 키보드 앱"
 
-#: app/templates/profile.html:207
+#: app/templates/profile.html:245
 msgid "SmartBrowser app"
 msgstr "스마트 브라우저 개발"
 
-#: app/templates/profile.html:210
+#: app/templates/profile.html:248
 msgid "smartbrowser text 1"
 msgstr "2012 Google HackFair 에 출품하기 위해 개발한 브라우저 앱"
 
-#: app/templates/profile.html:211
+#: app/templates/profile.html:249
 msgid "smartbrowser text 2"
-msgstr "앱의 기능 중 웹페이지에서 본문 내용을 추출하여 앱내에 출력하는 방식은 특허 등록됨."
+msgstr ""
+"앱의 기능 중 웹페이지에서 본문 내용을 추출하여 앱내에 출력하는 방식은 특허 등"
+"록됨."
 
-#: app/templates/profile.html:214
+#: app/templates/profile.html:252
 msgid "TakeFive game"
 msgstr "미션 오목 (TAKE FIVE)"
 
-#: app/templates/profile.html:217
+#: app/templates/profile.html:255
 msgid "takefive text 1"
 msgstr "기존의 정적인 오목 게임과 차별화된 신개념 오목 게임"
 
-#: app/templates/profile.html:218
+#: app/templates/profile.html:256
 msgid "takefive text 2"
 msgstr "단계별로 미션이 주어지고, UFO가 땅을 정복하는 컨셉"
 
-#: app/templates/profile.html:221
+#: app/templates/profile.html:259
 msgid "Walkholic app"
 msgstr "Walkholic 개발"
 
-#: app/templates/profile.html:224
+#: app/templates/profile.html:262
 msgid "walkholic text 1"
 msgstr "Google Fit Challenge 에 출품하기 위해 개발한 헬스케어 앱"
 
-#: app/templates/profile.html:225
+#: app/templates/profile.html:263
 msgid "walkholic text 2"
 msgstr "Grand Prize Winner 수상"
 
-#: app/templates/profile.html:228
+#: app/templates/profile.html:266
 msgid "Codebattle service"
 msgstr "코드배틀 개발"
 
-#: app/templates/profile.html:231
+#: app/templates/profile.html:269
 msgid "codebattle text 1"
 msgstr "전략 수립 및 상대 패턴 분석을 기반으로 하는 코딩 게임"
 
-#: app/templates/profile.html:236
+#: app/templates/profile.html:274
 msgid "Patent"
 msgstr "특허 관련 활동"
 
-#: app/templates/profile.html:238
+#: app/templates/profile.html:276
 msgid "patent text 1"
 msgstr "출원 16건, 등록 11건 (국제특허 1건)"
 
-#: app/templates/profile.html:239
+#: app/templates/profile.html:298
 msgid "patent text 2"
 msgstr "네오위즈 IP전략팀 주최 특허경진대회 2위 (상금 300만원)"
 
-#: app/templates/profile.html:242
+#: app/templates/profile.html:301
+msgid "Speech information"
+msgstr "강연/세미나 활동"
+
+#: app/templates/profile.html:303
+msgid "speechinfo text 1"
+msgstr "2012 NOC(Neowiz Open Conference) 발표세션 참여 (주제: 신개념 스마트폰 키보드 개발)"
+
+#: app/templates/profile.html:303
+msgid "speech link"
+msgstr "발표 동영상 보기"
+
+#: app/templates/profile.html:304
+msgid "speechinfo text 2"
+msgstr "2014 스타트업과 게임개발자를 위한 인텔 안드로이드 테크니컬 세미나 발표세션 참여 (주제: 음성메신저 Hay 개발 후기)"
+
+#: app/templates/profile.html:307
 msgid "Additional information"
 msgstr "개발 역량 관련 참고사항"
 
-#: app/templates/profile.html:244
+#: app/templates/profile.html:309
 msgid "addinfo text 1"
 msgstr "NDD 코드배틀 2007년 1위, 2008년 2위, 2009년 3위, 2010년 8강."
 
-#: app/templates/profile.html:245
+#: app/templates/profile.html:310
 msgid "addinfo text 2"
-msgstr "코드배틀: 네오위즈 개발자 행사(NDD)의 중요 섹션이었음. 배틀쉽이나 오목처럼 일대일 대전 형식이며, 게임의 룰에 기반한 기본 전략과 상대방의 데이터를 분석하여 상대를 이길 수 있는 선택을 하는 전략을 수립하는 것이 중요함."
+msgstr ""
+"코드배틀: 네오위즈 개발자 행사(NDD)의 중요 섹션이었음. 배틀쉽이나 오목처럼 일"
+"대일 대전 형식이며, 게임의 룰에 기반한 기본 전략과 상대방의 데이터를 분석하"
+"여 상대를 이길 수 있는 선택을 하는 전략을 수립하는 것이 중요함."
 
-#: app/templates/profile.html:248
+#: app/templates/profile.html:313
 msgid "Blog"
 msgstr "블로그 운영"
 
-#: app/templates/profile.html:250
+#: app/templates/profile.html:315
 msgid "Android developer site translation"
 msgstr "안드로이드 개발자 사이트 번역"
 
-#: app/templates/profile.html:251
+#: app/templates/profile.html:316
 msgid "Private diary"
 msgstr "개인 블로그"
 
-#: app/templates/profile.html:254
+#: app/templates/profile.html:319
 msgid "Join Mensa"
 msgstr "멘사코리아 가입"
 
-#: app/templates/profile.html:258
+#: app/templates/profile.html:323
 msgid "Korea University, Computer Science"
 msgstr "고려대학교 컴퓨터학과"
 
-#: app/templates/profile.html:259
+#: app/templates/profile.html:324
 msgid "ROTC, the 7th Infantry Division"
 msgstr "제7보병사단 통신대대 운영장교 (ROTC, 중위전역)"
 
