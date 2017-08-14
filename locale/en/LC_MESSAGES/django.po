@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 20:33+0900\n"
+"POT-Creation-Date: 2017-08-14 18:58+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,51 +287,55 @@ msgid "Codebattle service"
 msgstr ""
 
 #: app/templates/profile.html:270
+msgid "Codebattle history"
+msgstr "Development history"
+
+#: app/templates/profile.html:271
 msgid "codebattle text 1"
 msgstr ""
 "Coding game based on strategy formulation and relative pattern analysis"
 
-#: app/templates/profile.html:275
+#: app/templates/profile.html:276
 msgid "Patent"
 msgstr ""
 
-#: app/templates/profile.html:277
+#: app/templates/profile.html:278
 msgid "patent text 1"
 msgstr "apply 16 / registration 11 / international 1"
 
-#: app/templates/profile.html:299
+#: app/templates/profile.html:300
 msgid "patent text 2"
 msgstr ""
 "2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 "
 "prize)"
 
-#: app/templates/profile.html:302
+#: app/templates/profile.html:303
 msgid "Speech information"
 msgstr "Speech / Seminar"
 
-#: app/templates/profile.html:304
+#: app/templates/profile.html:305
 msgid "speechinfo text 1"
 msgstr "2012 NOC(Neowiz Open Conference)"
 
-#: app/templates/profile.html:304
+#: app/templates/profile.html:305
 msgid "speech link"
 msgstr "Youtube Link"
 
-#: app/templates/profile.html:305
+#: app/templates/profile.html:306
 msgid "speechinfo text 2"
 msgstr "2014 Intel Android Technical Seminar for Startup / Game Developers"
 
-#: app/templates/profile.html:308
+#: app/templates/profile.html:309
 msgid "Additional information"
 msgstr ""
 
-#: app/templates/profile.html:310
+#: app/templates/profile.html:311
 msgid "addinfo text 1"
 msgstr ""
 "NDD code battle 1st place in 2007, 2nd place in 2008, 3rd place in 2009, 8th "
 "place in 2010."
 
-#: app/templates/profile.html:311
+#: app/templates/profile.html:312
 msgid "addinfo text 2"
 msgstr ""
 "It was an important section of the Neowiz Developer's Day (NDD). It is "
@@ -339,27 +343,27 @@ msgstr ""
 "basic strategy and opponent's data based on the rules of the game, such as "
 "battle or concert."
 
-#: app/templates/profile.html:314
+#: app/templates/profile.html:315
 msgid "Blog"
 msgstr ""
 
-#: app/templates/profile.html:316
+#: app/templates/profile.html:317
 msgid "Android developer site translation"
 msgstr ""
 
-#: app/templates/profile.html:317
+#: app/templates/profile.html:318
 msgid "Private diary"
 msgstr ""
 
-#: app/templates/profile.html:320
+#: app/templates/profile.html:321
 msgid "Join Mensa"
 msgstr ""
 
-#: app/templates/profile.html:324
+#: app/templates/profile.html:325
 msgid "Korea University, Computer Science"
 msgstr ""
 
-#: app/templates/profile.html:325
+#: app/templates/profile.html:326
 msgid "ROTC, the 7th Infantry Division"
 msgstr ""
 

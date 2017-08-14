@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 20:33+0900\n"
+"POT-Creation-Date: 2017-08-14 18:58+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,77 +279,81 @@ msgid "Codebattle service"
 msgstr "코드배틀 개발"
 
 #: app/templates/profile.html:270
+msgid "Codebattle history"
+msgstr "코드배틀 개발 히스토리"
+
+#: app/templates/profile.html:271
 msgid "codebattle text 1"
 msgstr "전략 수립 및 상대 패턴 분석을 기반으로 하는 코딩 게임"
 
-#: app/templates/profile.html:275
+#: app/templates/profile.html:276
 msgid "Patent"
 msgstr "특허 관련 활동"
 
-#: app/templates/profile.html:277
+#: app/templates/profile.html:278
 msgid "patent text 1"
 msgstr "출원 16건, 등록 11건 (국제특허 1건)"
 
-#: app/templates/profile.html:299
+#: app/templates/profile.html:300
 msgid "patent text 2"
 msgstr "네오위즈 IP전략팀 주최 특허경진대회 2위 (상금 300만원)"
 
-#: app/templates/profile.html:302
+#: app/templates/profile.html:303
 msgid "Speech information"
 msgstr "강연/세미나 활동"
 
-#: app/templates/profile.html:304
+#: app/templates/profile.html:305
 msgid "speechinfo text 1"
 msgstr ""
 "2012 NOC(Neowiz Open Conference) 발표세션 참여 (주제: 신개념 스마트폰 키보드 "
 "개발)"
 
-#: app/templates/profile.html:304
+#: app/templates/profile.html:305
 msgid "speech link"
 msgstr "발표 동영상 보기"
 
-#: app/templates/profile.html:305
+#: app/templates/profile.html:306
 msgid "speechinfo text 2"
 msgstr ""
 "2014 스타트업과 게임개발자를 위한 인텔 안드로이드 테크니컬 세미나 발표세션 참"
 "여 (주제: 음성메신저 Hay 개발 후기)"
 
-#: app/templates/profile.html:308
+#: app/templates/profile.html:309
 msgid "Additional information"
 msgstr "개발 역량 관련 참고사항"
 
-#: app/templates/profile.html:310
+#: app/templates/profile.html:311
 msgid "addinfo text 1"
 msgstr "NDD 코드배틀 2007년 1위, 2008년 2위, 2009년 3위, 2010년 8강."
 
-#: app/templates/profile.html:311
+#: app/templates/profile.html:312
 msgid "addinfo text 2"
 msgstr ""
 "코드배틀: 네오위즈 개발자 행사(NDD)의 중요 섹션이었음. 배틀쉽이나 오목처럼 일"
 "대일 대전 형식이며, 게임의 룰에 기반한 기본 전략과 상대방의 데이터를 분석하"
 "여 상대를 이길 수 있는 선택을 하는 전략을 수립하는 것이 중요함."
 
-#: app/templates/profile.html:314
+#: app/templates/profile.html:315
 msgid "Blog"
 msgstr "블로그 운영"
 
-#: app/templates/profile.html:316
+#: app/templates/profile.html:317
 msgid "Android developer site translation"
 msgstr "안드로이드 개발자 사이트 번역"
 
-#: app/templates/profile.html:317
+#: app/templates/profile.html:318
 msgid "Private diary"
 msgstr "개인 블로그"
 
-#: app/templates/profile.html:320
+#: app/templates/profile.html:321
 msgid "Join Mensa"
 msgstr "멘사코리아 가입"
 
-#: app/templates/profile.html:324
+#: app/templates/profile.html:325
 msgid "Korea University, Computer Science"
 msgstr "고려대학교 컴퓨터학과"
 
-#: app/templates/profile.html:325
+#: app/templates/profile.html:326
 msgid "ROTC, the 7th Infantry Division"
 msgstr "제7보병사단 통신대대 운영장교 (ROTC, 중위전역)"
 
