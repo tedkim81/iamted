@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-14 18:58+0900\n"
+"POT-Creation-Date: 2017-08-18 02:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,127 +56,131 @@ msgid "Developing CodeBattle"
 msgstr ""
 
 #: app/templates/profile.html:131
-msgid "Studying swift"
+msgid "Studying machine learning"
 msgstr ""
 
 #: app/templates/profile.html:132
+msgid "Studying swift"
+msgstr ""
+
+#: app/templates/profile.html:133
 msgid "Modifying my android apps from java to kotlin"
 msgstr ""
 
-#: app/templates/profile.html:140
+#: app/templates/profile.html:141
 msgid "LOLO service"
 msgstr ""
 
-#: app/templates/profile.html:142 app/templates/profile.html:151
-#: app/templates/profile.html:163 app/templates/profile.html:193
-#: app/templates/profile.html:208
+#: app/templates/profile.html:143 app/templates/profile.html:152
+#: app/templates/profile.html:164 app/templates/profile.html:194
+#: app/templates/profile.html:209
 msgid "Server framework"
 msgstr ""
 
-#: app/templates/profile.html:143 app/templates/profile.html:269
+#: app/templates/profile.html:144 app/templates/profile.html:270
 msgid "Web"
 msgstr ""
 
-#: app/templates/profile.html:144 app/templates/profile.html:164
-#: app/templates/profile.html:201 app/templates/profile.html:235
-#: app/templates/profile.html:242 app/templates/profile.html:248
-#: app/templates/profile.html:255 app/templates/profile.html:262
+#: app/templates/profile.html:145 app/templates/profile.html:165
+#: app/templates/profile.html:202 app/templates/profile.html:236
+#: app/templates/profile.html:243 app/templates/profile.html:249
+#: app/templates/profile.html:256 app/templates/profile.html:263
 msgid "Android app"
 msgstr ""
 
-#: app/templates/profile.html:145 app/templates/profile.html:165
-#: app/templates/profile.html:202
+#: app/templates/profile.html:146 app/templates/profile.html:166
+#: app/templates/profile.html:203
 msgid "Iphone app"
 msgstr ""
 
-#: app/templates/profile.html:146
+#: app/templates/profile.html:147
 msgid "Use AWS, Github, Docker"
 msgstr ""
 
-#: app/templates/profile.html:149
+#: app/templates/profile.html:150
 msgid "Ezistics (4PL logistics service)"
 msgstr ""
 
-#: app/templates/profile.html:152
+#: app/templates/profile.html:153
 msgid "Use AWS, Github"
 msgstr ""
 
-#: app/templates/profile.html:159
+#: app/templates/profile.html:160
 msgid "HeyBee (free music app)"
 msgstr ""
 
-#: app/templates/profile.html:161 app/templates/profile.html:171
-#: app/templates/profile.html:199
+#: app/templates/profile.html:162 app/templates/profile.html:172
+#: app/templates/profile.html:200
 msgid "Android app development"
 msgstr ""
 
-#: app/templates/profile.html:162
+#: app/templates/profile.html:163
 msgid "Leading service development by supporting server development"
 msgstr ""
 
-#: app/templates/profile.html:168
+#: app/templates/profile.html:169
 msgid "Hay (Voice messenger app)"
 msgstr ""
 
-#: app/templates/profile.html:170
+#: app/templates/profile.html:171
 msgid "hay text 1"
 msgstr ""
 "We have developed a Voice Messenger that records voice and transmits it in a "
 "separate TF organization for about a year, but the service is now terminated."
 
-#: app/templates/profile.html:172
+#: app/templates/profile.html:173
 msgid "hay text 2"
 msgstr "I used an open source library to convert and synthesize voice."
 
-#: app/templates/profile.html:175
+#: app/templates/profile.html:176
 msgid "TapSonic (Rhythm action game)"
 msgstr ""
 
-#: app/templates/profile.html:177
+#: app/templates/profile.html:178
 msgid "Android app development (out game part)"
 msgstr ""
 
-#: app/templates/profile.html:180
+#: app/templates/profile.html:181
 msgid "PmangPlus (Social game platform)"
 msgstr ""
 
-#: app/templates/profile.html:182
+#: app/templates/profile.html:183
 msgid "API and SDK development"
 msgstr ""
 
-#: app/templates/profile.html:183
+#: app/templates/profile.html:184
 msgid "pmangplus text 1"
 msgstr ""
 "During this period, the publishing business of mobile games linked to "
 "PmangPlus was performed."
 
-#: app/templates/profile.html:190
+#: app/templates/profile.html:191
 msgid "YoApp (App recommendation service)"
 msgstr ""
 
-#: app/templates/profile.html:192 app/templates/profile.html:207
+#: app/templates/profile.html:193 app/templates/profile.html:208
 msgid "API server development"
 msgstr ""
 
-#: app/templates/profile.html:194
+#: app/templates/profile.html:195
 msgid "yoapp text 1"
 msgstr "The service is now terminated."
 
-#: app/templates/profile.html:197
+#: app/templates/profile.html:198
 msgid "Bugs (Music service)"
 msgstr ""
 
-#: app/templates/profile.html:200
+#: app/templates/profile.html:201
 msgid "bugs text 1"
 msgstr ""
 "At this time, the Bugs app overtook the traffic on the Bugs web and "
 "benchmarked other music apps."
 
-#: app/templates/profile.html:205
+#: app/templates/profile.html:206
 msgid "PopConn (Group chatting service)"
 msgstr ""
 
-#: app/templates/profile.html:209
+#: app/templates/profile.html:210
 msgid "popconn text 1"
 msgstr ""
 "Before WhatsApp was popular and KakaoTalk, I participated in the group chat "
@@ -184,158 +188,158 @@ msgstr ""
 "KakaoTalk was released first, and it was running for about six months after "
 "the late opening."
 
-#: app/templates/profile.html:212
+#: app/templates/profile.html:213
 msgid "Saycast (Social music broadcast service)"
 msgstr ""
 
-#: app/templates/profile.html:214 app/templates/profile.html:221
+#: app/templates/profile.html:215 app/templates/profile.html:222
 msgid "Web development"
 msgstr ""
 
-#: app/templates/profile.html:215
+#: app/templates/profile.html:216
 msgid "saycast text 1"
 msgstr "Renewal of all web services including chatting service"
 
-#: app/templates/profile.html:216
+#: app/templates/profile.html:217
 msgid "Android app development (support)"
 msgstr ""
 
-#: app/templates/profile.html:219
+#: app/templates/profile.html:220
 msgid "Sayclub (Social service)"
 msgstr ""
 
-#: app/templates/profile.html:222
+#: app/templates/profile.html:223
 msgid "sayclub text 1"
 msgstr ""
 "Partial renewal updates throughout the service (chat, cafe, homepage, notes, "
 "etc.)"
 
-#: app/templates/profile.html:223
+#: app/templates/profile.html:224
 msgid "sayclub text 2"
 msgstr "Events & Promotion Development"
 
-#: app/templates/profile.html:231
+#: app/templates/profile.html:232
 msgid "Private products"
 msgstr ""
 
-#: app/templates/profile.html:233
+#: app/templates/profile.html:234
 msgid "NoLook keyboard app"
 msgstr ""
 
-#: app/templates/profile.html:236
+#: app/templates/profile.html:237
 msgid "nolook text 1"
 msgstr ""
 "A keyboard application developed to enable typing without seeing the screen "
 "of the smartphone."
 
-#: app/templates/profile.html:237
+#: app/templates/profile.html:238
 msgid "nolook text 2"
 msgstr ""
 "The input method has been patented and has also been filed as an "
 "international patent."
 
-#: app/templates/profile.html:240
+#: app/templates/profile.html:241
 msgid "Piano keyboard app"
 msgstr ""
 
-#: app/templates/profile.html:243
+#: app/templates/profile.html:244
 msgid "piano text 1"
 msgstr ""
 "A keyboard application developed because NoLook keyboard is difficult to use."
 
-#: app/templates/profile.html:246
+#: app/templates/profile.html:247
 msgid "SmartBrowser app"
 msgstr ""
 
-#: app/templates/profile.html:249
+#: app/templates/profile.html:250
 msgid "smartbrowser text 1"
 msgstr "Browser apps developed for 2012 Google HackFair"
 
-#: app/templates/profile.html:250
+#: app/templates/profile.html:251
 msgid "smartbrowser text 2"
 msgstr ""
 "Among the functions of the app, the method of extracting the text content "
 "from the web page and outputting it in the app is patented."
 
-#: app/templates/profile.html:253
+#: app/templates/profile.html:254
 msgid "TakeFive game"
 msgstr ""
 
-#: app/templates/profile.html:256
+#: app/templates/profile.html:257
 msgid "takefive text 1"
 msgstr ""
 "A new concept omok game that is different from the existing static omok game"
 
-#: app/templates/profile.html:257
+#: app/templates/profile.html:258
 msgid "takefive text 2"
 msgstr "The concept of UFOs conquering the land, given the mission in stages"
 
-#: app/templates/profile.html:260
+#: app/templates/profile.html:261
 msgid "Walkholic app"
 msgstr ""
 
-#: app/templates/profile.html:263
+#: app/templates/profile.html:264
 msgid "walkholic text 1"
 msgstr "Healthcare apps for Google Fit Challenge"
 
-#: app/templates/profile.html:264
+#: app/templates/profile.html:265
 msgid "walkholic text 2"
 msgstr "Grand Prize Winner"
 
-#: app/templates/profile.html:267
+#: app/templates/profile.html:268
 msgid "Codebattle service"
 msgstr ""
 
-#: app/templates/profile.html:270
+#: app/templates/profile.html:271
 msgid "Codebattle history"
 msgstr "Development history"
 
-#: app/templates/profile.html:271
+#: app/templates/profile.html:272
 msgid "codebattle text 1"
 msgstr ""
 "Coding game based on strategy formulation and relative pattern analysis"
 
-#: app/templates/profile.html:276
+#: app/templates/profile.html:277
 msgid "Patent"
 msgstr ""
 
-#: app/templates/profile.html:278
+#: app/templates/profile.html:279
 msgid "patent text 1"
 msgstr "apply 16 / registration 11 / international 1"
 
-#: app/templates/profile.html:300
+#: app/templates/profile.html:301
 msgid "patent text 2"
 msgstr ""
 "2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 "
 "prize)"
 
-#: app/templates/profile.html:303
+#: app/templates/profile.html:304
 msgid "Speech information"
 msgstr "Speech / Seminar"
 
-#: app/templates/profile.html:305
+#: app/templates/profile.html:306
 msgid "speechinfo text 1"
 msgstr "2012 NOC(Neowiz Open Conference)"
 
-#: app/templates/profile.html:305
+#: app/templates/profile.html:306
 msgid "speech link"
 msgstr "Youtube Link"
 
-#: app/templates/profile.html:306
+#: app/templates/profile.html:307
 msgid "speechinfo text 2"
 msgstr "2014 Intel Android Technical Seminar for Startup / Game Developers"
 
-#: app/templates/profile.html:309
+#: app/templates/profile.html:310
 msgid "Additional information"
 msgstr ""
 
-#: app/templates/profile.html:311
+#: app/templates/profile.html:312
 msgid "addinfo text 1"
 msgstr ""
 "NDD code battle 1st place in 2007, 2nd place in 2008, 3rd place in 2009, 8th "
 "place in 2010."
 
-#: app/templates/profile.html:312
+#: app/templates/profile.html:313
 msgid "addinfo text 2"
 msgstr ""
 "It was an important section of the Neowiz Developer's Day (NDD). It is "
@@ -343,27 +347,27 @@ msgstr ""
 "basic strategy and opponent's data based on the rules of the game, such as "
 "battle or concert."
 
-#: app/templates/profile.html:315
+#: app/templates/profile.html:316
 msgid "Blog"
 msgstr ""
 
-#: app/templates/profile.html:317
+#: app/templates/profile.html:318
 msgid "Android developer site translation"
 msgstr ""
 
-#: app/templates/profile.html:318
+#: app/templates/profile.html:319
 msgid "Private diary"
 msgstr ""
 
-#: app/templates/profile.html:321
+#: app/templates/profile.html:322
 msgid "Join Mensa"
 msgstr ""
 
-#: app/templates/profile.html:325
+#: app/templates/profile.html:326
 msgid "Korea University, Computer Science"
 msgstr ""
 
-#: app/templates/profile.html:326
+#: app/templates/profile.html:327
 msgid "ROTC, the 7th Infantry Division"
 msgstr ""
 
