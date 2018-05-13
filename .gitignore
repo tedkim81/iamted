@@ -3,7 +3,4 @@
 venv
 *.pyc
 staticfiles
-.coverage
-htmlcov
-node_modules
-
+db.sqlite3
