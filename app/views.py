@@ -17,7 +17,7 @@ class ProfileView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(ProfileView, self).get_context_data(**kwargs)
-        context['goals'] = Goal.objects.all()
+        context['goals'] = Goal.objects.all().prefetch_related('goaltask_set')
         for c in Content.objects.all():
             if self.lang == 'en':
                 context[c.type] = c.content_en

@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_@a9xjwq7dq(dw_(hwau4#78t88-h6fkscwxrhe)sm$^rxec9g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -49,6 +49,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+if DEBUG:
+    INSTALLED_APPS += 'debug_toolbar',
+    MIDDLEWARE += 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    INTERNAL_IPS = ('127.0.0.1',)
 
 ROOT_URLCONF = 'iamted.urls'
 
