@@ -9,7 +9,7 @@
     </button>
 </div>
 <div class="modal-body">
-    <table class="table table-bordered">
+    <table class="table table-bordered table-goal-modal">
         <tr>
             <td>{% trans "Goal status" %}</td>
             <td>{% if LANGUAGE_CODE == 'ko' %}{{ object.goal_status_kr|linebreaks }}{% else %}{{ object.goal_status_en|linebreaks }}{% endif %}</td>
@@ -60,3 +60,8 @@
 <div class="modal-footer">
     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 </div>
+<script type="text/javascript">
+setTimeout(function() {
+    $(".overflow-table-wrap").css("width", $(".table-goal-modal tr td").eq(1).width()+"px");
+}, 500);
+</script>
