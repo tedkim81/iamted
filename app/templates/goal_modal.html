@@ -30,26 +30,28 @@
             <td>{% trans "Task history" %}</td>
             <td>
             {% if object.goaltask_set.count > 0 %}
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>{% trans "Task date" %}</th>
-                            <th>{% trans "Task title" %}</th>
-                            <th>{% trans "Contribution rate" %}</th>
-                            <th>{% trans "Related content" %}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for gt in object.goaltask_set.all %}
-                        <tr>
-                            <td>{{ gt.task_dt }}</td>
-                            <td>{% if LANGUAGE_CODE == 'ko' %}{{ gt.title_kr }}{% else %}{{ gt.title_en }}{% endif %}</td>
-                            <td>{{ gt.get_contribute_percent }}%</td>
-                            <td>{% if gt.link_url %}<a href="{{ gt.link_url }}" target="_blank">Link</a>{% endif %}</td>
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+                <div class="overflow-table-wrap">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>{% trans "Task date" %}</th>
+                                <th>{% trans "Task title" %}</th>
+                                <th>{% trans "Contribution rate" %}</th>
+                                <th>{% trans "Related content" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for gt in object.goaltask_set.all %}
+                            <tr>
+                                <td>{{ gt.task_dt }}</td>
+                                <td>{% if LANGUAGE_CODE == 'ko' %}{{ gt.title_kr }}{% else %}{{ gt.title_en }}{% endif %}</td>
+                                <td>{{ gt.get_contribute_percent }}%</td>
+                                <td>{% if gt.link_url %}<a href="{{ gt.link_url }}" target="_blank">Link</a>{% endif %}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             {% endif %}
             </td>
         </tr>
