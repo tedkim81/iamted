@@ -1,0 +1,60 @@
+{% load i18n %}
+{% load tags %}
+
+{% get_current_language as LANGUAGE_CODE %}
+<div class="modal-header">
+    <h5 class="modal-title">{% if LANGUAGE_CODE == 'ko' %}{{ object.title_kr }}{% else %}{{ object.title_en }}{% endif %}</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table class="table table-bordered">
+        <tr>
+            <td>{% trans "Goal status" %}</td>
+            <td>{% if LANGUAGE_CODE == 'ko' %}{{ object.goal_status_kr|linebreaks }}{% else %}{{ object.goal_status_en|linebreaks }}{% endif %}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Current status" %}</td>
+            <td>{% if LANGUAGE_CODE == 'ko' %}{{ object.curr_status_kr|linebreaks }}{% else %}{{ object.curr_status_en|linebreaks }}{% endif %}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Goal achievement rate" %}</td>
+            <td>
+                <div class="ratio-percent color-ratio">{{ object.get_achievement_percent }}%</div>
+                <div>{% trans "Task contribution formula" %}</div>
+                <div>{% trans "Goal achievement formula" %}</div>
+            </td>
+        </tr>
+        <tr>
+            <td>{% trans "Task history" %}</td>
+            <td>
+            {% if object.goaltask_set.count > 0 %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>{% trans "Task date" %}</th>
+                            <th>{% trans "Task title" %}</th>
+                            <th>{% trans "Contribution rate" %}</th>
+                            <th>{% trans "Related content" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for gt in object.goaltask_set.all %}
+                        <tr>
+                            <td>{{ gt.task_dt }}</td>
+                            <td>{% if LANGUAGE_CODE == 'ko' %}{{ gt.title_kr }}{% else %}{{ gt.title_en }}{% endif %}</td>
+                            <td>{{ gt.get_contribute_percent }}%</td>
+                            <td>{% if gt.link_url %}<a href="{{ gt.link_url }}" target="_blank">Link</a>{% endif %}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+</div>

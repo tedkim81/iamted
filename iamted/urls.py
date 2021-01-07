@@ -23,4 +23,5 @@ from app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.ProfileView.as_view(), name='profile'),
+    url(r'^goal_modal/(?P<pk>\d+)/$', views.GoalModalView.as_view(), name='goal-modal'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
