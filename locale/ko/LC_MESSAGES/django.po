@@ -37,7 +37,7 @@ msgstr ""
 
 #: app/templates/goal_modal.html:26
 msgid "Goal achievement formula"
-msgstr "목표 달성률 = 과제별 달성률의 총합"
+msgstr "목표 달성률 = 과제별 기여도의 총합"
 
 #: app/templates/goal_modal.html:30
 msgid "Task history"
