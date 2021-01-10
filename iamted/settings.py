@@ -22,7 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = eval(os.environ.get('DEBUG'))
+DEBUG = True
+DEBUG_TOOLBAR = eval(os.environ.get('DEBUG_TOOLBAR'))
 
 ALLOWED_HOSTS = ['*']
 
@@ -50,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-if DEBUG:
+if DEBUG_TOOLBAR:
     INSTALLED_APPS += 'debug_toolbar',
     MIDDLEWARE += 'debug_toolbar.middleware.DebugToolbarMiddleware',
     INTERNAL_IPS = ('127.0.0.1',)
