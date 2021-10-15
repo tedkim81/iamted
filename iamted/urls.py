@@ -19,11 +19,14 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 from app import views
+from mytube import apis
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.ProfileView.as_view(), name='profile'),
     url(r'^goal_modal/(?P<pk>\d+)/$', views.GoalModalView.as_view(), name='goal-modal'),
+    url(r'^mytube/api/recommend_words$', apis.recommend_words, name='mytube-api-recommend-words'),
+    url(r'^mytube/api/search$', apis.search, name='mytube-api-search'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG_TOOLBAR:

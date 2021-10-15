@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 15:40+0900\n"
+"POT-Creation-Date: 2021-10-15 13:58+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,8 @@ msgstr "목표 달성률"
 #: app/templates/goal_modal.html:25
 msgid "Task contribution formula"
 msgstr ""
-"과제별 기여도 = 실행과제의 task_point * ((기억 가능 기간(years) - 지나간 세월(years)) / 기억 가능 기간(years)) / 목표의 goal_point * 100"
+"과제별 기여도 = 실행과제의 task_point * ((기억 가능 기간(years) - 지나간 세월"
+"(years)) / 기억 가능 기간(years)) / 목표의 goal_point * 100"
 
 #: app/templates/goal_modal.html:26
 msgid "Goal achievement formula"
@@ -43,105 +44,110 @@ msgstr "목표 달성률 = 과제별 기여도의 총합"
 msgid "Task history"
 msgstr "과제 내역"
 
-#: app/templates/goal_modal.html:36
+#: app/templates/goal_modal.html:37
 msgid "Task date"
 msgstr "과제 수행일"
 
-#: app/templates/goal_modal.html:37
+#: app/templates/goal_modal.html:38
 msgid "Task title"
 msgstr "과제 제목"
 
-#: app/templates/goal_modal.html:38
+#: app/templates/goal_modal.html:39
 msgid "Contribution rate"
 msgstr "기여도"
 
-#: app/templates/goal_modal.html:39
+#: app/templates/goal_modal.html:40
 msgid "Related content"
 msgstr "관련 내용"
 
-#: app/templates/profile.html:139
+#: app/templates/profile.html:151
 msgid "Ted Kim"
 msgstr "김태우 (Ted Kim)"
 
-#: app/templates/profile.html:150
+#: app/templates/profile.html:162
 msgid "Working"
 msgstr "일하는 중"
 
-#: app/templates/profile.html:152
-msgid "Developing Spursell"
-msgstr "스퍼셀 개발 중"
+#: app/templates/profile.html:164
+msgid "Working text 1"
+msgstr "탱글 안드로이드 앱 개발 중"
 
-#: app/templates/profile.html:153
-msgid "Developing LOLO"
-msgstr "로로 개발 중"
-
-#: app/templates/profile.html:156
+#: app/templates/profile.html:167
 msgid "Achieving goals"
 msgstr "목표 달성 중"
 
-#: app/templates/profile.html:159
+#: app/templates/profile.html:170
 msgid "Achievement rate"
 msgstr "달성률"
 
-#: app/templates/profile.html:168
-msgid "SpurSell (Global eCommerce operating platform)"
-msgstr "스퍼셀 (SpurSell, 글로벌 이커머스 운영 플랫폼) 기획 및 개발"
+#: app/templates/profile.html:179
+msgid "Tangled (Voice chat app based school-ship)"
+msgstr "탱글 (학교 친구 기반의 음성 채팅 SNS 앱)"
 
-#: app/templates/profile.html:171 app/templates/profile.html:178
-#: app/templates/profile.html:184 app/templates/profile.html:201
-#: app/templates/profile.html:209 app/templates/profile.html:215
-#: app/templates/profile.html:222 app/templates/profile.html:232
-#: app/templates/profile.html:246 app/templates/profile.html:254
-#: app/templates/profile.html:262 app/templates/profile.html:278
-#: app/templates/profile.html:287 app/templates/profile.html:294
-#: app/templates/profile.html:302 app/templates/profile.html:309
-#: app/templates/profile.html:317
+#: app/templates/profile.html:182 app/templates/profile.html:229
+#: app/templates/profile.html:259
+msgid "Android app development"
+msgstr "안드로이드 앱 개발"
+
+#: app/templates/profile.html:183 app/templates/profile.html:193
+#: app/templates/profile.html:200 app/templates/profile.html:206
+#: app/templates/profile.html:223 app/templates/profile.html:231
+#: app/templates/profile.html:237 app/templates/profile.html:244
+#: app/templates/profile.html:254 app/templates/profile.html:268
+#: app/templates/profile.html:276 app/templates/profile.html:284
+#: app/templates/profile.html:300 app/templates/profile.html:309
+#: app/templates/profile.html:316 app/templates/profile.html:324
+#: app/templates/profile.html:331 app/templates/profile.html:339
 msgid "Programming"
 msgstr ""
 
-#: app/templates/profile.html:172 app/templates/profile.html:185
+#: app/templates/profile.html:190
+msgid "SpurSell (Global eCommerce operating platform)"
+msgstr "스퍼셀 (SpurSell, 글로벌 이커머스 운영 플랫폼) 기획 및 개발"
+
+#: app/templates/profile.html:194 app/templates/profile.html:207
 msgid "Show main tasks"
 msgstr ""
 
-#: app/templates/profile.html:175
+#: app/templates/profile.html:197
 msgid "SpurSell Connector (Shopify plugin app for SpurSell)"
 msgstr ""
 "스퍼셀커넥터 (SpurSell Connector, 쇼피파이와 스퍼셀 연동을 위해 개발한 쇼피파"
 "이 플러그인 앱)"
 
-#: app/templates/profile.html:177
+#: app/templates/profile.html:199
 msgid "Shopify Appstore"
 msgstr ""
 
-#: app/templates/profile.html:181
+#: app/templates/profile.html:203
 msgid "LOLO service"
 msgstr "로로(LOLO) 서비스 기획 및 개발"
 
-#: app/templates/profile.html:188
+#: app/templates/profile.html:210
 msgid "Configuration of development environment"
 msgstr "개발환경 구성(공통)"
 
-#: app/templates/profile.html:197
+#: app/templates/profile.html:219
 msgid "HeyBee (free music app)"
 msgstr "무료 음악앱, 헤이비(HeyBee) 개발"
 
-#: app/templates/profile.html:199
+#: app/templates/profile.html:221
 msgid ""
 "I developed a free music app that listed and played YouTube musics in a "
 "separate TF team, but the service was terminated."
 msgstr ""
 "사내 별도 TF 조직에서 유튜브 음악 기반으로 개발했으나, 현재는 서비스 종료됨."
 
-#: app/templates/profile.html:200
+#: app/templates/profile.html:222
 msgid "Android app development and supporting server development"
 msgstr ""
 "안드로이드 앱 개발 및 서버 개발 일부를 서포트 함으로써, 전반적인 개발 리딩"
 
-#: app/templates/profile.html:204
+#: app/templates/profile.html:226
 msgid "Hay (Voice messenger app)"
 msgstr "음성 메신저, 헤이(Hay) 개발"
 
-#: app/templates/profile.html:206
+#: app/templates/profile.html:228
 msgid ""
 "I developed a voice messenger that recorded and transmitted voices in a "
 "separate TF team and operated it for about a year, but the service was "
@@ -150,70 +156,66 @@ msgstr ""
 "사내 별도 TF 조직에서, 목소리를 녹음해서 전송하는 방식의 음성 메신저를 개발하"
 "여 약 1년 정도 운영했으나, 현재는 서비스 종료됨."
 
-#: app/templates/profile.html:207 app/templates/profile.html:237
-msgid "Android app development"
-msgstr "안드로이드 앱 개발"
-
-#: app/templates/profile.html:208
+#: app/templates/profile.html:230
 msgid "I used an open source library to convert and synthesize voice."
 msgstr "음성 변조 및 합성을 위해 오픈소스 라이브러리를 컨버팅하여 사용함."
 
-#: app/templates/profile.html:212
+#: app/templates/profile.html:234
 msgid "TapSonic (Rhythm action game)"
 msgstr "리듬액션 모바일 게임, 탭소닉(TapSonic) 개발"
 
-#: app/templates/profile.html:214
+#: app/templates/profile.html:236
 msgid "Android app development (out game part)"
 msgstr "안드로이드 탭소닉의 out game 영역 리뉴얼"
 
-#: app/templates/profile.html:218
+#: app/templates/profile.html:240
 msgid "PmangPlus (Social game platform)"
 msgstr "소셜 게임 플랫폼, 피망플러스(PmangPlus) 개발"
 
-#: app/templates/profile.html:220
+#: app/templates/profile.html:242
 msgid "API and SDK development"
 msgstr "피망플러스 API 개발 및 SDK 개발 서포트"
 
-#: app/templates/profile.html:221
+#: app/templates/profile.html:243
 msgid ""
 "During this period, I also worked on publishing PmangPlus-linked mobile "
 "games."
 msgstr "이 기간 중 피망플러스 연동하는 모바일 게임들 퍼블리싱 업무 병행"
 
-#: app/templates/profile.html:229
+#: app/templates/profile.html:251
 msgid "YoApp (App recommendation service)"
 msgstr "앱 추천 서비스, 요앱(YoApp) 개발"
 
-#: app/templates/profile.html:231
+#: app/templates/profile.html:253
 msgid "API server development, but the service was terminated."
 msgstr "API 서버 개발, 현재는 서비스 종료됨."
 
-#: app/templates/profile.html:235
+#: app/templates/profile.html:257
 msgid "Bugs (Music service)"
 msgstr "대국민 음악 서비스, 벅스(Bugs) 개발"
 
-#: app/templates/profile.html:238
+#: app/templates/profile.html:260
 msgid ""
 "At this time, the Bugs app overtook the traffic on the Bugs web and were "
 "benchmarked by other music apps."
 msgstr ""
 "이 시기에 앱이 웹의 트래픽을 추월했고, 다른 음악 앱들의 벤치마킹 대상이었음."
 
-#: app/templates/profile.html:239 app/templates/profile.html:284
-#: app/templates/profile.html:292 app/templates/profile.html:299
-#: app/templates/profile.html:307 app/templates/profile.html:314
+#: app/templates/profile.html:261 app/templates/profile.html:306
+#: app/templates/profile.html:314 app/templates/profile.html:321
+#: app/templates/profile.html:329 app/templates/profile.html:336
 msgid "Google Play"
 msgstr ""
 
-#: app/templates/profile.html:242
+#: app/templates/profile.html:264
 msgid "PopConn (Group chatting service)"
 msgstr "비운의 그룹 채팅 서비스, 팝콘(PopConn) 개발"
 
-#: app/templates/profile.html:244
+#: app/templates/profile.html:266
 msgid "API server development"
 msgstr "API 서버 개발"
 
-#: app/templates/profile.html:245
+#: app/templates/profile.html:267
 msgid ""
 "I started developing PopConn before KakaoTalk was released, but the client "
 "development was delayed, so KakaoTalk was released first, and PopConn was "
@@ -223,75 +225,75 @@ msgstr ""
 "라이언트 개발이 목표보다 지연되면서 카카오톡이 먼저 출시됐고, 늦은 오픈 후에 "
 "6개월 정도 운영하다가 서비스 종료됨."
 
-#: app/templates/profile.html:249
+#: app/templates/profile.html:271
 msgid "Saycast (Social music broadcast service)"
 msgstr "음악방송 서비스, 세이캐스트(Saycast) 개발"
 
-#: app/templates/profile.html:252
+#: app/templates/profile.html:274
 msgid "Renewal of all web services including chatting service"
 msgstr "채팅을 비롯한 웹 서비스 전체 리뉴얼"
 
-#: app/templates/profile.html:253
+#: app/templates/profile.html:275
 msgid "Android app development (support)"
 msgstr "안드로이드 앱 개발 서포트"
 
-#: app/templates/profile.html:257
+#: app/templates/profile.html:279
 msgid "Sayclub (Social service)"
 msgstr "소셜 포털 서비스, 세이클럽(Sayclub) 개발"
 
-#: app/templates/profile.html:260
+#: app/templates/profile.html:282
 msgid ""
 "Partially renewal updates throughout the service (chat, cafe, homepage, "
 "notes, etc.)"
 msgstr "서비스 전반에 걸쳐(채팅, 카페, 홈피, 쪽지 등) 부분적 리뉴얼 업데이트"
 
-#: app/templates/profile.html:261
+#: app/templates/profile.html:283
 msgid "Events & Promotions Development"
 msgstr "이벤트 및 프로모션 개발"
 
-#: app/templates/profile.html:270
+#: app/templates/profile.html:292
 msgid "Private products"
 msgstr "개인적 개발 활동"
 
-#: app/templates/profile.html:272
+#: app/templates/profile.html:294
 msgid "Codebattle service"
 msgstr "코드배틀 개발"
 
-#: app/templates/profile.html:275
+#: app/templates/profile.html:297
 msgid "Codebattle history"
 msgstr "코드배틀 개발 히스토리"
 
-#: app/templates/profile.html:276
+#: app/templates/profile.html:298
 msgid ""
 "Coding game based on strategy establishment and opponent pattern analysis"
 msgstr "전략 수립 및 상대 패턴 분석을 기반으로 하는 코딩 게임"
 
-#: app/templates/profile.html:277
+#: app/templates/profile.html:299
 msgid "Used for coding tests when hiring software developers."
 msgstr "개발자 채용시 코딩 테스트에 활용"
 
-#: app/templates/profile.html:279 app/templates/profile.html:327
+#: app/templates/profile.html:301 app/templates/profile.html:349
 msgid "Show details"
 msgstr ""
 
-#: app/templates/profile.html:282
+#: app/templates/profile.html:304
 msgid "Walkholic app"
 msgstr "Walkholic 개발"
 
-#: app/templates/profile.html:285
+#: app/templates/profile.html:307
 msgid ""
 "A healthcare app developed to enter the Google Fit Developer Challenge (2015)"
 msgstr "2015 Google Fit Challenge 에 출품하기 위해 개발한 헬스케어 앱"
 
-#: app/templates/profile.html:286
+#: app/templates/profile.html:308
 msgid "Grand Prize Winner"
 msgstr "Grand Prize Winner 수상"
 
-#: app/templates/profile.html:290
+#: app/templates/profile.html:312
 msgid "TakeFive game"
 msgstr "미션 오목 (TAKE FIVE)"
 
-#: app/templates/profile.html:293
+#: app/templates/profile.html:315
 msgid ""
 "An omok game with a concept in which missions are given step by step and "
 "UFOs conquer the land"
@@ -299,15 +301,15 @@ msgstr ""
 "기존의 정적인 오목 게임과 차별화된 신개념 오목 게임으로서, 단계별로 미션이 주"
 "어지고, UFO가 땅을 정복하는 컨셉."
 
-#: app/templates/profile.html:297
+#: app/templates/profile.html:319
 msgid "SmartBrowser app"
 msgstr "스마트 브라우저 개발"
 
-#: app/templates/profile.html:300
+#: app/templates/profile.html:322
 msgid "A browser app developed to enter the 2012 Google HackFair"
 msgstr "2012 Google HackFair 에 출품하기 위해 개발한 브라우저 앱"
 
-#: app/templates/profile.html:301
+#: app/templates/profile.html:323
 msgid ""
 "Among the functions of the app, the method of extracting the body content "
 "from a web page and outputting it in the app was patented."
@@ -315,11 +317,11 @@ msgstr ""
 "앱의 기능 중 웹페이지에서 본문 내용을 추출하여 앱내에 출력하는 방식은 특허 등"
 "록됨."
 
-#: app/templates/profile.html:305
+#: app/templates/profile.html:327
 msgid "Piano keyboard app"
 msgstr "피아노 키보드 개발"
 
-#: app/templates/profile.html:308
+#: app/templates/profile.html:330
 msgid ""
 "A keyboard app developed to make typing easier and more fun because the "
 "NoLook Keyboard is too difficult to use"
@@ -327,47 +329,47 @@ msgstr ""
 "노룩 키보드가 사용하기 너무 어려워서, 좀더 쉽고 재미있게 타이핑을 하기 위해 "
 "개발한 키보드 앱"
 
-#: app/templates/profile.html:312
+#: app/templates/profile.html:334
 msgid "NoLook keyboard app"
 msgstr "노룩 키보드 개발"
 
-#: app/templates/profile.html:315
+#: app/templates/profile.html:337
 msgid ""
 "A keyboard app that allows users to type without looking at the screen of "
 "their smartphone"
 msgstr "스마트폰의 화면을 보지 않고도 타이핑을 할 수 있는 키보드 앱"
 
-#: app/templates/profile.html:316
+#: app/templates/profile.html:338
 msgid ""
 "The input method has been patented, and has also been applied as an "
 "international patent."
 msgstr "입력 방식은 특허 등록되었으며, 국제 특허로도 출원함."
 
-#: app/templates/profile.html:322
+#: app/templates/profile.html:344
 msgid "Patent related activities"
 msgstr "특허 관련 활동"
 
-#: app/templates/profile.html:324
+#: app/templates/profile.html:346
 msgid ""
 "16 patent applications, 11 patent registrations (1 international patent)"
 msgstr "출원 16건, 등록 11건 (국제특허 1건)"
 
-#: app/templates/profile.html:331
+#: app/templates/profile.html:353
 msgid ""
 "2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 "
 "prize)"
 msgstr "네오위즈 IP전략팀 주최 특허경진대회 2위 (상금 300만원)"
 
-#: app/templates/profile.html:334
+#: app/templates/profile.html:356
 msgid "Speech / Seminar / Personal broadcast"
 msgstr "강연/세미나/개인방송 활동"
 
-#: app/templates/profile.html:336
+#: app/templates/profile.html:358
 msgid ""
 "2018~2019 Broadcasting about programming for non developers on AfreecaTV"
 msgstr "2018-2019 비개발자 대상으로 프로그래밍 상식 관련 방송 진행"
 
-#: app/templates/profile.html:341
+#: app/templates/profile.html:363
 msgid ""
 "2014 Intel Android Technical Seminar for Startup / Game Developers speech "
 "session"
@@ -375,55 +377,55 @@ msgstr ""
 "2014 스타트업과 게임개발자를 위한 인텔 안드로이드 테크니컬 세미나 발표세션 참"
 "여"
 
-#: app/templates/profile.html:343
+#: app/templates/profile.html:365
 msgid "Voice messenger Hay development review"
 msgstr "음성메신저 Hay 개발 후기"
 
-#: app/templates/profile.html:346
+#: app/templates/profile.html:368
 msgid "2012 NOC (Neowiz Open Conference) speech session"
 msgstr "2012 NOC (Neowiz Open Conference) 발표세션 참여"
 
-#: app/templates/profile.html:348
+#: app/templates/profile.html:370
 msgid "New concept smartphone keyboard development"
 msgstr "신개념 스마트폰 키보드 개발"
 
-#: app/templates/profile.html:354
+#: app/templates/profile.html:376
 msgid "Etc."
 msgstr "기타"
 
-#: app/templates/profile.html:356
+#: app/templates/profile.html:378
 msgid "NDD (Neowiz Developer’s Day) code battle session"
 msgstr "NDD (Neowiz Developer’s Day) 코드배틀 입상"
 
-#: app/templates/profile.html:361
+#: app/templates/profile.html:383
 msgid "Personal blog"
 msgstr "개인 블로그 운영"
 
-#: app/templates/profile.html:366
+#: app/templates/profile.html:388
 msgid "Android developer site translation"
 msgstr "안드로이드 개발자 사이트 번역"
 
-#: app/templates/profile.html:369
+#: app/templates/profile.html:391
 msgid "No updates since 2016"
 msgstr "2016년 이후 업데이트 없음"
 
-#: app/templates/profile.html:372
+#: app/templates/profile.html:394
 msgid "Joined Mensa"
 msgstr "멘사코리아 가입"
 
-#: app/templates/profile.html:378
+#: app/templates/profile.html:400
 msgid "Korea University, Computer Science"
 msgstr "고려대학교 컴퓨터학과"
 
-#: app/templates/profile.html:379
+#: app/templates/profile.html:401
 msgid "ROTC, the 7th Infantry Division"
 msgstr "제7보병사단 통신대대 운영장교 (ROTC, 중위전역)"
 
-#: app/templates/profile.html:394
+#: app/templates/profile.html:416
 msgid "Main tasks for SpurSell"
 msgstr "스퍼셀(SpurSell) 서비스에 대한 주요 업무"
 
-#: app/templates/profile.html:401
+#: app/templates/profile.html:423
 msgid ""
 "Since there were no service planners and few developers, I was directly and "
 "indirectly involved in the planning and development of all parts of the "
@@ -432,54 +434,54 @@ msgstr ""
 "서비스 기획자가 없고 개발자가 많지 않았기 때문에, 직책과 관계없이 스퍼셀 서비"
 "스의 모든 부분에 대한 기획 및 개발에 직간접적으로 관여했습니다."
 
-#: app/templates/profile.html:402
+#: app/templates/profile.html:424
 msgid ""
 "Created SpurSell’s development environment (AWS, Github, PHP, Codeigniter"
 msgstr "스퍼셀의 개발 환경 구성 (AWS, Github, PHP, Codeigniter)"
 
-#: app/templates/profile.html:404
+#: app/templates/profile.html:426
 msgid ""
 "Created web servers and deployment environment with EC2 instances (Ubuntu, "
 "Apache)"
 msgstr "EC2 인스턴스로 웹서버 및 배포환경 구성(Ubuntu, Apache)"
 
-#: app/templates/profile.html:405
+#: app/templates/profile.html:427
 msgid "Created DB with RDS instances (MySQL)"
 msgstr "RDS 인스턴스(MySQL)로 DB 구성"
 
-#: app/templates/profile.html:406
+#: app/templates/profile.html:428
 msgid "Created serving environment of static files with S3"
 msgstr "S3 서비스로 각종 static 파일들의 serving 환경 구성"
 
-#: app/templates/profile.html:407 app/templates/profile.html:456
+#: app/templates/profile.html:429 app/templates/profile.html:478
 msgid "Created domain management environment with Route53"
 msgstr "Route53으로 도메인 관리 환경 구성"
 
-#: app/templates/profile.html:408 app/templates/profile.html:457
+#: app/templates/profile.html:430 app/templates/profile.html:479
 msgid ""
 "Source code management with Github’s private repository, and set development "
 "collaboration environment"
 msgstr "Github의 private repository로 소스코드 관리하고, 협업 환경 구성"
 
-#: app/templates/profile.html:409
+#: app/templates/profile.html:431
 msgid "Developed source code project with PHP Codeigniter"
 msgstr "PHP Codeigniter로 소스코드 프로젝트 작성 및 관리"
 
-#: app/templates/profile.html:412
+#: app/templates/profile.html:434
 msgid "Designed and developed SpurSell’s base structure"
 msgstr "스퍼셀의 기본 구조 설계 및 개발/구현"
 
-#: app/templates/profile.html:413
+#: app/templates/profile.html:435
 msgid "Developed product management and order management modules"
 msgstr "상품관리, 주문관리 모듈 개발"
 
-#: app/templates/profile.html:415
+#: app/templates/profile.html:437
 msgid ""
 "Designed and created DB structure for products and orders, and developed "
 "related pages and functions"
 msgstr "상품과 주문에 대한 DB 설계 및 각종 화면과 기능 개발"
 
-#: app/templates/profile.html:416
+#: app/templates/profile.html:438
 msgid ""
 "Linked from SpurSell to LOLO and Korean famous online marketplaces (Gmarket, "
 "11st street, Naver smartstore, etc.) through API"
@@ -487,15 +489,15 @@ msgstr ""
 "로로(LOLO)와 외부 판매채널(G마켓, 11번가, 네이버 스마트스토어 등) 연동 기능 "
 "개발"
 
-#: app/templates/profile.html:417
+#: app/templates/profile.html:439
 msgid "Developed delivery tracking function for each delivery company"
 msgstr "각 배송사별 배송추적 기능 개발"
 
-#: app/templates/profile.html:420
+#: app/templates/profile.html:442
 msgid "Developed payout management modules"
 msgstr "정산관리 모듈 개발"
 
-#: app/templates/profile.html:422
+#: app/templates/profile.html:444
 msgid ""
 "Developed related pages and functions for seller’s payout request, payout "
 "processing, payout history management, pre-payout fund management"
@@ -503,26 +505,26 @@ msgstr ""
 "셀러의 정산 요청, 지급처리, 지급내역 관리, 선정산 펀드 관리 등에 대한 각종 화"
 "면과 기능 개발"
 
-#: app/templates/profile.html:425
+#: app/templates/profile.html:447
 msgid "Developed finance and accounting module"
 msgstr "재무회계 모듈 개발"
 
-#: app/templates/profile.html:427
+#: app/templates/profile.html:449
 msgid ""
 "Developed related pages and functions for balance sheet (include journalize "
 "function)"
 msgstr ""
 "대차대조표 작성을 위해 필요한 각종 화면과 기능 개발 (분개 기능 직접 구현)"
 
-#: app/templates/profile.html:430
+#: app/templates/profile.html:452
 msgid "Developed the dashboards and report pages"
 msgstr "각종 대시보드 및 리포트 화면 개발"
 
-#: app/templates/profile.html:443
+#: app/templates/profile.html:465
 msgid "Main tasks for LOLO"
 msgstr "로로(LOLO) 서비스에 대한 주요 업무"
 
-#: app/templates/profile.html:450
+#: app/templates/profile.html:472
 msgid ""
 "Since there were no service planners and few developers, I was directly and "
 "indirectly involved in the planning and development of all parts of the LOLO "
@@ -531,44 +533,44 @@ msgstr ""
 "서비스 기획자가 없고 개발자가 많지 않았기 때문에, 직책과 관계없이 로로 서비스"
 "의 모든 부분에 대한 기획 및 개발에 직간접적으로 관여했습니다."
 
-#: app/templates/profile.html:451
+#: app/templates/profile.html:473
 msgid ""
 "Created LOLO’s development environment (AWS, Github, Docker, Python, Django)"
 msgstr "로로의 개발환경 구성 (AWS, Github, Docker, Python, Django)"
 
-#: app/templates/profile.html:453
+#: app/templates/profile.html:475
 msgid "Created web servers with EC2 instances (Ubuntu, Nginx)"
 msgstr "EC2 인스턴스로 웹서버 구성(Ubuntu, Nginx)"
 
-#: app/templates/profile.html:454
+#: app/templates/profile.html:476
 msgid "Created DB with RDS instances (PostgreSQL)"
 msgstr "RDS 인스턴스(PostgreSQL)로 DB 구성"
 
-#: app/templates/profile.html:455
+#: app/templates/profile.html:477
 msgid "Created serving environment of static files with S3 and CloudFront"
 msgstr "S3, CloudFront 서비스로 각종 static 파일들의 serving 환경 구성"
 
-#: app/templates/profile.html:465
+#: app/templates/profile.html:487
 msgid "Developed source code project with Python3 Django"
 msgstr "Python3 Django로 소스코드 프로젝트 작성 및 관리"
 
-#: app/templates/profile.html:468
+#: app/templates/profile.html:490
 msgid "Designed and Developed LOLO’s base structure"
 msgstr "로로의 기본 구조 설계 및 개발/구현"
 
-#: app/templates/profile.html:469
+#: app/templates/profile.html:491
 msgid "Developed all necessary pages and functions for online marketplace"
 msgstr "이커머스 판매채널(온라인 쇼핑몰)의 모든 필요 기능 개발"
 
-#: app/templates/profile.html:482
+#: app/templates/profile.html:504
 msgid "Details of Code Battle"
 msgstr "코드배틀(Code Battle)에 대한 자세한 내용"
 
-#: app/templates/profile.html:490
+#: app/templates/profile.html:512
 msgid "Motivation for development:"
 msgstr "개발 동기:"
 
-#: app/templates/profile.html:491
+#: app/templates/profile.html:513
 msgid ""
 "Neowiz had an annual event called Neowiz Developer's Day (NDD), and Code "
 "Battle was the last and most popular session. I enjoyed the process of "
@@ -585,11 +587,11 @@ msgstr ""
 "참 아쉬웠는데.. 그렇게 몇 년 지나고 2016년에 “간단하게라도 하나 그냥 만들자. "
 "추억인데.” 싶어서 개인적으로 개발했습니다."
 
-#: app/templates/profile.html:494
+#: app/templates/profile.html:516
 msgid "About Code Battle:"
 msgstr "설명:"
 
-#: app/templates/profile.html:495
+#: app/templates/profile.html:517
 msgid ""
 "It is a one-on-one match-up game, and each game has a rule of win and loss. "
 "And each code should make the best choice every turn."
@@ -598,11 +600,11 @@ msgstr ""
 "서 매 turn 마다 그 규칙에 맞춰서 자신이 낼 수 있는 것들 중에서 최선의 선택을 "
 "하는 방식으로 실행됩니다."
 
-#: app/templates/profile.html:498
+#: app/templates/profile.html:520
 msgid "Used for coding test:"
 msgstr "코딩테스트에 활용:"
 
-#: app/templates/profile.html:499
+#: app/templates/profile.html:521
 msgid ""
 "Most of the existing coding tests consisted of solving algorithmic problems, "
 "and like math problems, the ability to understand the problem itself was "
@@ -619,11 +621,11 @@ msgstr ""
 "낮추고 “생각하는 바를 코딩해내는 능력”을 확인하는데에 코드배틀이 더 적합할 수"
 "도 있겠다고 생각하여 코딩테스트에 활용하기 시작했습니다."
 
-#: app/templates/profile.html:513
+#: app/templates/profile.html:535
 msgid "Patent application and registration"
 msgstr "특허 출원 및 등록"
 
-#: app/templates/profile.html:520
+#: app/templates/profile.html:542
 msgid ""
 "In 2011, when the patent war between Samsung and Apple was in full swing, "
 "Neowiz also implemented an incentive policy to produce patents, and "
@@ -632,26 +634,26 @@ msgstr ""
 "삼성과 애플의 특허 전쟁이 한창이던 2011년경에 네오위즈에서도 특허를 생산(?)하"
 "기 위한 장려 정책을 시행했고, 이에 따라 특허를 다수 출원하게 됐습니다."
 
-#: app/templates/profile.html:521
+#: app/templates/profile.html:543
 msgid ""
 "Over time, many of the patents have expired for the purpose of reducing "
 "administrative costs, and only a few remain."
 msgstr ""
 "시간이 지나면서 상당수는 관리비 절감을 목적으로 소멸됐고 일부만 남았습니다."
 
-#: app/templates/profile.html:522
+#: app/templates/profile.html:544
 msgid "Patent details"
 msgstr "특허 내역"
 
-#: app/templates/profile.html:524
+#: app/templates/profile.html:546
 msgid "METHOD, TERMINAL, AND RECORDING MEDIUM FOR CHARACTER INPUT"
 msgstr "문자 입력을 제공하는 방법, 단말기 및 기록매체"
 
-#: app/templates/profile.html:525
+#: app/templates/profile.html:547
 msgid "USER TERMINAL HAVING FUNCTION CHECKING BANNED WORDS AND METHOD THEREOF"
 msgstr "금칙어 검사 기능을 채용한 사용자 단말기 및 금칙어 검사 방법"
 
-#: app/templates/profile.html:526
+#: app/templates/profile.html:548
 msgid ""
 "METHOD, CLIENT DEVICE, CHATTING SERVER AND RECORDING MEDIUM FOR PROVIDING "
 "CLIENT-BASED CHATTING SERVICE"
@@ -659,1233 +661,83 @@ msgstr ""
 "클라이언트 기반의 채팅 서비스를 제공하는 방법, 클라이언트 장치, 채팅 서버, 시"
 "스템 및 기록매체"
 
-#: app/templates/profile.html:527
+#: app/templates/profile.html:549
 msgid ""
 "METHOD FOR PROVIDING APPLICATION SOFTWARE, AND THE APPLICATION PROVIDING "
 "SERVER THEREOF"
 msgstr "어플리케이션 제공 방법 및 그를 위한 어플리케이션 제공 서버"
 
-#: app/templates/profile.html:528
+#: app/templates/profile.html:550
 msgid "METHOD, TERMINAL, AND RECORDING MEDIUM FOR PROVIDING TOUCH INPUT"
 msgstr "터치입력을 제공하는 방법, 단말기 및 기록매체"
 
-#: app/templates/profile.html:529
+#: app/templates/profile.html:551
 msgid "METHOD AND APPARATUS FOR PROCESSING DOCUMENT OF WEB PAGE"
 msgstr "웹페이지의 문서 처리 방법 및 장치"
 
-#: app/templates/profile.html:530
+#: app/templates/profile.html:552
 msgid "CHARACTER INPUT DEVICE AND WORD PROVIDING METHOD THEREOF"
 msgstr "문자입력장치 및 그의 단어제공방법"
 
-#: app/templates/profile.html:531
+#: app/templates/profile.html:553
 msgid ""
 "METHOD FOR LOADING INTERNET-WEBPAGE, USER TERMINAL PERFORMING THE SAME, AND "
 "RECORDING MEDIUM"
 msgstr "인터넷 웹페이지 로딩 방법, 이를 수행하는 사용자 단말 및 기록매체"
 
-#: app/templates/profile.html:532
+#: app/templates/profile.html:554
 msgid "METHOD, TERMINAL, AND RECORDING MEDIUM FOR CONTROLLING SCREEN OUTPUT"
 msgstr "화면 출력을 제어하는 방법, 단말기 및 기록매체"
 
-#: app/templates/profile.html:533
+#: app/templates/profile.html:555
 msgid ""
 "METHOD OF PROVIDING GAME, SERVER PERFORMING THE SAME AND STORAGE MEDIA "
 "STORING THE SAME"
 msgstr "게임 제공 방법, 이를 수행하는 제공 서버 및 이를 저장하는 기록매체"
 
-#: app/templates/profile.html:534
+#: app/templates/profile.html:556
 msgid "PORTABLE TERMINAL DISPLAYING IMAGE DESIGN"
 msgstr "화상디자인이 표시된 휴대용 단말기"
 
-#: app/templates/profile.html:535
+#: app/templates/profile.html:557
 msgid ""
 "METHOD OF PROVIDING COMPUTER-EXECUTIVE ENUMERATION TYPE CONTENTS, DEVICE "
 "PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME"
 msgstr ""
 "컴퓨터 실행 가능한 열거형 콘텐츠 제공 방법 및 장치와 이를 저장한 기록매체"
 
-#: app/templates/profile.html:536
+#: app/templates/profile.html:558
 msgid ""
 "METHOD, MOBILE TERMINAL, AND RECORDING MEDIUM FOR PROVIDING SOUND SOURCE "
 "SERVICE"
 msgstr "음원 서비스를 제공하는 방법, 모바일 단말기 및 기록매체"
 
-#: app/templates/profile.html:537
+#: app/templates/profile.html:559
 msgid "MUSIC SERVICE SYSTEM AND METHOD THEREOF"
 msgstr "음원 서비스 시스템과 그 서비스 방법"
 
-#: app/templates/profile.html:538
+#: app/templates/profile.html:560
 msgid ""
 "METHOD, CLIENT APPARATUS, SERVER, AND RECORDING MEDIUM FOR PROVIDING "
 "MULTIPLE API CALL"
 msgstr "멀티플 API 호출을 제공하는 방법, 클라이언트 장치, 서버 및 기록매체"
 
-#: app/templates/profile.html:539
+#: app/templates/profile.html:561
 msgid ""
 "METHOD AND APPARATUS FOR PROVIDING POSTURE CORRECTING FUNCTION OF MOBILE "
 "TERMINAL"
 msgstr "휴대용 단말의 자세교정 기능 제공 방법 및 장치"
 
-#: iamted/settings.py:111
+#: iamted/settings.py:118
 msgid "English"
 msgstr ""
 
-#: iamted/settings.py:112
+#: iamted/settings.py:119
 msgid "Korean"
 msgstr ""
 
-#: venv/lib/python3.7/site-packages/django/contrib/messages/apps.py:7
-msgid "Messages"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/contrib/sitemaps/apps.py:7
-msgid "Site Maps"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/contrib/staticfiles/apps.py:9
-msgid "Static Files"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/contrib/syndication/apps.py:7
-msgid "Syndication"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/paginator.py:42
-msgid "That page number is not an integer"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/paginator.py:44
-msgid "That page number is less than 1"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/paginator.py:49
-msgid "That page contains no results"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:31
-msgid "Enter a valid value."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:102
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:659
-msgid "Enter a valid URL."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:154
-msgid "Enter a valid integer."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:165
-msgid "Enter a valid email address."
-msgstr ""
-
-#. Translators: "letters" means latin letters: a-z and A-Z.
-#: venv/lib/python3.7/site-packages/django/core/validators.py:239
-msgid ""
-"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:246
-msgid ""
-"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:255
-#: venv/lib/python3.7/site-packages/django/core/validators.py:275
-msgid "Enter a valid IPv4 address."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:260
-#: venv/lib/python3.7/site-packages/django/core/validators.py:276
-msgid "Enter a valid IPv6 address."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:270
-#: venv/lib/python3.7/site-packages/django/core/validators.py:274
-msgid "Enter a valid IPv4 or IPv6 address."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:304
-msgid "Enter only digits separated by commas."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:310
-#, python-format
-msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:341
-#, python-format
-msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:350
-#, python-format
-msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:360
-#, python-format
-msgid ""
-"Ensure this value has at least %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at least %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:375
-#, python-format
-msgid ""
-"Ensure this value has at most %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at most %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:394
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:289
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:324
-msgid "Enter a number."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:396
-#, python-format
-msgid "Ensure that there are no more than %(max)s digit in total."
-msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:401
-#, python-format
-msgid "Ensure that there are no more than %(max)s decimal place."
-msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:406
-#, python-format
-msgid ""
-"Ensure that there are no more than %(max)s digit before the decimal point."
-msgid_plural ""
-"Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:468
-#, python-format
-msgid ""
-"File extension '%(extension)s' is not allowed. Allowed extensions are: "
-"'%(allowed_extensions)s'."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/core/validators.py:520
-msgid "Null characters are not allowed."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/base.py:1110
-#: venv/lib/python3.7/site-packages/django/forms/models.py:752
-msgid "and"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/base.py:1112
-#, python-format
-msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:105
-#, python-format
-msgid "Value %(value)r is not a valid choice."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:106
-msgid "This field cannot be null."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:107
-msgid "This field cannot be blank."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:108
-#, python-format
-msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
-
-#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
-#. Eg: "Title must be unique for pub_date year"
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:112
-#, python-format
-msgid ""
-"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:129
-#, python-format
-msgid "Field of type: %(field_type)s"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:898
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1766
-msgid "Integer"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:902
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1764
-#, python-format
-msgid "'%(value)s' value must be an integer."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:977
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1833
-msgid "Big (8 byte) integer"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:989
-#, python-format
-msgid "'%(value)s' value must be either True or False."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:990
-#, python-format
-msgid "'%(value)s' value must be either True, False, or None."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:992
-msgid "Boolean (Either True or False)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1034
-#, python-format
-msgid "String (up to %(max_length)s)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1098
-msgid "Comma-separated integers"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1147
-#, python-format
-msgid ""
-"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
-"format."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1149
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1292
-#, python-format
-msgid ""
-"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
-"date."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1152
-msgid "Date (without time)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1290
-#, python-format
-msgid ""
-"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1294
-#, python-format
-msgid ""
-"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1298
-msgid "Date (with time)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1446
-#, python-format
-msgid "'%(value)s' value must be a decimal number."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1448
-msgid "Decimal number"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1587
-#, python-format
-msgid ""
-"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
-"uuuuuu] format."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1590
-msgid "Duration"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1640
-msgid "Email address"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1663
-msgid "File path"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1729
-#, python-format
-msgid "'%(value)s' value must be a float."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1731
-msgid "Floating point number"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1849
-msgid "IPv4 address"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1880
-msgid "IP address"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1960
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1961
-#, python-format
-msgid "'%(value)s' value must be either None, True or False."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1963
-msgid "Boolean (Either True, False or None)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1998
-msgid "Positive integer"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2011
-msgid "Positive small integer"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2025
-#, python-format
-msgid "Slug (up to %(max_length)s)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2057
-msgid "Small integer"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2064
-msgid "Text"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2092
-#, python-format
-msgid ""
-"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
-"format."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2094
-#, python-format
-msgid ""
-"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
-"invalid time."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2097
-msgid "Time"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2223
-msgid "URL"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2245
-msgid "Raw binary data"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:2295
-#, python-format
-msgid "'%(value)s' is not a valid UUID."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/files.py:221
-msgid "File"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/files.py:360
-msgid "Image"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:778
-#, python-format
-msgid "%(model)s instance with %(field)s %(value)r does not exist."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:780
-msgid "Foreign Key (type determined by related field)"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1001
-msgid "One-to-one relationship"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1051
-#, python-format
-msgid "%(from)s-%(to)s relationship"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1052
-#, python-format
-msgid "%(from)s-%(to)s relationships"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/db/models/fields/related.py:1094
-msgid "Many-to-many relationship"
-msgstr ""
-
-#. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
-#: venv/lib/python3.7/site-packages/django/forms/boundfield.py:146
-msgid ":?.!"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:52
-msgid "This field is required."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:244
-msgid "Enter a whole number."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:395
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:1128
-msgid "Enter a valid date."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:419
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:1129
-msgid "Enter a valid time."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:441
-msgid "Enter a valid date/time."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:470
-msgid "Enter a valid duration."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:472
-#, python-brace-format
-msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:533
-msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:534
-msgid "No file was submitted."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:535
-msgid "The submitted file is empty."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:537
-#, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
-msgid_plural ""
-"Ensure this filename has at most %(max)d characters (it has %(length)d)."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:540
-msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:601
-msgid ""
-"Upload a valid image. The file you uploaded was either not an image or a "
-"corrupted image."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:763
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:853
-#: venv/lib/python3.7/site-packages/django/forms/models.py:1272
-#, python-format
-msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:854
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:969
-#: venv/lib/python3.7/site-packages/django/forms/models.py:1271
-msgid "Enter a list of values."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:970
-msgid "Enter a complete value."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/fields.py:1187
-msgid "Enter a valid UUID."
-msgstr ""
-
-#. Translators: This is the default suffix added to form field labels
-#: venv/lib/python3.7/site-packages/django/forms/forms.py:86
-msgid ":"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/forms.py:212
-#, python-format
-msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/formsets.py:91
-msgid "ManagementForm data is missing or has been tampered with"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/formsets.py:338
-#, python-format
-msgid "Please submit %d or fewer forms."
-msgid_plural "Please submit %d or fewer forms."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/forms/formsets.py:345
-#, python-format
-msgid "Please submit %d or more forms."
-msgid_plural "Please submit %d or more forms."
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/forms/formsets.py:371
-#: venv/lib/python3.7/site-packages/django/forms/formsets.py:373
-msgid "Order"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/formsets.py:375
-msgid "Delete"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:747
-#, python-format
-msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:751
-#, python-format
-msgid "Please correct the duplicate data for %(field)s, which must be unique."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:757
-#, python-format
-msgid ""
-"Please correct the duplicate data for %(field_name)s which must be unique "
-"for the %(lookup)s in %(date_field)s."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:766
-msgid "Please correct the duplicate values below."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:1093
-msgid "The inline value did not match the parent instance."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:1160
-msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/models.py:1274
-#, python-format
-msgid "\"%(pk)s\" is not a valid value."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/utils.py:162
-#, python-format
-msgid ""
-"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
-"may be ambiguous or it may not exist."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/widgets.py:383
-msgid "Clear"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/widgets.py:384
-msgid "Currently"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/widgets.py:385
-msgid "Change"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/widgets.py:699
-msgid "Unknown"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/widgets.py:700
-msgid "Yes"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/forms/widgets.py:701
-msgid "No"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:788
-msgid "yes,no,maybe"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:817
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:834
-#, python-format
-msgid "%(size)d byte"
-msgid_plural "%(size)d bytes"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:836
-#, python-format
-msgid "%s KB"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:838
-#, python-format
-msgid "%s MB"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:840
-#, python-format
-msgid "%s GB"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:842
-#, python-format
-msgid "%s TB"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/template/defaultfilters.py:844
-#, python-format
-msgid "%s PB"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:62
-msgid "p.m."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:63
-msgid "a.m."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:68
-msgid "PM"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:69
-msgid "AM"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:150
-msgid "midnight"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dateformat.py:152
-msgid "noon"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
-msgid "Monday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
-msgid "Tuesday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
-msgid "Wednesday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
-msgid "Thursday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:6
-msgid "Friday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:7
-msgid "Saturday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:7
-msgid "Sunday"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
-msgid "Mon"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
-msgid "Tue"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
-msgid "Wed"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
-msgid "Thu"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:10
-msgid "Fri"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:11
-msgid "Sat"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:11
-msgid "Sun"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
-msgid "January"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
-msgid "February"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
-msgid "March"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
-msgid "April"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
-msgid "May"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:14
-msgid "June"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
-msgid "July"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
-msgid "August"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
-msgid "September"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
-msgid "October"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:15
-msgid "November"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:16
-msgid "December"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
-msgid "jan"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
-msgid "feb"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
-msgid "mar"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
-msgid "apr"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
-msgid "may"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:19
-msgid "jun"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
-msgid "jul"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
-msgid "aug"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
-msgid "sep"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
-msgid "oct"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
-msgid "nov"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:20
-msgid "dec"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:23
-msgctxt "abbrev. month"
-msgid "Jan."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:24
-msgctxt "abbrev. month"
-msgid "Feb."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:25
-msgctxt "abbrev. month"
-msgid "March"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:26
-msgctxt "abbrev. month"
-msgid "April"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:27
-msgctxt "abbrev. month"
-msgid "May"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:28
-msgctxt "abbrev. month"
-msgid "June"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:29
-msgctxt "abbrev. month"
-msgid "July"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:30
-msgctxt "abbrev. month"
-msgid "Aug."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:31
-msgctxt "abbrev. month"
-msgid "Sept."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:32
-msgctxt "abbrev. month"
-msgid "Oct."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:33
-msgctxt "abbrev. month"
-msgid "Nov."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:34
-msgctxt "abbrev. month"
-msgid "Dec."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:37
-msgctxt "alt. month"
-msgid "January"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:38
-msgctxt "alt. month"
-msgid "February"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:39
-msgctxt "alt. month"
-msgid "March"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:40
-msgctxt "alt. month"
-msgid "April"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:41
-msgctxt "alt. month"
-msgid "May"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:42
-msgctxt "alt. month"
-msgid "June"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:43
-msgctxt "alt. month"
-msgid "July"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:44
-msgctxt "alt. month"
-msgid "August"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:45
-msgctxt "alt. month"
-msgid "September"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:46
-msgctxt "alt. month"
-msgid "October"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:47
-msgctxt "alt. month"
-msgid "November"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/dates.py:48
-msgctxt "alt. month"
-msgid "December"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/ipv6.py:8
-msgid "This is not a valid IPv6 address."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/text.py:70
-#, python-format
-msgctxt "String to return when truncating text"
-msgid "%(truncated_text)s..."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/text.py:237
-msgid "or"
-msgstr ""
-
-#. Translators: This string is used as a separator between list elements
-#: venv/lib/python3.7/site-packages/django/utils/text.py:256
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:83
-msgid ", "
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:9
-#, python-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:10
-#, python-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:11
-#, python-format
-msgid "%d week"
-msgid_plural "%d weeks"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:12
-#, python-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:13
-#, python-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:14
-#, python-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] ""
-
-#: venv/lib/python3.7/site-packages/django/utils/timesince.py:72
-msgid "0 minutes"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:110
-msgid "Forbidden"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:111
-msgid "CSRF verification failed. Request aborted."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:115
-msgid ""
-"You are seeing this message because this HTTPS site requires a 'Referer "
-"header' to be sent by your Web browser, but none was sent. This header is "
-"required for security reasons, to ensure that your browser is not being "
-"hijacked by third parties."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:120
-msgid ""
-"If you have configured your browser to disable 'Referer' headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for 'same-"
-"origin' requests."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:124
-msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
-"CSRF protection requires the 'Referer' header to do strict referer checking. "
-"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" ...> for links to third-party sites."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:132
-msgid ""
-"You are seeing this message because this site requires a CSRF cookie when "
-"submitting forms. This cookie is required for security reasons, to ensure "
-"that your browser is not being hijacked by third parties."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:137
-msgid ""
-"If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for 'same-origin' requests."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/csrf.py:142
-msgid "More information is available with DEBUG=True."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:41
-msgid "No year specified"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:61
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:111
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:208
-msgid "Date out of range"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:90
-msgid "No month specified"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:142
-msgid "No day specified"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:188
-msgid "No week specified"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:338
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:367
-#, python-format
-msgid "No %(verbose_name_plural)s available"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:585
-#, python-format
-msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/dates.py:619
-#, python-format
-msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/detail.py:54
-#, python-format
-msgid "No %(verbose_name)s found matching the query"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/list.py:67
-msgid "Page is not 'last', nor can it be converted to an int."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/list.py:72
-#, python-format
-msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/generic/list.py:154
-#, python-format
-msgid "Empty list and '%(class_name)s.allow_empty' is False."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/static.py:40
-msgid "Directory indexes are not allowed here."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/static.py:42
-#, python-format
-msgid "\"%(path)s\" does not exist"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/static.py:80
-#, python-format
-msgid "Index of %(directory)s"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:6
-msgid "Django: the Web framework for perfectionists with deadlines."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:345
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:367
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:368
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:383
-msgid "Django Documentation"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:384
-msgid "Topics, references, &amp; how-to's"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:395
-msgid "Tutorial: A Polling App"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:396
-msgid "Get started with Django"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:407
-msgid "Django Community"
-msgstr ""
-
-#: venv/lib/python3.7/site-packages/django/views/templates/default_urlconf.html:408
-msgid "Connect, get help, or contribute"
-msgstr ""
+#~ msgid "Developing Spursell"
+#~ msgstr "스퍼셀 개발 중"
+
+#~ msgid "Developing LOLO"
+#~ msgstr "로로 개발 중"
