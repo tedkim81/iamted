@@ -157,6 +157,8 @@
                 <div>LinkedIn: <a href="https://www.linkedin.com/in/김-태우-419084b4" target="_blank">https://www.linkedin.com/in/김-태우-419084b4</a></div>
             </div>
         </div>
+        {% if false %}
+        <!-- 일단 숨기고, 나중에 삭제하던지 개선하던지 하자. -->
         <div class="section-title">Today</div>
         <ul class="cont-list">
             <li class="cont-li">{% trans "Working" %}
@@ -172,17 +174,19 @@
                 </ul>
             </li>
         </ul>
+        {% endif %}
         <div class="section-title">Work Experience</div>
         <ul class="cont-list">
             <li class="cont-li">2021.10 ~ Today<a href="http://frienkly.me" target="_blank" class="company-link">Software Engineer, Frienkly</a>
                 <ul>
-                    <li>{% trans "Tangled (Voice chat app based school-ship)" %}
+                    <li>{% trans "Tangled (Web3.0 video chat dApp)" %}
                         <ul>
                             <li>Site: <a href="https://tangled.im" target="_blank">https://tangled.im</a></li>
                             <li>{% trans "Android app development" %}</li>
                             <li>{% trans "Programming" %}: Kotlin</li>
                         </ul>
                     </li>
+                    <li>{% trans "Working on a new project with Flutter" %}</li>
                 </ul>
             </li>
             <li class="cont-li">2015.11 ~ 2021.09<a href="https://spursell.com/home" target="_blank" class="company-link">CTO, SpurSell Limited</a>
@@ -382,7 +386,8 @@
                     </li>
                     <li>{% trans "Personal blog" %}
                         <ul>
-                            <li>Site: <a href="https://blog.naver.com/ktw5724" target="_blank">https://blog.naver.com/ktw5724</a></li>
+                            <li>{% trans "Blah blah with GPT" %}: <a href="https://blog.naver.com/gptlog" target="_blank">https://blog.naver.com/gptlog</a></li>
+                            <li>{% trans "Fun to get to know" %}: <a href="https://blog.naver.com/ktw5724" target="_blank">https://blog.naver.com/ktw5724</a></li>
                         </ul>
                     </li>
                     <li>{% trans "Android developer site translation" %}
