@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-24 18:36+0900\n"
+"POT-Creation-Date: 2023-10-04 00:59+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,498 +63,523 @@ msgstr ""
 msgid "Ted Kim"
 msgstr ""
 
-#: app/templates/profile.html:163
+#: app/templates/profile.html:164
 msgid "Working"
 msgstr ""
 
-#: app/templates/profile.html:165
+#: app/templates/profile.html:166
 msgid "Working text 1"
 msgstr "Developing Tangled android app"
 
-#: app/templates/profile.html:168
+#: app/templates/profile.html:169
 msgid "Achieving goals"
 msgstr ""
 
-#: app/templates/profile.html:171
+#: app/templates/profile.html:172
 msgid "Achievement rate"
 msgstr ""
 
-#: app/templates/profile.html:181
+#: app/templates/profile.html:182
 msgid "Tangled (Web3.0 video chat dApp)"
 msgstr ""
 
-#: app/templates/profile.html:184 app/templates/profile.html:232
-#: app/templates/profile.html:262
+#: app/templates/profile.html:185 app/templates/profile.html:233
+#: app/templates/profile.html:263
 msgid "Android app development"
 msgstr ""
 
-#: app/templates/profile.html:185 app/templates/profile.html:196
-#: app/templates/profile.html:203 app/templates/profile.html:209
-#: app/templates/profile.html:226 app/templates/profile.html:234
-#: app/templates/profile.html:240 app/templates/profile.html:247
-#: app/templates/profile.html:257 app/templates/profile.html:271
-#: app/templates/profile.html:279 app/templates/profile.html:287
-#: app/templates/profile.html:303 app/templates/profile.html:312
-#: app/templates/profile.html:319 app/templates/profile.html:327
-#: app/templates/profile.html:334 app/templates/profile.html:342
+#: app/templates/profile.html:186 app/templates/profile.html:197
+#: app/templates/profile.html:204 app/templates/profile.html:210
+#: app/templates/profile.html:227 app/templates/profile.html:235
+#: app/templates/profile.html:241 app/templates/profile.html:248
+#: app/templates/profile.html:258 app/templates/profile.html:272
+#: app/templates/profile.html:280 app/templates/profile.html:288
+#: app/templates/profile.html:305 app/templates/profile.html:314
+#: app/templates/profile.html:321 app/templates/profile.html:329
+#: app/templates/profile.html:336 app/templates/profile.html:344
 msgid "Programming"
 msgstr ""
 
-#: app/templates/profile.html:188
+#: app/templates/profile.html:189
 msgid "Working on a new project with Flutter"
 msgstr ""
 
-#: app/templates/profile.html:193
+#: app/templates/profile.html:194
 msgid "SpurSell (Global eCommerce operating platform)"
 msgstr ""
 
-#: app/templates/profile.html:197 app/templates/profile.html:210
+#: app/templates/profile.html:198 app/templates/profile.html:211
 msgid "Show main tasks"
 msgstr ""
 
-#: app/templates/profile.html:200
+#: app/templates/profile.html:201
 msgid "SpurSell Connector (Shopify plugin app for SpurSell)"
 msgstr ""
 
-#: app/templates/profile.html:202
+#: app/templates/profile.html:203
 msgid "Shopify Appstore"
 msgstr ""
 
-#: app/templates/profile.html:206
+#: app/templates/profile.html:207
 msgid "LOLO service"
 msgstr ""
 
-#: app/templates/profile.html:213
+#: app/templates/profile.html:214
 msgid "Configuration of development environment"
 msgstr ""
 
-#: app/templates/profile.html:222
+#: app/templates/profile.html:223
 msgid "HeyBee (free music app)"
 msgstr ""
 
-#: app/templates/profile.html:224
+#: app/templates/profile.html:225
 msgid ""
 "I developed a free music app that listed and played YouTube musics in a "
 "separate TF team, but the service was terminated."
 msgstr ""
 
-#: app/templates/profile.html:225
+#: app/templates/profile.html:226
 msgid "Android app development and supporting server development"
 msgstr ""
 
-#: app/templates/profile.html:229
+#: app/templates/profile.html:230
 msgid "Hay (Voice messenger app)"
 msgstr ""
 
-#: app/templates/profile.html:231
+#: app/templates/profile.html:232
 msgid ""
 "I developed a voice messenger that recorded and transmitted voices in a "
 "separate TF team and operated it for about a year, but the service was "
 "terminated."
 msgstr ""
 
-#: app/templates/profile.html:233
+#: app/templates/profile.html:234
 msgid "I used an open source library to convert and synthesize voice."
 msgstr ""
 
-#: app/templates/profile.html:237
+#: app/templates/profile.html:238
 msgid "TapSonic (Rhythm action game)"
 msgstr ""
 
-#: app/templates/profile.html:239
+#: app/templates/profile.html:240
 msgid "Android app development (out game part)"
 msgstr ""
 
-#: app/templates/profile.html:243
+#: app/templates/profile.html:244
 msgid "PmangPlus (Social game platform)"
 msgstr ""
 
-#: app/templates/profile.html:245
+#: app/templates/profile.html:246
 msgid "API and SDK development"
 msgstr ""
 
-#: app/templates/profile.html:246
+#: app/templates/profile.html:247
 msgid ""
 "During this period, I also worked on publishing PmangPlus-linked mobile "
 "games."
 msgstr ""
 
-#: app/templates/profile.html:254
+#: app/templates/profile.html:255
 msgid "YoApp (App recommendation service)"
 msgstr ""
 
-#: app/templates/profile.html:256
+#: app/templates/profile.html:257
 msgid "API server development, but the service was terminated."
 msgstr ""
 
-#: app/templates/profile.html:260
+#: app/templates/profile.html:261
 msgid "Bugs (Music service)"
 msgstr ""
 
-#: app/templates/profile.html:263
+#: app/templates/profile.html:264
 msgid ""
 "At this time, the Bugs app overtook the traffic on the Bugs web and were "
 "benchmarked by other music apps."
 msgstr ""
 
-#: app/templates/profile.html:264 app/templates/profile.html:309
-#: app/templates/profile.html:317 app/templates/profile.html:324
-#: app/templates/profile.html:332 app/templates/profile.html:339
+#: app/templates/profile.html:265 app/templates/profile.html:311
+#: app/templates/profile.html:319 app/templates/profile.html:326
+#: app/templates/profile.html:334 app/templates/profile.html:341
 msgid "Google Play"
 msgstr ""
 
-#: app/templates/profile.html:267
+#: app/templates/profile.html:268
 msgid "PopConn (Group chatting service)"
 msgstr ""
 
-#: app/templates/profile.html:269
+#: app/templates/profile.html:270
 msgid "API server development"
 msgstr ""
 
-#: app/templates/profile.html:270
+#: app/templates/profile.html:271
 msgid ""
 "I started developing PopConn before KakaoTalk was released, but the client "
 "development was delayed, so KakaoTalk was released first, and PopConn was "
 "released later, but the service ended after operating for about 6 months."
 msgstr ""
 
-#: app/templates/profile.html:274
+#: app/templates/profile.html:275
 msgid "Saycast (Social music broadcast service)"
 msgstr ""
 
-#: app/templates/profile.html:277
+#: app/templates/profile.html:278
 msgid "Renewal of all web services including chatting service"
 msgstr ""
 
-#: app/templates/profile.html:278
+#: app/templates/profile.html:279
 msgid "Android app development (support)"
 msgstr ""
 
-#: app/templates/profile.html:282
+#: app/templates/profile.html:283
 msgid "Sayclub (Social service)"
 msgstr ""
 
-#: app/templates/profile.html:285
+#: app/templates/profile.html:286
 msgid ""
 "Partially renewal updates throughout the service (chat, cafe, homepage, "
 "notes, etc.)"
 msgstr ""
 
-#: app/templates/profile.html:286
+#: app/templates/profile.html:287
 msgid "Events & Promotions Development"
 msgstr ""
 
-#: app/templates/profile.html:295
+#: app/templates/profile.html:296
 msgid "Private products"
 msgstr "Side products"
 
-#: app/templates/profile.html:297
+#: app/templates/profile.html:298
 msgid "Codebattle service"
 msgstr ""
 
-#: app/templates/profile.html:300
+#: app/templates/profile.html:301
 msgid "Codebattle history"
 msgstr "Development history"
 
-#: app/templates/profile.html:301
+#: app/templates/profile.html:302
 msgid ""
 "Coding game based on strategy establishment and opponent pattern analysis"
 msgstr ""
 
-#: app/templates/profile.html:302
+#: app/templates/profile.html:303
 msgid "Used for coding tests when hiring software developers."
 msgstr ""
 
-#: app/templates/profile.html:304 app/templates/profile.html:352
+#: app/templates/profile.html:304
+msgid "Used for the Code Battle session of the SK Planet Developer’s day"
+msgstr ""
+
+#: app/templates/profile.html:306 app/templates/profile.html:354
 msgid "Show details"
 msgstr ""
 
-#: app/templates/profile.html:307
+#: app/templates/profile.html:309
 msgid "Walkholic app"
 msgstr ""
 
-#: app/templates/profile.html:310
+#: app/templates/profile.html:312
 msgid ""
 "A healthcare app developed to enter the Google Fit Developer Challenge (2015)"
 msgstr ""
 
-#: app/templates/profile.html:311
+#: app/templates/profile.html:313
 msgid "Grand Prize Winner"
 msgstr ""
 
-#: app/templates/profile.html:315
+#: app/templates/profile.html:317
 msgid "TakeFive game"
 msgstr ""
 
-#: app/templates/profile.html:318
+#: app/templates/profile.html:320
 msgid ""
 "An omok game with a concept in which missions are given step by step and "
 "UFOs conquer the land"
 msgstr ""
 
-#: app/templates/profile.html:322
+#: app/templates/profile.html:324
 msgid "SmartBrowser app"
 msgstr ""
 
-#: app/templates/profile.html:325
+#: app/templates/profile.html:327
 msgid "A browser app developed to enter the 2012 Google HackFair"
 msgstr ""
 
-#: app/templates/profile.html:326
+#: app/templates/profile.html:328
 msgid ""
 "Among the functions of the app, the method of extracting the body content "
 "from a web page and outputting it in the app was patented."
 msgstr ""
 
-#: app/templates/profile.html:330
+#: app/templates/profile.html:332
 msgid "Piano keyboard app"
 msgstr ""
 
-#: app/templates/profile.html:333
+#: app/templates/profile.html:335
 msgid ""
 "A keyboard app developed to make typing easier and more fun because the "
 "NoLook Keyboard is too difficult to use"
 msgstr ""
 
-#: app/templates/profile.html:337
+#: app/templates/profile.html:339
 msgid "NoLook keyboard app"
 msgstr ""
 
-#: app/templates/profile.html:340
+#: app/templates/profile.html:342
 msgid ""
 "A keyboard app that allows users to type without looking at the screen of "
 "their smartphone"
 msgstr ""
 
-#: app/templates/profile.html:341
+#: app/templates/profile.html:343
 msgid ""
 "The input method has been patented, and has also been applied as an "
 "international patent."
 msgstr ""
 
-#: app/templates/profile.html:347
+#: app/templates/profile.html:349
 msgid "Patent related activities"
 msgstr ""
 
-#: app/templates/profile.html:349
+#: app/templates/profile.html:351
 msgid ""
 "16 patent applications, 11 patent registrations (1 international patent)"
 msgstr ""
 
-#: app/templates/profile.html:356
+#: app/templates/profile.html:358
 msgid ""
 "2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 "
 "prize)"
 msgstr ""
 
-#: app/templates/profile.html:359
+#: app/templates/profile.html:361
 msgid "Speech / Seminar / Personal broadcast"
 msgstr ""
 
-#: app/templates/profile.html:361
+#: app/templates/profile.html:363
 msgid ""
 "2018~2019 Broadcasting about programming for non developers on AfreecaTV"
 msgstr ""
 
-#: app/templates/profile.html:366
+#: app/templates/profile.html:368
 msgid ""
 "2014 Intel Android Technical Seminar for Startup / Game Developers speech "
 "session"
 msgstr ""
 
-#: app/templates/profile.html:368
+#: app/templates/profile.html:370
 msgid "Voice messenger Hay development review"
 msgstr ""
 
-#: app/templates/profile.html:371
+#: app/templates/profile.html:373
 msgid "2012 NOC (Neowiz Open Conference) speech session"
 msgstr ""
 
-#: app/templates/profile.html:373
+#: app/templates/profile.html:375
 msgid "New concept smartphone keyboard development"
 msgstr ""
 
-#: app/templates/profile.html:379
+#: app/templates/profile.html:381
 msgid "Etc."
 msgstr ""
 
-#: app/templates/profile.html:381
+#: app/templates/profile.html:383
 msgid "NDD (Neowiz Developer’s Day) code battle session"
 msgstr ""
 
-#: app/templates/profile.html:386
+#: app/templates/profile.html:388
+msgid ""
+"Planned and developed the Code Battle session for SK Planet Developer’s Day."
+msgstr ""
+
+#: app/templates/profile.html:390
+msgid "SK Planet 1:1 Fighting Tournament"
+msgstr ""
+
+#: app/templates/profile.html:390 app/templates/profile.html:391
+msgid "Playground"
+msgstr ""
+
+#: app/templates/profile.html:390 app/templates/profile.html:391
+msgid "Final round of 16"
+msgstr ""
+
+#: app/templates/profile.html:391
+msgid "SK Planet Code Baseball Classic"
+msgstr ""
+
+#: app/templates/profile.html:394
 msgid "Personal blog"
 msgstr ""
 
-#: app/templates/profile.html:388
+#: app/templates/profile.html:396
 msgid "Blah blah with GPT"
 msgstr ""
 
-#: app/templates/profile.html:389
+#: app/templates/profile.html:397
 msgid "Fun to get to know"
 msgstr ""
 
-#: app/templates/profile.html:392
+#: app/templates/profile.html:400
 msgid "Android developer site translation"
 msgstr ""
 
-#: app/templates/profile.html:395
+#: app/templates/profile.html:403
 msgid "No updates since 2016"
 msgstr ""
 
-#: app/templates/profile.html:398
+#: app/templates/profile.html:406
 msgid "Joined Mensa"
 msgstr ""
 
-#: app/templates/profile.html:404
+#: app/templates/profile.html:412
 msgid "Korea University, Computer Science"
 msgstr ""
 
-#: app/templates/profile.html:405
+#: app/templates/profile.html:413
 msgid "ROTC, the 7th Infantry Division"
 msgstr ""
 
-#: app/templates/profile.html:420
+#: app/templates/profile.html:428
 msgid "Main tasks for SpurSell"
 msgstr ""
 
-#: app/templates/profile.html:427
+#: app/templates/profile.html:435
 msgid ""
 "Since there were no service planners and few developers, I was directly and "
 "indirectly involved in the planning and development of all parts of the "
 "SpurSell service, regardless of job title."
 msgstr ""
 
-#: app/templates/profile.html:428
+#: app/templates/profile.html:436
 msgid ""
 "Created SpurSell’s development environment (AWS, Github, PHP, Codeigniter"
 msgstr ""
 
-#: app/templates/profile.html:430
+#: app/templates/profile.html:438
 msgid ""
 "Created web servers and deployment environment with EC2 instances (Ubuntu, "
 "Apache)"
 msgstr ""
 
-#: app/templates/profile.html:431
+#: app/templates/profile.html:439
 msgid "Created DB with RDS instances (MySQL)"
 msgstr ""
 
-#: app/templates/profile.html:432
+#: app/templates/profile.html:440
 msgid "Created serving environment of static files with S3"
 msgstr ""
 
-#: app/templates/profile.html:433 app/templates/profile.html:482
+#: app/templates/profile.html:441 app/templates/profile.html:490
 msgid "Created domain management environment with Route53"
 msgstr ""
 
-#: app/templates/profile.html:434 app/templates/profile.html:483
+#: app/templates/profile.html:442 app/templates/profile.html:491
 msgid ""
 "Source code management with Github’s private repository, and set development "
 "collaboration environment"
 msgstr ""
 
-#: app/templates/profile.html:435
+#: app/templates/profile.html:443
 msgid "Developed source code project with PHP Codeigniter"
 msgstr ""
 
-#: app/templates/profile.html:438
+#: app/templates/profile.html:446
 msgid "Designed and developed SpurSell’s base structure"
 msgstr ""
 
-#: app/templates/profile.html:439
+#: app/templates/profile.html:447
 msgid "Developed product management and order management modules"
 msgstr ""
 
-#: app/templates/profile.html:441
+#: app/templates/profile.html:449
 msgid ""
 "Designed and created DB structure for products and orders, and developed "
 "related pages and functions"
 msgstr ""
 
-#: app/templates/profile.html:442
+#: app/templates/profile.html:450
 msgid ""
 "Linked from SpurSell to LOLO and Korean famous online marketplaces (Gmarket, "
 "11st street, Naver smartstore, etc.) through API"
 msgstr ""
 
-#: app/templates/profile.html:443
+#: app/templates/profile.html:451
 msgid "Developed delivery tracking function for each delivery company"
 msgstr ""
 
-#: app/templates/profile.html:446
+#: app/templates/profile.html:454
 msgid "Developed payout management modules"
 msgstr ""
 
-#: app/templates/profile.html:448
+#: app/templates/profile.html:456
 msgid ""
 "Developed related pages and functions for seller’s payout request, payout "
 "processing, payout history management, pre-payout fund management"
 msgstr ""
 
-#: app/templates/profile.html:451
+#: app/templates/profile.html:459
 msgid "Developed finance and accounting module"
 msgstr ""
 
-#: app/templates/profile.html:453
+#: app/templates/profile.html:461
 msgid ""
 "Developed related pages and functions for balance sheet (include journalize "
 "function)"
 msgstr ""
 
-#: app/templates/profile.html:456
+#: app/templates/profile.html:464
 msgid "Developed the dashboards and report pages"
 msgstr ""
 
-#: app/templates/profile.html:469
+#: app/templates/profile.html:477
 msgid "Main tasks for LOLO"
 msgstr ""
 
-#: app/templates/profile.html:476
+#: app/templates/profile.html:484
 msgid ""
 "Since there were no service planners and few developers, I was directly and "
 "indirectly involved in the planning and development of all parts of the LOLO "
 "service, regardless of job title."
 msgstr ""
 
-#: app/templates/profile.html:477
+#: app/templates/profile.html:485
 msgid ""
 "Created LOLO’s development environment (AWS, Github, Docker, Python, Django)"
 msgstr ""
 
-#: app/templates/profile.html:479
+#: app/templates/profile.html:487
 msgid "Created web servers with EC2 instances (Ubuntu, Nginx)"
 msgstr ""
 
-#: app/templates/profile.html:480
+#: app/templates/profile.html:488
 msgid "Created DB with RDS instances (PostgreSQL)"
 msgstr ""
 
-#: app/templates/profile.html:481
+#: app/templates/profile.html:489
 msgid "Created serving environment of static files with S3 and CloudFront"
 msgstr ""
 
-#: app/templates/profile.html:491
+#: app/templates/profile.html:499
 msgid "Developed source code project with Python3 Django"
 msgstr ""
 
-#: app/templates/profile.html:494
+#: app/templates/profile.html:502
 msgid "Designed and Developed LOLO’s base structure"
 msgstr ""
 
-#: app/templates/profile.html:495
+#: app/templates/profile.html:503
 msgid "Developed all necessary pages and functions for online marketplace"
 msgstr ""
 
-#: app/templates/profile.html:508
+#: app/templates/profile.html:516
 msgid "Details of Code Battle"
 msgstr ""
 
-#: app/templates/profile.html:516
+#: app/templates/profile.html:524
 msgid "Motivation for development:"
 msgstr ""
 
-#: app/templates/profile.html:517
+#: app/templates/profile.html:525
 msgid ""
 "Neowiz had an annual event called Neowiz Developer's Day (NDD), and Code "
 "Battle was the last and most popular session. I enjoyed the process of "
@@ -565,21 +590,21 @@ msgid ""
 "event."
 msgstr ""
 
-#: app/templates/profile.html:520
+#: app/templates/profile.html:528
 msgid "About Code Battle:"
 msgstr ""
 
-#: app/templates/profile.html:521
+#: app/templates/profile.html:529
 msgid ""
 "It is a one-on-one match-up game, and each game has a rule of win and loss. "
 "And each code should make the best choice every turn."
 msgstr ""
 
-#: app/templates/profile.html:524
+#: app/templates/profile.html:532
 msgid "Used for coding test:"
 msgstr ""
 
-#: app/templates/profile.html:525
+#: app/templates/profile.html:533
 msgid ""
 "Most of the existing coding tests consisted of solving algorithmic problems, "
 "and like math problems, the ability to understand the problem itself was "
@@ -590,102 +615,102 @@ msgid ""
 "started using it for coding tests."
 msgstr ""
 
-#: app/templates/profile.html:539
+#: app/templates/profile.html:547
 msgid "Patent application and registration"
 msgstr ""
 
-#: app/templates/profile.html:546
+#: app/templates/profile.html:554
 msgid ""
 "In 2011, when the patent war between Samsung and Apple was in full swing, "
 "Neowiz also implemented an incentive policy to produce patents, and "
 "accordingly, I applied for a number of patents."
 msgstr ""
 
-#: app/templates/profile.html:547
+#: app/templates/profile.html:555
 msgid ""
 "Over time, many of the patents have expired for the purpose of reducing "
 "administrative costs, and only a few remain."
 msgstr ""
 
-#: app/templates/profile.html:548
+#: app/templates/profile.html:556
 msgid "Patent details"
 msgstr ""
 
-#: app/templates/profile.html:550
+#: app/templates/profile.html:558
 msgid "METHOD, TERMINAL, AND RECORDING MEDIUM FOR CHARACTER INPUT"
 msgstr ""
 
-#: app/templates/profile.html:551
+#: app/templates/profile.html:559
 msgid "USER TERMINAL HAVING FUNCTION CHECKING BANNED WORDS AND METHOD THEREOF"
 msgstr ""
 
-#: app/templates/profile.html:552
+#: app/templates/profile.html:560
 msgid ""
 "METHOD, CLIENT DEVICE, CHATTING SERVER AND RECORDING MEDIUM FOR PROVIDING "
 "CLIENT-BASED CHATTING SERVICE"
 msgstr ""
 
-#: app/templates/profile.html:553
+#: app/templates/profile.html:561
 msgid ""
 "METHOD FOR PROVIDING APPLICATION SOFTWARE, AND THE APPLICATION PROVIDING "
 "SERVER THEREOF"
 msgstr ""
 
-#: app/templates/profile.html:554
+#: app/templates/profile.html:562
 msgid "METHOD, TERMINAL, AND RECORDING MEDIUM FOR PROVIDING TOUCH INPUT"
 msgstr ""
 
-#: app/templates/profile.html:555
+#: app/templates/profile.html:563
 msgid "METHOD AND APPARATUS FOR PROCESSING DOCUMENT OF WEB PAGE"
 msgstr ""
 
-#: app/templates/profile.html:556
+#: app/templates/profile.html:564
 msgid "CHARACTER INPUT DEVICE AND WORD PROVIDING METHOD THEREOF"
 msgstr ""
 
-#: app/templates/profile.html:557
+#: app/templates/profile.html:565
 msgid ""
 "METHOD FOR LOADING INTERNET-WEBPAGE, USER TERMINAL PERFORMING THE SAME, AND "
 "RECORDING MEDIUM"
 msgstr ""
 
-#: app/templates/profile.html:558
+#: app/templates/profile.html:566
 msgid "METHOD, TERMINAL, AND RECORDING MEDIUM FOR CONTROLLING SCREEN OUTPUT"
 msgstr ""
 
-#: app/templates/profile.html:559
+#: app/templates/profile.html:567
 msgid ""
 "METHOD OF PROVIDING GAME, SERVER PERFORMING THE SAME AND STORAGE MEDIA "
 "STORING THE SAME"
 msgstr ""
 
-#: app/templates/profile.html:560
+#: app/templates/profile.html:568
 msgid "PORTABLE TERMINAL DISPLAYING IMAGE DESIGN"
 msgstr ""
 
-#: app/templates/profile.html:561
+#: app/templates/profile.html:569
 msgid ""
 "METHOD OF PROVIDING COMPUTER-EXECUTIVE ENUMERATION TYPE CONTENTS, DEVICE "
 "PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME"
 msgstr ""
 
-#: app/templates/profile.html:562
+#: app/templates/profile.html:570
 msgid ""
 "METHOD, MOBILE TERMINAL, AND RECORDING MEDIUM FOR PROVIDING SOUND SOURCE "
 "SERVICE"
 msgstr ""
 
-#: app/templates/profile.html:563
+#: app/templates/profile.html:571
 msgid "MUSIC SERVICE SYSTEM AND METHOD THEREOF"
 msgstr ""
 
-#: app/templates/profile.html:564
+#: app/templates/profile.html:572
 msgid ""
 "METHOD, CLIENT APPARATUS, SERVER, AND RECORDING MEDIUM FOR PROVIDING "
 "MULTIPLE API CALL"
 msgstr ""
 
-#: app/templates/profile.html:565
+#: app/templates/profile.html:573
 msgid ""
 "METHOD AND APPARATUS FOR PROVIDING POSTURE CORRECTING FUNCTION OF MOBILE "
 "TERMINAL"
