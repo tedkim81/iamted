@@ -1,8 +1,12 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.utils import translation
 from app.models import Goal, Content
 from django.views.generic import DetailView
+
+def health_check(request):
+    return HttpResponse(status=200)
 
 class ProfileView(TemplateView):
     template_name = 'profile.html'

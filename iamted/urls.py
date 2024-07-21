@@ -24,6 +24,7 @@ from mytube import apis
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.ProfileView.as_view(), name='profile'),
+    url(r'^health-check/', views.health_check, name='health-check'),
     url(r'^goal_modal/(?P<pk>\d+)/$', views.GoalModalView.as_view(), name='goal-modal'),
     url(r'^mytube/api/recommend_words$', apis.recommend_words, name='mytube-api-recommend-words'),
     url(r'^mytube/api/search$', apis.search, name='mytube-api-search'),
