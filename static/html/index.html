@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>I am Ted Kim</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    body {
+        padding-bottom: 30px;
+    }
+    header {
+        width: 100%; height: 50px; color: white;
+    }
+    header .container {
+        line-height: 50px; vertical-align: middle;
+    }
+    header a, header a:hover {
+        color: #FFFFFF;
+    }
+    header .left {
+        float: left;
+    }
+    header .right {
+        float: right;
+    }
+    table td {
+        min-width: 90px;
+    }
+    ul {
+        padding-inline-start: 20px;
+    }
+    .profile-info {
+        margin-top: 20px;
+    }
+    .profile-img {
+        width: 140px; height: 140px;
+    }
+    .profile-img img {
+        width: 100%; height: 100%; border-radius: 50%;
+    }
+    .profile-text {
+        margin-top: 20px;
+    }
+    .overflow-table-wrap {
+        width: 100px; overflow-x: auto;
+    }
+    @media all and (min-width:768px) {
+        ul {
+            padding-inline-start: 40px;
+        }
+        .profile-info {
+            position: relative;
+        }
+        .profile-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .profile-text {
+            padding-left: 170px;
+        }
+        .overflow-table-wrap {
+            width: 100%;
+        }
+    }
+    .myintro {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .section-title {
+        width: 100%; padding: 15px; background-color: #eeeeee; margin-top: 20px; font-weight: bold;
+    }
+    .cont-list {
+        margin-top: 15px;
+    }
+    .company-link {
+        margin-left: 10px;
+    }
+    .cont-li {
+        margin-bottom: 15px;
+    }
+    .text-highlight {
+        font-weight: bold;
+    }
+    .text-big {
+        font-size: 15px;
+    }
+    .color-ratio {
+        color: #888;
+    }
+    .ratio-percent {
+        font-size: 18px; margin: 0 0 5px 0;
+    }
+    .link-open-modal {
+        cursor: pointer;
+    }
+    .modal-title {
+        display: inline-block;
+    }
+    .no-margin {
+        margin: 0;
+    }
+    .no-padding {
+        padding: 0;
+    }
+    </style>
+    <script type="text/javascript">
+    // Language translation data
+    var introTextKo = '현재는 아마존 광고를 비롯한 리테일 미디어 광고 및 AI 관련 다양한 개발 업무를 진행하고 있습니다.<br>업무 범위를 프론트엔드 또는 백엔드 개발로 한정하지 않고, 필요한 업무를 다양하게 수행할 수 있고 다양한 업무를 선호합니다.<br>AI를 이용한 개발 자동화, 컨텐츠 생성 자동화 등에 관심이 많고, 빠르게 변화하는 기술 트렌드를 놓치지 않기 위해 노력하고 있습니다.<br>커뮤니케이션에 상대적 강점이 있고, 팀 매니징에 익숙합니다.';
+    var introTextEn = 'Currently, I am working on various development tasks related to retail media advertising and AI, including Amazon advertising.<br>I prefer diverse tasks that can be performed in various ways, without limiting the scope of work to front-end or back-end development.<br>I am interested in development automation using AI, content creation automation, etc., and I am trying not to miss out on rapidly changing technology trends.<br>I have relative strengths in communication and am familiar with team management.';
+
+    var translations = {
+        'ko': {
+            'Ted Kim': '김태우 (Ted Kim)',
+            'Amazon Advertising RTB System': '아마존 광고(Amazon Ads)에 대한 RTB 시스템',
+            'Development of Real Time Bidding system for Amazon Advertising': '아마존 광고에 대한 Real Time Bidding(RTB) 시스템 개발',
+            'Programming': '',
+            'AMC (Amazon Marketing Cloud) System': 'AMC (Amazon Marketing Cloud) 관련 시스템',
+            'Development of data extraction and reporting system for Amazon Marketing Cloud': 'AMC (Amazon Marketing Cloud) 관련 데이터 추출 및 리포팅 시스템 개발',
+            'AI Backend System': 'AI 백엔드 시스템',
+            'Involvement in development of AI backend system': 'AI 백엔드 시스템 개발에 관여',
+            'Configuration of development environment': '개발환경 구성(공통)',
+            'Coin Kraft (Game)': 'Coin Kraft (게임)',
+            'Flutter game development': 'Flutter 게임 개발',
+            'Backend development (support)': '백엔드 개발 서포트',
+            'una Messenger (Web3.0 messenger dApp)': '우나메신저 (Web3.0 메신저 dApp)',
+            'Flutter app development': 'Flutter 앱 개발',
+            'Tangled (Web3.0 video chat dApp)': '탱글 (Web3.0 라이브챗 dApp)',
+            'Android app development': '안드로이드 앱 개발',
+            'SpurSell (Global eCommerce operating platform)': '스퍼셀 (SpurSell, 글로벌 이커머스 운영 플랫폼) 기획 및 개발',
+            'Show main tasks': '',
+            'SpurSell Connector (Shopify plugin app for SpurSell)': '스퍼셀커넥터 (SpurSell Connector, 쇼피파이와 스퍼셀 연동을 위해 개발한 쇼피파이 플러그인 앱)',
+            'LOLO service': '로로(LOLO) 서비스 기획 및 개발',
+            'HeyBee (free music app)': '무료 음악앱, 헤이비(HeyBee) 개발',
+            'I developed a free music app that listed and played YouTube musics in a separate TF team, but the service was terminated.': '사내 별도 TF 조직에서 유튜브 음악 기반으로 개발했으나, 현재는 서비스 종료됨.',
+            'Android app development and supporting server development': '안드로이드 앱 개발 및 서버 개발 일부를 서포트 함으로써, 전반적인 개발 리딩',
+            'Hay (Voice messenger app)': '음성 메신저, 헤이(Hay) 개발',
+            'I developed a voice messenger that recorded and transmitted voices in a separate TF team and operated it for about a year, but the service was terminated.': '사내 별도 TF 조직에서, 목소리를 녹음해서 전송하는 방식의 음성 메신저를 개발하여 약 1년 정도 운영했으나, 현재는 서비스 종료됨.',
+            'I used an open source library to convert and synthesize voice.': '음성 변조 및 합성을 위해 오픈소스 라이브러리를 컨버팅하여 사용함.',
+            'TapSonic (Rhythm action game)': '리듬액션 모바일 게임, 탭소닉(TapSonic) 개발',
+            'Android app development (out game part)': '안드로이드 탭소닉의 out game 영역 리뉴얼',
+            'PmangPlus (Social game platform)': '소셜 게임 플랫폼, 피망플러스(PmangPlus) 개발',
+            'API and SDK development': '피망플러스 API 개발 및 SDK 개발 서포트',
+            'During this period, I also worked on publishing PmangPlus-linked mobile games.': '이 기간 중 피망플러스 연동하는 모바일 게임들 퍼블리싱 업무 병행',
+            'YoApp (App recommendation service)': '앱 추천 서비스, 요앱(YoApp) 개발',
+            'API server development, but the service was terminated.': 'API 서버 개발, 현재는 서비스 종료됨.',
+            'Bugs (Music service)': '대국민 음악 서비스, 벅스(Bugs) 개발',
+            'At this time, the Bugs app overtook the traffic on the Bugs web and were benchmarked by other music apps.': '이 시기에 앱이 웹의 트래픽을 추월했고, 다른 음악 앱들의 벤치마킹 대상이었음.',
+            'Google Play': '',
+            'PopConn (Group chatting service)': '비운의 그룹 채팅 서비스, 팝콘(PopConn) 개발',
+            'API server development': 'API 서버 개발',
+            'I started developing PopConn before KakaoTalk was released, but the client development was delayed, so KakaoTalk was released first, and PopConn was released later, but the service ended after operating for about 6 months.': 'WhatsApp이 유행하고 카카오톡이 나오기 전에, 그룹채팅 서비스 개발에 참여함. 클라이언트 개발이 목표보다 지연되면서 카카오톡이 먼저 출시됐고, 늦은 오픈 후에 6개월 정도 운영하다가 서비스 종료됨.',
+            'Saycast (Social music broadcast service)': '음악방송 서비스, 세이캐스트(Saycast) 개발',
+            'Renewal of all web services including chatting service': '채팅을 비롯한 웹 서비스 전체 리뉴얼',
+            'Android app development (support)': '안드로이드 앱 개발 서포트',
+            'Sayclub (Social service)': '소셜 포털 서비스, 세이클럽(Sayclub) 개발',
+            'Partially renewal updates throughout the service (chat, cafe, homepage, notes, etc.)': '서비스 전반에 걸쳐(채팅, 카페, 홈피, 쪽지 등) 부분적 리뉴얼 업데이트',
+            'Events & Promotions Development': '이벤트 및 프로모션 개발',
+            'Side products': '개인적 개발 활동',
+            'Green Swagger': '',
+            'An app developed for submission to the Google Gemini API Developer Competition.': 'Google Gemini API Developer Competition에 출품하기 위해 개발한 앱',
+            'The main function of the app is to add and share Eco Actions to motivate and inspire people to take action to improve the environment, and to encourage people to send Eco Coins and talk to each other about Eco Actions.': '사람들이 환경 개선을 위한 행동을 하는데에 동기를 부여하고 의욕을 갖도록 하기 위해, Eco Action을 추가하여 공유하면 사람들이 Eco Coin을 전달하여 응원을 하고 Eco Action에 대해 서로 대화하도록 하는 것이 앱의 주요 기능이다.',
+            'More details': '자세한 내용',
+            'Codebattle service': '코드배틀 개발',
+            'Development history': '코드배틀 개발 히스토리',
+            'Coding game based on strategy establishment and opponent pattern analysis': '전략 수립 및 상대 패턴 분석을 기반으로 하는 코딩 게임',
+            'Used for coding tests when hiring software developers.': '개발자 채용시 코딩 테스트에 활용',
+            'Used for the Code Battle session of the SK Planet Developer\'s day': 'SK플래닛 개발자 행사의 코드배틀 세션에 활용',
+            'Show details': '',
+            'Walkholic app': 'Walkholic 개발',
+            'A healthcare app developed to enter the Google Fit Developer Challenge (2015)': '2015 Google Fit Challenge 에 출품하기 위해 개발한 헬스케어 앱',
+            'Grand Prize Winner': 'Grand Prize Winner 수상',
+            'TakeFive game': '미션 오목 (TAKE FIVE)',
+            'An omok game with a concept in which missions are given step by step and UFOs conquer the land': '기존의 정적인 오목 게임과 차별화된 신개념 오목 게임으로서, 단계별로 미션이 주어지고, UFO가 땅을 정복하는 컨셉.',
+            'SmartBrowser app': '스마트 브라우저 개발',
+            'A browser app developed to enter the 2012 Google HackFair': '2012 Google HackFair 에 출품하기 위해 개발한 브라우저 앱',
+            'Among the functions of the app, the method of extracting the body content from a web page and outputting it in the app was patented.': '앱의 기능 중 웹페이지에서 본문 내용을 추출하여 앱내에 출력하는 방식은 특허 등록됨.',
+            'Piano keyboard app': '피아노 키보드 개발',
+            'A keyboard app developed to make typing easier and more fun because the NoLook Keyboard is too difficult to use': '노룩 키보드가 사용하기 너무 어려워서, 좀더 쉽고 재미있게 타이핑을 하기 위해 개발한 키보드 앱',
+            'NoLook keyboard app': '노룩 키보드 개발',
+            'A keyboard app that allows users to type without looking at the screen of their smartphone': '스마트폰의 화면을 보지 않고도 타이핑을 할 수 있는 키보드 앱',
+            'The input method has been patented, and has also been applied as an international patent.': '입력 방식은 특허 등록되었으며, 국제 특허로도 출원함.',
+            'Patent related activities': '특허 관련 활동',
+            '16 patent applications, 11 patent registrations (1 international patent)': '출원 16건, 등록 11건 (국제특허 1건)',
+            '2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 prize)': '네오위즈 IP전략팀 주최 특허경진대회 2위 (상금 300만원)',
+            'Speech / Seminar / Personal broadcast': '강연/세미나/개인방송 활동',
+            '2018~2019 Broadcasting about programming for non developers on AfreecaTV': '2018-2019 비개발자 대상으로 프로그래밍 상식 관련 방송 진행',
+            '2014 Intel Android Technical Seminar for Startup / Game Developers speech session': '2014 스타트업과 게임개발자를 위한 인텔 안드로이드 테크니컬 세미나 발표세션 참여',
+            'Voice messenger Hay development review': '음성메신저 Hay 개발 후기',
+            '2012 NOC (Neowiz Open Conference) speech session': '2012 NOC (Neowiz Open Conference) 발표세션 참여',
+            'New concept smartphone keyboard development': '신개념 스마트폰 키보드 개발',
+            'Etc.': '기타',
+            'NDD (Neowiz Developer\'s Day) code battle session': 'NDD (Neowiz Developer\'s Day) 코드배틀 입상',
+            'Planned and developed the Code Battle session for SK Planet Developer\'s Day.': 'SK플래닛 개발자 행사의 코드배틀 세션 기획 및 개발',
+            'SK Planet 1:1 Fighting Tournament': 'SK플래닛 1:1 무술대회',
+            'Playground': '연습장',
+            'Final round of 16': '16강전',
+            'SK Planet Code Baseball Classic': 'SK플래닛 Code Baseball Classic',
+            'SK Planet Number Cards Battle': 'SK플래닛 숫자카드 배틀',
+            'Personal blog': '개인 블로그 운영',
+            'Blah blah with GPT': 'GPT와 블라블라',
+            'Fun to get to know': '알아가는 재미',
+            'Android developer site translation': '안드로이드 개발자 사이트 번역',
+            'No updates since 2016': '2016년 이후 업데이트 없음',
+            'Joined Mensa': '멘사코리아 가입',
+            'Korea University, Computer Science': '고려대학교 컴퓨터학과',
+            'ROTC, the 7th Infantry Division': '제7보병사단 통신대대 운영장교 (ROTC, 중위전역)',
+            'Main tasks for SpurSell': '스퍼셀(SpurSell) 서비스에 대한 주요 업무',
+            'Since there were no service planners and few developers, I was directly and indirectly involved in the planning and development of all parts of the SpurSell service, regardless of job title.': '서비스 기획자가 없고 개발자가 많지 않았기 때문에, 직책과 관계없이 스퍼셀 서비스의 모든 부분에 대한 기획 및 개발에 직간접적으로 관여했습니다.',
+            'Created SpurSell\'s development environment (AWS, Github, PHP, Codeigniter': '스퍼셀의 개발 환경 구성 (AWS, Github, PHP, Codeigniter)',
+            'Created web servers and deployment environment with EC2 instances (Ubuntu, Apache)': 'EC2 인스턴스로 웹서버 및 배포환경 구성(Ubuntu, Apache)',
+            'Created DB with RDS instances (MySQL)': 'RDS 인스턴스(MySQL)로 DB 구성',
+            'Created serving environment of static files with S3': 'S3 서비스로 각종 static 파일들의 serving 환경 구성',
+            'Created domain management environment with Route53': 'Route53으로 도메인 관리 환경 구성',
+            'Source code management with Github\'s private repository, and set development collaboration environment': 'Github의 private repository로 소스코드 관리하고, 협업 환경 구성',
+            'Developed source code project with PHP Codeigniter': 'PHP Codeigniter로 소스코드 프로젝트 작성 및 관리',
+            'Designed and developed SpurSell\'s base structure': '스퍼셀의 기본 구조 설계 및 개발/구현',
+            'Developed product management and order management modules': '상품관리, 주문관리 모듈 개발',
+            'Designed and created DB structure for products and orders, and developed related pages and functions': '상품과 주문에 대한 DB 설계 및 각종 화면과 기능 개발',
+            'Linked from SpurSell to LOLO and Korean famous online marketplaces (Gmarket, 11st street, Naver smartstore, etc.) through API': '로로(LOLO)와 외부 판매채널(G마켓, 11번가, 네이버 스마트스토어 등) 연동 기능 개발',
+            'Developed delivery tracking function for each delivery company': '각 배송사별 배송추적 기능 개발',
+            'Developed payout management modules': '정산관리 모듈 개발',
+            'Developed related pages and functions for seller\'s payout request, payout processing, payout history management, pre-payout fund management': '셀러의 정산 요청, 지급처리, 지급내역 관리, 선정산 펀드 관리 등에 대한 각종 화면과 기능 개발',
+            'Developed finance and accounting module': '재무회계 모듈 개발',
+            'Developed related pages and functions for balance sheet (include journalize function)': '대차대조표 작성을 위해 필요한 각종 화면과 기능 개발 (분개 기능 직접 구현)',
+            'Developed the dashboards and report pages': '각종 대시보드 및 리포트 화면 개발',
+            'Main tasks for LOLO': '로로(LOLO) 서비스에 대한 주요 업무',
+            'Since there were no service planners and few developers, I was directly and indirectly involved in the planning and development of all parts of the LOLO service, regardless of job title.': '서비스 기획자가 없고 개발자가 많지 않았기 때문에, 직책과 관계없이 로로 서비스의 모든 부분에 대한 기획 및 개발에 직간접적으로 관여했습니다.',
+            'Created LOLO\'s development environment (AWS, Github, Docker, Python, Django)': '로로의 개발환경 구성 (AWS, Github, Docker, Python, Django)',
+            'Created web servers with EC2 instances (Ubuntu, Nginx)': 'EC2 인스턴스로 웹서버 구성(Ubuntu, Nginx)',
+            'Created DB with RDS instances (PostgreSQL)': 'RDS 인스턴스(PostgreSQL)로 DB 구성',
+            'Created serving environment of static files with S3 and CloudFront': 'S3, CloudFront 서비스로 각종 static 파일들의 serving 환경 구성',
+            'Developed source code project with Python3 Django': 'Python3 Django로 소스코드 프로젝트 작성 및 관리',
+            'Designed and Developed LOLO\'s base structure': '로로의 기본 구조 설계 및 개발/구현',
+            'Developed all necessary pages and functions for online marketplace': '이커머스 판매채널(온라인 쇼핑몰)의 모든 필요 기능 개발',
+            'Details of Code Battle': '코드배틀(Code Battle)에 대한 자세한 내용',
+            'Motivation for development:': '개발 동기:',
+            'Neowiz had an annual event called Neowiz Developer\'s Day (NDD), and Code Battle was the last and most popular session. I enjoyed the process of preparing for the code battle very much, and the result was good, so it was a very favorite event, but the code battle session was excluded as NDD changed to NOC (Neowiz Open Conference) at the end of 2010. I personally developed Code Battle in 2016, because I think it was a very meaningful event.': '네오위즈에 NDD(Neowiz Developer\'s Day)라는 연례 행사가 있었고, 코드배틀이 마지막 가장 인기있는 세션이었습니다. 코드배틀을 준비하는 과정을 매우 즐겼고, 결과도 좋았기 때문에 매우 좋아하는 행사였는데, 2010년을 마지막으로 NDD가 NOC(Neowiz Open Conference)로 바뀌면서 코드배틀 세션이 제외되었습니다. 그게 참 아쉬웠는데.. 그렇게 몇 년 지나고 2016년에 "간단하게라도 하나 그냥 만들자. 추억인데." 싶어서 개인적으로 개발했습니다.',
+            'About Code Battle:': '설명:',
+            'It is a one-on-one match-up game, and each game has a rule of win and loss. And each code should make the best choice every turn.': '1대1 대전 방식의 게임이고, 각 게임마다 승과 패의 규칙이 있으며, 각자의 코드에서 매 turn 마다 그 규칙에 맞춰서 자신이 낼 수 있는 것들 중에서 최선의 선택을 하는 방식으로 실행됩니다.',
+            'Used for coding test:': '코딩테스트에 활용:',
+            'Most of the existing coding tests consisted of solving algorithmic problems, and like math problems, the ability to understand the problem itself was important. However, since the company is still small and not well known, there are very few developer applicants, and it is rare to properly understand and solve algorithmic problems. I thought that Code Battle was better suited for verifying \'the ability to implement what they think\', so I started using it for coding tests.': '기존의 코딩테스트는 알고리즘 문제 풀이 방식이 대부분이었는데, 이는 수학문제처럼 문제 자체를 이해하는 능력이 중요했습니다. 그런데 회사가 아직 인지도가 없는 상황이라 개발자의 지원이 매우 적었고, 알고리즘 문제 풀이를 제대로 이해하고 해결하는 경우가 매우 드물었습니다. 그래서 문제 자체를 이해하는 진입장벽을 낮추고 "생각하는 바를 코딩해내는 능력"을 확인하는데에 코드배틀이 더 적합할 수도 있겠다고 생각하여 코딩테스트에 활용하기 시작했습니다.',
+            'Patent application and registration': '특허 출원 및 등록',
+            'In 2011, when the patent war between Samsung and Apple was in full swing, Neowiz also implemented an incentive policy to produce patents, and accordingly, I applied for a number of patents.': '삼성과 애플의 특허 전쟁이 한창이던 2011년경에 네오위즈에서도 특허를 생산(?)하기 위한 장려 정책을 시행했고, 이에 따라 특허를 다수 출원하게 됐습니다.',
+            'Over time, many of the patents have expired for the purpose of reducing administrative costs, and only a few remain.': '시간이 지나면서 상당수는 관리비 절감을 목적으로 소멸됐고 일부만 남았습니다.',
+            'Patent details': '특허 내역',
+            'METHOD, TERMINAL, AND RECORDING MEDIUM FOR CHARACTER INPUT': '문자 입력을 제공하는 방법, 단말기 및 기록매체',
+            'USER TERMINAL HAVING FUNCTION CHECKING BANNED WORDS AND METHOD THEREOF': '금칙어 검사 기능을 채용한 사용자 단말기 및 금칙어 검사 방법',
+            'METHOD, CLIENT DEVICE, CHATTING SERVER AND RECORDING MEDIUM FOR PROVIDING CLIENT-BASED CHATTING SERVICE': '클라이언트 기반의 채팅 서비스를 제공하는 방법, 클라이언트 장치, 채팅 서버, 시스템 및 기록매체',
+            'METHOD FOR PROVIDING APPLICATION SOFTWARE, AND THE APPLICATION PROVIDING SERVER THEREOF': '어플리케이션 제공 방법 및 그를 위한 어플리케이션 제공 서버',
+            'METHOD, TERMINAL, AND RECORDING MEDIUM FOR PROVIDING TOUCH INPUT': '터치입력을 제공하는 방법, 단말기 및 기록매체',
+            'METHOD AND APPARATUS FOR PROCESSING DOCUMENT OF WEB PAGE': '웹페이지의 문서 처리 방법 및 장치',
+            'CHARACTER INPUT DEVICE AND WORD PROVIDING METHOD THEREOF': '문자입력장치 및 그의 단어제공방법',
+            'METHOD FOR LOADING INTERNET-WEBPAGE, USER TERMINAL PERFORMING THE SAME, AND RECORDING MEDIUM': '인터넷 웹페이지 로딩 방법, 이를 수행하는 사용자 단말 및 기록매체',
+            'METHOD, TERMINAL, AND RECORDING MEDIUM FOR CONTROLLING SCREEN OUTPUT': '화면 출력을 제어하는 방법, 단말기 및 기록매체',
+            'METHOD OF PROVIDING GAME, SERVER PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME': '게임 제공 방법, 이를 수행하는 제공 서버 및 이를 저장하는 기록매체',
+            'PORTABLE TERMINAL DISPLAYING IMAGE DESIGN': '화상디자인이 표시된 휴대용 단말기',
+            'METHOD OF PROVIDING COMPUTER-EXECUTIVE ENUMERATION TYPE CONTENTS, DEVICE PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME': '컴퓨터 실행 가능한 열거형 콘텐츠 제공 방법 및 장치와 이를 저장한 기록매체',
+            'METHOD, MOBILE TERMINAL, AND RECORDING MEDIUM FOR PROVIDING SOUND SOURCE SERVICE': '음원 서비스를 제공하는 방법, 모바일 단말기 및 기록매체',
+            'MUSIC SERVICE SYSTEM AND METHOD THEREOF': '음원 서비스 시스템과 그 서비스 방법',
+            'METHOD, CLIENT APPARATUS, SERVER, AND RECORDING MEDIUM FOR PROVIDING MULTIPLE API CALL': '멀티플 API 호출을 제공하는 방법, 클라이언트 장치, 서버 및 기록매체',
+            'METHOD AND APPARATUS FOR PROVIDING POSTURE CORRECTING FUNCTION OF MOBILE TERMINAL': '휴대용 단말의 자세교정 기능 제공 방법 및 장치'
+        },
+        'en': {}
+    };
+
+    // Get language from query string
+    function getLanguage() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var lang = urlParams.get('lang');
+        if (lang === 'en') {
+            return 'en';
+        }
+        return 'ko';
+    }
+
+    // Translate text
+    function t(text) {
+        var lang = getLanguage();
+        if (lang === 'en') {
+            return text;  // Return original English text
+        }
+        if (translations['ko'][text]) {
+            return translations['ko'][text];
+        }
+        return text;
+    }
+
+    $(document).ready(function() {
+        var lang = getLanguage();
+        
+        // Update language toggle link
+        if (lang === 'ko') {
+            $('#lang-toggle').attr('href', '?lang=en').text('In English, please.');
+            $('.myintro').html(introTextKo);
+        } else {
+            $('#lang-toggle').attr('href', '?lang=ko').text('한글로 보기');
+            $('.myintro').html(introTextEn);
+        }
+
+        // Translate all elements with data-i18n attribute
+        $('[data-i18n]').each(function() {
+            var key = $(this).data('i18n');
+            $(this).text(t(key));
+        });
+        
+        $(document).on('hidden.bs.modal', function(e) {
+            $(e.target).removeData('bs.modal');
+        });
+    });
+    </script>
+</head>
+<body>
+    <header class="bg-primary">
+        <div class="container">
+            <div class="left text-big">I am Ted Kim</div>
+            <div class="right">
+                <a href="?lang=ko" id="lang-toggle">한글로 보기</a>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="profile-info">
+            <div class="profile-img">
+                <img src="blog_profile.jpg" />
+            </div>
+            <div class="profile-text">
+                <div class="text-highlight" data-i18n="Ted Kim">Ted Kim</div>
+                <div class="text-highlight">Software Engineer, Frienkly</div>
+                <p class="myintro"></p>
+                <div>Email: <a href="mailto:tedkim.developer@gmail.com">tedkim.developer@gmail.com</a></div>
+                <div>Facebook: <a href="https://www.facebook.com/tedkim156" target="_blank">https://www.facebook.com/tedkim156</a></div>
+                <div>Github: <a href="https://github.com/tedkim81" target="_blank">https://github.com/tedkim81</a></div>
+                <div>LinkedIn: <a href="https://www.linkedin.com/in/김-태우-419084b4" target="_blank">https://www.linkedin.com/in/김-태우-419084b4</a></div>
+            </div>
+        </div>
+        
+        <div class="section-title">Work Experience</div>
+        <ul class="cont-list">
+            <li class="cont-li">2024.12 ~ Today<a href="https://www.pulsead.io" target="_blank" class="company-link">Software Engineer, PulseAd</a>
+                <ul>
+                    <li><span data-i18n="Amazon Advertising RTB System">Amazon Advertising RTB System</span>
+                        <ul>
+                            <li data-i18n="Development of Real Time Bidding system for Amazon Advertising">Development of Real Time Bidding system for Amazon Advertising</li>
+                            <li><span data-i18n="Programming">Programming</span>: Python, Prefect</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="AMC (Amazon Marketing Cloud) System">AMC (Amazon Marketing Cloud) System</span>
+                        <ul>
+                            <li data-i18n="Development of data extraction and reporting system for Amazon Marketing Cloud">Development of data extraction and reporting system for Amazon Marketing Cloud</li>
+                            <li><span data-i18n="Programming">Programming</span>: Python, Prefect</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="AI Backend System">AI Backend System</span>
+                        <ul>
+                            <li data-i18n="Involvement in development of AI backend system">Involvement in development of AI backend system</li>
+                            <li><span data-i18n="Programming">Programming</span>: Python, FastAPI, LangGraph, LangChain, CrewAI</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="Configuration of development environment">Configuration of development environment
+                        <ul>
+                            <li>AWS, Github, Docker, Prefect, Pulumi, Snowflake</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="cont-li">2021.10 ~ 2024.12<a href="http://frienkly.me" target="_blank" class="company-link">CTO, Frienkly</a>
+                <ul>
+                    <li><span data-i18n="Coin Kraft (Game)">Coin Kraft (Game)</span>
+                        <ul>
+                            <li>Youtube: <a href="https://www.youtube.com/watch?v=J3gYZGmMWso" target="_blank">https://www.youtube.com/watch?v=J3gYZGmMWso</a></li>
+                            <li data-i18n="Flutter game development">Flutter game development</li>
+                            <li data-i18n="Backend development (support)">Backend development (support)</li>
+                            <li><span data-i18n="Programming">Programming</span>: Dart, Rive, Kotlin Spring</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="una Messenger (Web3.0 messenger dApp)">una Messenger (Web3.0 messenger dApp)</span>
+                        <ul>
+                            <li data-i18n="Flutter app development">Flutter app development</li>
+                            <li><span data-i18n="Programming">Programming</span>: Dart</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Tangled (Web3.0 video chat dApp)">Tangled (Web3.0 video chat dApp)</span>
+                        <ul>
+                            <li data-i18n="Android app development">Android app development</li>
+                            <li><span data-i18n="Programming">Programming</span>: Kotlin</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="cont-li">2015.11 ~ 2021.09<span class="company-link">CTO, SpurSell Limited</span>
+                <ul>
+                    <li><span data-i18n="SpurSell (Global eCommerce operating platform)">SpurSell (Global eCommerce operating platform)</span>
+                        <ul>
+                            <li><span data-i18n="Programming">Programming</span>: PHP, Codeigniter</li>
+                            <li><a class="link-open-modal" data-toggle="modal" data-target="#modal-spursell-maintasks"><span data-i18n="Show main tasks">Show main tasks</span></a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="SpurSell Connector (Shopify plugin app for SpurSell)">SpurSell Connector (Shopify plugin app for SpurSell)</span>
+                        <ul>
+                            <li><span data-i18n="Programming">Programming</span>: Node.js, React, Next.js</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="LOLO service">LOLO service</span>
+                        <ul>
+                            <li><span data-i18n="Programming">Programming</span>: Python, Django</li>
+                            <li><a class="link-open-modal" data-toggle="modal" data-target="#modal-lolo-maintasks"><span data-i18n="Show main tasks">Show main tasks</span></a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Configuration of development environment">Configuration of development environment</span>
+                        <ul>
+                            <li>AWS, Github, Docker</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="cont-li">2012.07 ~ 2015.10<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Software Engineer, Neowiz Games</a>
+                <ul>
+                    <li><span data-i18n="HeyBee (free music app)">HeyBee (free music app)</span>
+                        <ul>
+                            <li data-i18n="I developed a free music app that listed and played YouTube musics in a separate TF team, but the service was terminated.">I developed a free music app that listed and played YouTube musics in a separate TF team, but the service was terminated.</li>
+                            <li data-i18n="Android app development and supporting server development">Android app development and supporting server development</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java, Node.js</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Hay (Voice messenger app)">Hay (Voice messenger app)</span>
+                        <ul>
+                            <li data-i18n="I developed a voice messenger that recorded and transmitted voices in a separate TF team and operated it for about a year, but the service was terminated.">I developed a voice messenger that recorded and transmitted voices in a separate TF team and operated it for about a year, but the service was terminated.</li>
+                            <li data-i18n="Android app development">Android app development</li>
+                            <li data-i18n="I used an open source library to convert and synthesize voice.">I used an open source library to convert and synthesize voice.</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="TapSonic (Rhythm action game)">TapSonic (Rhythm action game)</span>
+                        <ul>
+                            <li data-i18n="Android app development (out game part)">Android app development (out game part)</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="PmangPlus (Social game platform)">PmangPlus (Social game platform)</span>
+                        <ul>
+                            <li data-i18n="API and SDK development">API and SDK development</li>
+                            <li data-i18n="During this period, I also worked on publishing PmangPlus-linked mobile games.">During this period, I also worked on publishing PmangPlus-linked mobile games.</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="cont-li">2006.07 ~ 2012.06<a href="http://www.neowiz.co.kr/" target="_blank" class="company-link">Software Engineer, Neowiz Internet</a>
+                <ul>
+                    <li><span data-i18n="YoApp (App recommendation service)">YoApp (App recommendation service)</span>
+                        <ul>
+                            <li data-i18n="API server development, but the service was terminated.">API server development, but the service was terminated.</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java, Spring 3.0</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Bugs (Music service)">Bugs (Music service)</span>
+                        <ul>
+                            <li data-i18n="Android app development">Android app development</li>
+                            <li data-i18n="At this time, the Bugs app overtook the traffic on the Bugs web and were benchmarked by other music apps.">At this time, the Bugs app overtook the traffic on the Bugs web and were benchmarked by other music apps.</li>
+                            <li><span data-i18n="Google Play">Google Play</span>: <a href="https://play.google.com/store/apps/details?id=com.neowiz.android.bugs" target="_blank">com.neowiz.android.bugs</a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="PopConn (Group chatting service)">PopConn (Group chatting service)</span>
+                        <ul>
+                            <li data-i18n="API server development">API server development</li>
+                            <li data-i18n="I started developing PopConn before KakaoTalk was released, but the client development was delayed, so KakaoTalk was released first, and PopConn was released later, but the service ended after operating for about 6 months.">I started developing PopConn before KakaoTalk was released, but the client development was delayed, so KakaoTalk was released first, and PopConn was released later, but the service ended after operating for about 6 months.</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java, Spring 2.5</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Saycast (Social music broadcast service)">Saycast (Social music broadcast service)</span>
+                        <ul>
+                            <li>Site: <a href="http://www.saycast.com" target="_blank">http://www.saycast.com</a></li>
+                            <li data-i18n="Renewal of all web services including chatting service">Renewal of all web services including chatting service</li>
+                            <li data-i18n="Android app development (support)">Android app development (support)</li>
+                            <li><span data-i18n="Programming">Programming</span>: PHP, Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Sayclub (Social service)">Sayclub (Social service)</span>
+                        <ul>
+                            <li>Site: <a href="http://www.sayclub.com" target="_blank">http://www.sayclub.com</a></li>
+                            <li data-i18n="Partially renewal updates throughout the service (chat, cafe, homepage, notes, etc.)">Partially renewal updates throughout the service (chat, cafe, homepage, notes, etc.)</li>
+                            <li data-i18n="Events & Promotions Development">Events & Promotions Development</li>
+                            <li><span data-i18n="Programming">Programming</span>: PHP</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="section-title">Personal Experience</div>
+        <ul class="cont-list">
+            <li class="cont-li"><span data-i18n="Side products">Side products</span>
+                <ul>
+                    <li><span data-i18n="Green Swagger">Green Swagger</span>
+                        <ul>
+                            <li data-i18n="An app developed for submission to the Google Gemini API Developer Competition.">An app developed for submission to the Google Gemini API Developer Competition.</li>
+                            <li data-i18n="The main function of the app is to add and share Eco Actions to motivate and inspire people to take action to improve the environment, and to encourage people to send Eco Coins and talk to each other about Eco Actions.">The main function of the app is to add and share Eco Actions to motivate and inspire people to take action to improve the environment, and to encourage people to send Eco Coins and talk to each other about Eco Actions.</li>
+                            <li><span data-i18n="More details">More details</span>: <a href="https://blog.naver.com/ktw5724/223548836733" target="_blank">Link</a></li>
+                            <li><span data-i18n="Programming">Programming</span>: Flutter, Python Flask, Gemini API, OpenAI API</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Codebattle service">Codebattle service</span>
+                        <ul>
+                            <li>Site: <a href="https://codebattle.online" target="_blank">https://codebattle.online</a></li>
+                            <li><span data-i18n="Development history">Development history</span>: <a href="http://blog.naver.com/ktw5724/221013634142" target="_blank">Link</a></li>
+                            <li data-i18n="Coding game based on strategy establishment and opponent pattern analysis">Coding game based on strategy establishment and opponent pattern analysis</li>
+                            <li data-i18n="Used for coding tests when hiring software developers.">Used for coding tests when hiring software developers.</li>
+                            <li data-i18n="Used for the Code Battle session of the SK Planet Developer's day">Used for the Code Battle session of the SK Planet Developer's day</li>
+                            <li><span data-i18n="Programming">Programming</span>: Node.js, Express, Socket.io</li>
+                            <li><a class="link-open-modal" data-toggle="modal" data-target="#modal-codebattle"><span data-i18n="Show details">Show details</span></a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Walkholic app">Walkholic app</span>
+                        <ul>
+                            <li><span data-i18n="Google Play">Google Play</span>: <a href="https://blog.naver.com/ktw5724/220346864275" target="_blank">com.teuskim.fitproj</a></li>
+                            <li data-i18n="A healthcare app developed to enter the Google Fit Developer Challenge (2015)">A healthcare app developed to enter the Google Fit Developer Challenge (2015)</li>
+                            <li><span data-i18n="Grand Prize Winner">Grand Prize Winner</span>: <a href="https://www.itbusinessedge.com/slideshows/twelve-winning-apps-from-the-google-fit-challenge-13.html" target="_blank">Link</a></li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="TakeFive game">TakeFive game</span>
+                        <ul>
+                            <li><span data-i18n="Google Play">Google Play</span>: <a href="https://blog.naver.com/ktw5724/220089126954" target="_blank">com.teuskim.takefive</a></li>
+                            <li data-i18n="An omok game with a concept in which missions are given step by step and UFOs conquer the land">An omok game with a concept in which missions are given step by step and UFOs conquer the land</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="SmartBrowser app">SmartBrowser app</span>
+                        <ul>
+                            <li><span data-i18n="Google Play">Google Play</span>: <a href="https://blog.naver.com/ktw5724/120197512222" target="_blank">com.teuskim.sbrowser</a></li>
+                            <li data-i18n="A browser app developed to enter the 2012 Google HackFair">A browser app developed to enter the 2012 Google HackFair</li>
+                            <li data-i18n="Among the functions of the app, the method of extracting the body content from a web page and outputting it in the app was patented.">Among the functions of the app, the method of extracting the body content from a web page and outputting it in the app was patented.</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Piano keyboard app">Piano keyboard app</span>
+                        <ul>
+                            <li><span data-i18n="Google Play">Google Play</span>: <a href="https://blog.naver.com/ktw5724/120197511941" target="_blank">com.teuskim.pianokeyboard</a></li>
+                            <li data-i18n="A keyboard app developed to make typing easier and more fun because the NoLook Keyboard is too difficult to use">A keyboard app developed to make typing easier and more fun because the NoLook Keyboard is too difficult to use</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="NoLook keyboard app">NoLook keyboard app</span>
+                        <ul>
+                            <li><span data-i18n="Google Play">Google Play</span>: <a href="https://blog.naver.com/ktw5724/120153226982" target="_blank">com.teuskim.nlkeyboard</a></li>
+                            <li data-i18n="A keyboard app that allows users to type without looking at the screen of their smartphone">A keyboard app that allows users to type without looking at the screen of their smartphone</li>
+                            <li data-i18n="The input method has been patented, and has also been applied as an international patent.">The input method has been patented, and has also been applied as an international patent.</li>
+                            <li><span data-i18n="Programming">Programming</span>: Java</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="cont-li"><span data-i18n="Patent related activities">Patent related activities</span>
+                <ul>
+                    <li><span data-i18n="16 patent applications, 11 patent registrations (1 international patent)">16 patent applications, 11 patent registrations (1 international patent)</span>
+                        <ul>
+                            <li>
+                                <a class="link-open-modal" data-toggle="modal" data-target="#modal-patent"><span data-i18n="Show details">Show details</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-i18n="2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 prize)">2nd prize of patent competition sponsored by Neowiz IP Strategy team ($3000 prize)</li>
+                </ul>
+            </li>
+            <li class="cont-li"><span data-i18n="Speech / Seminar / Personal broadcast">Speech / Seminar / Personal broadcast</span>
+                <ul>
+                    <li><span data-i18n="2018~2019 Broadcasting about programming for non developers on AfreecaTV">2018~2019 Broadcasting about programming for non developers on AfreecaTV</span>
+                        <ul>
+                            <li>Blog: <a href="https://blog.naver.com/ktw5724/221319241806" target="_blank">Link</a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="2014 Intel Android Technical Seminar for Startup / Game Developers speech session">2014 Intel Android Technical Seminar for Startup / Game Developers speech session</span>
+                        <ul>
+                            <li>Title: <span data-i18n="Voice messenger Hay development review">Voice messenger Hay development review</span></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="2012 NOC (Neowiz Open Conference) speech session">2012 NOC (Neowiz Open Conference) speech session</span>
+                        <ul>
+                            <li>Title: <span data-i18n="New concept smartphone keyboard development">New concept smartphone keyboard development</span></li>
+                            <li>YouTube: <a href="https://youtu.be/6mlzvMyvuZc" target="_blank">https://youtu.be/6mlzvMyvuZc</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="cont-li"><span data-i18n="Etc.">Etc.</span>
+                <ul>
+                    <li><span data-i18n="NDD (Neowiz Developer's Day) code battle session">NDD (Neowiz Developer's Day) code battle session</span>
+                        <ul>
+                            <li>1st place in 2007, 2nd place in 2008, 3rd place in 2009, Quarter finals in 2010</li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Planned and developed the Code Battle session for SK Planet Developer's Day.">Planned and developed the Code Battle session for SK Planet Developer's Day.</span>
+                        <ul>
+                            <li>2021. <span data-i18n="SK Planet 1:1 Fighting Tournament">SK Planet 1:1 Fighting Tournament</span>: <a href="https://codebattle.online/skp2021" target="_blank"><span data-i18n="Playground">Playground</span></a>, <a href="https://codebattle.online/skp2021-final" target="_blank"><span data-i18n="Final round of 16">Final round of 16</span></a></li>
+                            <li>2022. <span data-i18n="SK Planet Code Baseball Classic">SK Planet Code Baseball Classic</span>: <a href="https://codebattle.online/skp2022" target="_blank"><span data-i18n="Playground">Playground</span></a>, <a href="https://codebattle.online/skp2022-final" target="_blank"><span data-i18n="Final round of 16">Final round of 16</span></a></li>
+                            <li>2023. <span data-i18n="SK Planet Number Cards Battle">SK Planet Number Cards Battle</span>: <a href="https://codebattle.online/skp2023" target="_blank"><span data-i18n="Playground">Playground</span></a>, <a href="https://codebattle.online/skp2023-final" target="_blank"><span data-i18n="Final round of 16">Final round of 16</span></a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Personal blog">Personal blog</span>
+                        <ul>
+                            <li><span data-i18n="Blah blah with GPT">Blah blah with GPT</span>: <a href="https://blog.naver.com/gptlog" target="_blank">https://blog.naver.com/gptlog</a></li>
+                            <li><span data-i18n="Fun to get to know">Fun to get to know</span>: <a href="https://blog.naver.com/ktw5724" target="_blank">https://blog.naver.com/ktw5724</a></li>
+                        </ul>
+                    </li>
+                    <li><span data-i18n="Android developer site translation">Android developer site translation</span>
+                        <ul>
+                            <li>Site: <a href="https://android-kr.tistory.com" target="_blank">https://android-kr.tistory.com</a></li>
+                            <li data-i18n="No updates since 2016">No updates since 2016</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="Joined Mensa">Joined Mensa</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="section-title">Education &amp; Other Experience</div>
+        <ul class="cont-list">
+            <li>2000 ~ 2003 <span data-i18n="Korea University, Computer Science">Korea University, Computer Science</span></li>
+            <li>2004 ~ 2006 <span data-i18n="ROTC, the 7th Infantry Division">ROTC, the 7th Infantry Division</span></li>
+        </ul>
+    </section>
+    <!-- Modals -->
+    <div class="modal fade" id="modal-spursell-maintasks" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="Main tasks for SpurSell">Main tasks for SpurSell</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="cont-li" data-i18n="Since there were no service planners and few developers, I was directly and indirectly involved in the planning and development of all parts of the SpurSell service, regardless of job title.">Since there were no service planners and few developers, I was directly and indirectly involved in the planning and development of all parts of the SpurSell service, regardless of job title.</li>
+                        <li class="cont-li"><span data-i18n="Created SpurSell's development environment (AWS, Github, PHP, Codeigniter">Created SpurSell's development environment (AWS, Github, PHP, Codeigniter</span>
+                            <ul>
+                                <li data-i18n="Created web servers and deployment environment with EC2 instances (Ubuntu, Apache)">Created web servers and deployment environment with EC2 instances (Ubuntu, Apache)</li>
+                                <li data-i18n="Created DB with RDS instances (MySQL)">Created DB with RDS instances (MySQL)</li>
+                                <li data-i18n="Created serving environment of static files with S3">Created serving environment of static files with S3</li>
+                                <li data-i18n="Created domain management environment with Route53">Created domain management environment with Route53</li>
+                                <li data-i18n="Source code management with Github's private repository, and set development collaboration environment">Source code management with Github's private repository, and set development collaboration environment</li>
+                                <li data-i18n="Developed source code project with PHP Codeigniter">Developed source code project with PHP Codeigniter</li>
+                            </ul>
+                        </li>
+                        <li class="cont-li" data-i18n="Designed and developed SpurSell's base structure">Designed and developed SpurSell's base structure</li>
+                        <li class="cont-li"><span data-i18n="Developed product management and order management modules">Developed product management and order management modules</span>
+                            <ul>
+                                <li data-i18n="Designed and created DB structure for products and orders, and developed related pages and functions">Designed and created DB structure for products and orders, and developed related pages and functions</li>
+                                <li data-i18n="Linked from SpurSell to LOLO and Korean famous online marketplaces (Gmarket, 11st street, Naver smartstore, etc.) through API">Linked from SpurSell to LOLO and Korean famous online marketplaces (Gmarket, 11st street, Naver smartstore, etc.) through API</li>
+                                <li data-i18n="Developed delivery tracking function for each delivery company">Developed delivery tracking function for each delivery company</li>
+                            </ul>
+                        </li>
+                        <li class="cont-li"><span data-i18n="Developed payout management modules">Developed payout management modules</span>
+                            <ul>
+                                <li data-i18n="Developed related pages and functions for seller's payout request, payout processing, payout history management, pre-payout fund management">Developed related pages and functions for seller's payout request, payout processing, payout history management, pre-payout fund management</li>
+                            </ul>
+                        </li>
+                        <li class="cont-li"><span data-i18n="Developed finance and accounting module">Developed finance and accounting module</span>
+                            <ul>
+                                <li data-i18n="Developed related pages and functions for balance sheet (include journalize function)">Developed related pages and functions for balance sheet (include journalize function)</li>
+                            </ul>
+                        </li>
+                        <li class="cont-li" data-i18n="Developed the dashboards and report pages">Developed the dashboards and report pages</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-lolo-maintasks" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="Main tasks for LOLO">Main tasks for LOLO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="cont-li" data-i18n="Since there were no service planners and few developers, I was directly and indirectly involved in the planning and development of all parts of the LOLO service, regardless of job title.">Since there were no service planners and few developers, I was directly and indirectly involved in the planning and development of all parts of the LOLO service, regardless of job title.</li>
+                        <li class="cont-li"><span data-i18n="Created LOLO's development environment (AWS, Github, Docker, Python, Django)">Created LOLO's development environment (AWS, Github, Docker, Python, Django)</span>
+                            <ul>
+                                <li data-i18n="Created web servers with EC2 instances (Ubuntu, Nginx)">Created web servers with EC2 instances (Ubuntu, Nginx)</li>
+                                <li data-i18n="Created DB with RDS instances (PostgreSQL)">Created DB with RDS instances (PostgreSQL)</li>
+                                <li data-i18n="Created serving environment of static files with S3 and CloudFront">Created serving environment of static files with S3 and CloudFront</li>
+                                <li data-i18n="Created domain management environment with Route53">Created domain management environment with Route53</li>
+                                <li data-i18n="Source code management with Github's private repository, and set development collaboration environment">Source code management with Github's private repository, and set development collaboration environment</li>
+                                <li>
+                                Created deployment environment with Docker (writed a <a href="https://blog.naver.com/ktw5724/220899692550" target="_blank">Docker experience</a> in my blog)
+                                </li>
+                                <li data-i18n="Developed source code project with Python3 Django">Developed source code project with Python3 Django</li>
+                            </ul>
+                        </li>
+                        <li class="cont-li" data-i18n="Designed and Developed LOLO's base structure">Designed and Developed LOLO's base structure</li>
+                        <li class="cont-li" data-i18n="Developed all necessary pages and functions for online marketplace">Developed all necessary pages and functions for online marketplace</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-codebattle" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="Details of Code Battle">Details of Code Battle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="cont-li">
+                            <span data-i18n="Motivation for development:">Motivation for development:</span><br>
+                            <span data-i18n="Neowiz had an annual event called Neowiz Developer's Day (NDD), and Code Battle was the last and most popular session. I enjoyed the process of preparing for the code battle very much, and the result was good, so it was a very favorite event, but the code battle session was excluded as NDD changed to NOC (Neowiz Open Conference) at the end of 2010. I personally developed Code Battle in 2016, because I think it was a very meaningful event.">Neowiz had an annual event called Neowiz Developer's Day (NDD), and Code Battle was the last and most popular session. I enjoyed the process of preparing for the code battle very much, and the result was good, so it was a very favorite event, but the code battle session was excluded as NDD changed to NOC (Neowiz Open Conference) at the end of 2010. I personally developed Code Battle in 2016, because I think it was a very meaningful event.</span>
+                        </li>
+                        <li class="cont-li">
+                            <span data-i18n="About Code Battle:">About Code Battle:</span><br>
+                            <span data-i18n="It is a one-on-one match-up game, and each game has a rule of win and loss. And each code should make the best choice every turn.">It is a one-on-one match-up game, and each game has a rule of win and loss. And each code should make the best choice every turn.</span>
+                        </li>
+                        <li class="cont-li">
+                            <span data-i18n="Used for coding test:">Used for coding test:</span><br>
+                            <span data-i18n="Most of the existing coding tests consisted of solving algorithmic problems, and like math problems, the ability to understand the problem itself was important. However, since the company is still small and not well known, there are very few developer applicants, and it is rare to properly understand and solve algorithmic problems. I thought that Code Battle was better suited for verifying 'the ability to implement what they think', so I started using it for coding tests.">Most of the existing coding tests consisted of solving algorithmic problems, and like math problems, the ability to understand the problem itself was important. However, since the company is still small and not well known, there are very few developer applicants, and it is rare to properly understand and solve algorithmic problems. I thought that Code Battle was better suited for verifying 'the ability to implement what they think', so I started using it for coding tests.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-patent" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="Patent application and registration">Patent application and registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="cont-li" data-i18n="In 2011, when the patent war between Samsung and Apple was in full swing, Neowiz also implemented an incentive policy to produce patents, and accordingly, I applied for a number of patents.">In 2011, when the patent war between Samsung and Apple was in full swing, Neowiz also implemented an incentive policy to produce patents, and accordingly, I applied for a number of patents.</li>
+                        <li class="cont-li" data-i18n="Over time, many of the patents have expired for the purpose of reducing administrative costs, and only a few remain.">Over time, many of the patents have expired for the purpose of reducing administrative costs, and only a few remain.</li>
+                        <li class="cont-li"><span data-i18n="Patent details">Patent details</span>
+                            <ul>
+                                <li><span data-i18n="METHOD, TERMINAL, AND RECORDING MEDIUM FOR CHARACTER INPUT">METHOD, TERMINAL, AND RECORDING MEDIUM FOR CHARACTER INPUT</span> (<a href="https://goo.gl/Hi1P7U" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="USER TERMINAL HAVING FUNCTION CHECKING BANNED WORDS AND METHOD THEREOF">USER TERMINAL HAVING FUNCTION CHECKING BANNED WORDS AND METHOD THEREOF</span> (<a href="https://goo.gl/p3ySdQ" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD, CLIENT DEVICE, CHATTING SERVER AND RECORDING MEDIUM FOR PROVIDING CLIENT-BASED CHATTING SERVICE">METHOD, CLIENT DEVICE, CHATTING SERVER AND RECORDING MEDIUM FOR PROVIDING CLIENT-BASED CHATTING SERVICE</span> (<a href="https://goo.gl/Rao33M" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD FOR PROVIDING APPLICATION SOFTWARE, AND THE APPLICATION PROVIDING SERVER THEREOF">METHOD FOR PROVIDING APPLICATION SOFTWARE, AND THE APPLICATION PROVIDING SERVER THEREOF</span> (<a href="https://goo.gl/ZwY8os" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD, TERMINAL, AND RECORDING MEDIUM FOR PROVIDING TOUCH INPUT">METHOD, TERMINAL, AND RECORDING MEDIUM FOR PROVIDING TOUCH INPUT</span> (<a href="https://goo.gl/FWEXMi" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD AND APPARATUS FOR PROCESSING DOCUMENT OF WEB PAGE">METHOD AND APPARATUS FOR PROCESSING DOCUMENT OF WEB PAGE</span> (<a href="https://goo.gl/GQTGSn" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="CHARACTER INPUT DEVICE AND WORD PROVIDING METHOD THEREOF">CHARACTER INPUT DEVICE AND WORD PROVIDING METHOD THEREOF</span> (<a href="https://goo.gl/xJHKam" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD FOR LOADING INTERNET-WEBPAGE, USER TERMINAL PERFORMING THE SAME, AND RECORDING MEDIUM">METHOD FOR LOADING INTERNET-WEBPAGE, USER TERMINAL PERFORMING THE SAME, AND RECORDING MEDIUM</span> (<a href="https://goo.gl/n7Pzgx" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD, TERMINAL, AND RECORDING MEDIUM FOR CONTROLLING SCREEN OUTPUT">METHOD, TERMINAL, AND RECORDING MEDIUM FOR CONTROLLING SCREEN OUTPUT</span> (<a href="https://goo.gl/c9kffb" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD OF PROVIDING GAME, SERVER PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME">METHOD OF PROVIDING GAME, SERVER PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME</span> (<a href="https://goo.gl/gGA8vw" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="PORTABLE TERMINAL DISPLAYING IMAGE DESIGN">PORTABLE TERMINAL DISPLAYING IMAGE DESIGN</span> (<a href="https://goo.gl/HWbjZK" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD OF PROVIDING COMPUTER-EXECUTIVE ENUMERATION TYPE CONTENTS, DEVICE PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME">METHOD OF PROVIDING COMPUTER-EXECUTIVE ENUMERATION TYPE CONTENTS, DEVICE PERFORMING THE SAME AND STORAGE MEDIA STORING THE SAME</span> (<a href="https://goo.gl/HwR5zu" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD, MOBILE TERMINAL, AND RECORDING MEDIUM FOR PROVIDING SOUND SOURCE SERVICE">METHOD, MOBILE TERMINAL, AND RECORDING MEDIUM FOR PROVIDING SOUND SOURCE SERVICE</span> (<a href="https://goo.gl/tZzfmc" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="MUSIC SERVICE SYSTEM AND METHOD THEREOF">MUSIC SERVICE SYSTEM AND METHOD THEREOF</span> (<a href="https://goo.gl/F7BmQo" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD, CLIENT APPARATUS, SERVER, AND RECORDING MEDIUM FOR PROVIDING MULTIPLE API CALL">METHOD, CLIENT APPARATUS, SERVER, AND RECORDING MEDIUM FOR PROVIDING MULTIPLE API CALL</span> (<a href="https://goo.gl/RZQKSb" target="_blank">Link</a>)</li>
+                                <li><span data-i18n="METHOD AND APPARATUS FOR PROVIDING POSTURE CORRECTING FUNCTION OF MOBILE TERMINAL">METHOD AND APPARATUS FOR PROVIDING POSTURE CORRECTING FUNCTION OF MOBILE TERMINAL</span> (<a href="https://goo.gl/5JSKeF" target="_blank">Link</a>)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
