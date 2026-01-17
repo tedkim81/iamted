@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <title>I am your AI 개인정보 처리방침</title>
+  <style>
+    :root { --fg:#111; --muted:#555; --bg:#fff; --card:#fafafa; --line:#e6e6e6; --accent:#2563eb; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    header { padding:28px 16px; border-bottom:1px solid var(--line); background:linear-gradient(180deg, #f7f9ff 0%, #fff 65%); }
+    header .wrap, main .wrap { max-width: 920px; margin: 0 auto; }
+    h1 { margin:0 0 8px; font-size: 26px; }
+    header p { margin:6px 0 0; color:var(--muted); line-height:1.6; }
+    main { padding: 18px 16px 40px; }
+    nav.toc { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 14px; margin: 14px 0 18px; }
+    nav.toc strong { display:block; margin-bottom:8px; }
+    nav.toc a { color:var(--accent); text-decoration:none; }
+    nav.toc a:hover { text-decoration:underline; }
+    section { padding: 18px 0; border-top: 1px solid var(--line); }
+    section:first-of-type { border-top: 0; padding-top: 0; }
+    h2 { font-size: 18px; margin: 0 0 10px; }
+    p, li { line-height: 1.7; color: var(--fg); }
+    .muted { color: var(--muted); }
+    .badge { display:inline-block; font-size:12px; padding:2px 8px; border:1px solid var(--line); background:#fff; border-radius: 999px; margin-left:6px; color: var(--muted); }
+    .card { background:var(--card); border:1px solid var(--line); border-radius: 12px; padding: 14px; }
+    table { width:100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+    th, td { border:1px solid var(--line); padding: 10px; vertical-align: top; text-align:left; }
+    th { background:#fff; }
+    code { background:#f3f4f6; padding:2px 6px; border-radius:6px; }
+    footer { border-top:1px solid var(--line); padding:18px 16px; color:var(--muted); }
+    footer .wrap { max-width: 920px; margin: 0 auto; }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <h1>I am your AI 개인정보 처리방침</h1>
+    <p>
+      "I am your AI"(이하 "확장프로그램")은(는) 이용자의 개인정보를 중요하게 생각하며,
+      관련 법령을 준수하고 이용자의 권익을 보호하기 위해 본 개인정보 처리방침을 공개합니다.
+      <br/>
+      <span class="muted">
+        본 확장프로그램은 <strong>별도의 백엔드 서버 없이</strong> 동작하며, 사용자가 생성한 대부분의 정보(요약/채팅 히스토리/저장된 요소/실행 그래프/설정 등)는
+        <strong>사용자의 로컬 환경(브라우저 저장소)</strong>에만 저장됩니다.
+      </span>
+    </p>
+    <p class="muted">시행일: <strong>2025-12-18</strong></p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <nav class="toc" aria-label="목차">
+      <strong>목차</strong>
+      <ul>
+        <li><a href="#purpose">1. 개인정보의 처리 목적</a></li>
+        <li><a href="#items">2. 처리하는 개인정보의 항목</a></li>
+        <li><a href="#retention">3. 개인정보의 처리 및 보유 기간</a></li>
+        <li><a href="#destroy">4. 개인정보의 파기 절차 및 방법</a></li>
+        <li><a href="#thirdparty">5. 개인정보의 제3자 제공</a></li>
+        <li><a href="#overseas">6. 개인정보의 국외 이전</a></li>
+        <li><a href="#security">7. 개인정보의 안전성 확보조치</a></li>
+        <li><a href="#cookies">8. 개인정보 자동 수집 장치의 설치·운영 및 거부</a></li>
+        <li><a href="#rights">9. 정보주체의 권리·의무 및 행사방법</a></li>
+        <li><a href="#dpo">10. 개인정보 보호책임자 및 고충처리</a></li>
+        <li><a href="#remedy">11. 권익침해 구제방법</a></li>
+        <li><a href="#changes">12. 개인정보 처리방침의 변경</a></li>
+      </ul>
+    </nav>
+
+    <section id="purpose">
+      <h2>1. 개인정보의 처리 목적</h2>
+      <p>확장프로그램은 다음 목적을 위하여 개인정보를 처리합니다. 처리되는 정보는 아래 목적 이외의 용도로 이용되지 않으며, 목적이 변경되는 경우 관련 법령에 따라 필요한 조치를 이행합니다.</p>
+      <ul>
+        <li><strong>서비스 제공 및 기능 수행</strong>: 웹페이지 본문 추출/요약, 사이드패널 채팅, 번역, 선택 텍스트 변환, 저장된 요소 및 실행 그래프 기반 자동화 기능 제공</li>
+        <li><strong>설정 및 사용자 경험 유지</strong>: AI 제공자/모델 선택, 폰트 크기, 요약 길이, 채팅 저장 개수, 링크 열기 방식 등 사용자 설정 저장</li>
+        <li><strong>문의 대응</strong> <span class="badge">해당 시</span>: 이용자가 문의 채널을 통해 연락하는 경우, 문의 처리 및 답변 제공</li>
+      </ul>
+
+      <div class="card">
+        <p class="muted" style="margin:0">
+          <strong>중요 안내(로컬 저장 원칙)</strong><br/>
+          확장프로그램에서 사용자가 생성한 대부분의 정보(요약 결과, 채팅 히스토리, 저장된 요소, 실행 그래프, 설정값 등)는
+          <strong>사용자의 브라우저 로컬 저장소</strong>(예: chrome.storage 등)에만 저장되며,
+          확장프로그램 개발자가 운영하는 별도 서버로 전송·저장하지 않습니다.
+        </p>
+      </div>
+    </section>
+
+    <section id="items">
+      <h2>2. 처리하는 개인정보의 항목</h2>
+      <p>확장프로그램은 원칙적으로 최소한의 정보만을 처리합니다. 아래 항목은 실제 사용 설정에 따라 일부만 처리될 수 있습니다.</p>
+
+      <table aria-label="개인정보 항목">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>처리 항목</th>
+            <th>수집/생성 경로</th>
+            <th>비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>설정 정보</td>
+            <td>AI 제공자/모델 선택값, 폰트 크기, 요약 제한 글자수, 채팅 저장 개수, 링크 클릭 동작 등</td>
+            <td>이용자 입력/선택</td>
+            <td><strong>로컬 저장</strong></td>
+          </tr>
+          <tr>
+            <td>API 키</td>
+            <td>OpenAI/Google/Anthropic 등 AI 제공자 API 키</td>
+            <td>이용자 직접 입력</td>
+            <td><strong>로컬 저장</strong>. 이용자가 선택한 AI 제공자 호출에만 사용</td>
+          </tr>
+          <tr>
+            <td>사용자 생성 콘텐츠</td>
+            <td>채팅 메시지, 요약 결과(마크다운), 저장된 요소(이름/선택자/URL), 실행 그래프(노드/연결/설정)</td>
+            <td>이용자 입력 또는 사용 중 생성</td>
+            <td><strong>로컬 저장</strong></td>
+          </tr>
+          <tr>
+            <td>페이지 컨텍스트</td>
+            <td>현재 페이지 본문 텍스트(예: "@페이지" 기능), 사용자가 선택한 텍스트, URL 등</td>
+            <td>이용자의 기능 실행 시 확장프로그램이 웹페이지에서 추출</td>
+            <td>AI 요청 시 이용자가 선택한 제공자에게 전송될 수 있음</td>
+          </tr>
+          <tr>
+            <td>문의 처리</td>
+            <td>이메일 주소, 문의 내용 등(이용자가 제공한 범위)</td>
+            <td>이용자가 문의 채널로 제공</td>
+            <td><span class="badge">해당 시</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="muted">
+        ※ 확장프로그램은 원칙적으로 주민등록번호 등 고유식별정보 및 민감정보의 처리를 의도하지 않습니다.
+        다만 이용자가 웹페이지 본문/선택 텍스트에 민감정보를 포함한 내용을 직접 입력·전송할 수 있으므로, 해당 전송 여부는 이용자가 기능 사용 시 결정하게 됩니다.
+      </p>
+    </section>
+
+    <section id="retention">
+      <h2>3. 개인정보의 처리 및 보유 기간</h2>
+      <p>확장프로그램은 개인정보를 <strong>목적 달성에 필요한 기간</strong> 동안만 보유·이용하며, 원칙적으로 로컬 저장소에 보관됩니다.</p>
+      <ul>
+        <li><strong>설정 정보 / API 키 / 채팅·요약·저장 데이터</strong>: 이용자가 삭제하거나 확장프로그램을 제거(언인스톨)할 때까지</li>
+        <li><strong>채팅 히스토리</strong>: 이용자가 설정한 저장 개수 정책에 따라 오래된 항목부터 자동 삭제될 수 있음</li>
+        <li><strong>문의 처리 정보</strong> <span class="badge">해당 시</span>: 문의 처리 완료 후 내부 기준에 따라 즉시 또는 일정 기간 보관 후 삭제</li>
+      </ul>
+    </section>
+
+    <section id="destroy">
+      <h2>4. 개인정보의 파기 절차 및 방법</h2>
+      <p>확장프로그램은 개인정보가 불필요하게 되었을 때 지체 없이 파기합니다.</p>
+      <ul>
+        <li><strong>파기 절차</strong>: 이용자의 삭제 동작(기록 삭제/초기화) 또는 확장프로그램 제거 시 로컬 저장 데이터가 삭제됩니다.</li>
+        <li><strong>파기 방법</strong>: 브라우저 저장소에서 해당 데이터를 삭제(전자적 삭제)합니다.</li>
+      </ul>
+      <p class="muted">※ 이용자가 브라우저 동기화 기능을 사용하는 경우, 동기화 정책에 따라 일부 설정값이 계정에 연동될 수 있으므로, 동기화 해제/관리 기능은 브라우저(Chrome) 설정에서 조정할 수 있습니다.</p>
+    </section>
+
+    <section id="thirdparty">
+      <h2>5. 개인정보의 제3자 제공</h2>
+      <p>확장프로그램은 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다.</p>
+      <p>
+        다만, 이용자가 AI 기능(요약/채팅/번역/텍스트 변환/자동화 중 AI 노드 등)을 실행하는 경우,
+        이용자가 선택한 <strong>AI 제공자</strong>에게 요청이 전송되며, 이 과정에서 아래 정보가 포함될 수 있습니다.
+      </p>
+
+      <table aria-label="제3자 제공">
+        <thead>
+          <tr>
+            <th>제공받는 자</th>
+            <th>제공 목적</th>
+            <th>제공 항목</th>
+            <th>보유·이용 기간</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OpenAI / Google / Anthropic 등 이용자가 선택한 AI 제공자</td>
+            <td>AI 응답 생성(요약/번역/대화/텍스트 변환/분석 등)</td>
+            <td>이용자 입력 프롬프트, 선택 텍스트, 페이지 본문("@페이지" 사용 시), URL 등 이용자가 기능 실행 시 포함한 데이터</td>
+            <td>AI 제공자의 정책에 따름</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card">
+        <p style="margin:0">
+          <strong>중요</strong><br/>
+          확장프로그램 개발자는 이용자의 요청 데이터를 자체 서버로 중계하거나 저장하지 않습니다.
+          AI 요청은 이용자가 입력한 API 키를 사용하여 <strong>이용자의 브라우저에서 AI 제공자로 직접 전송</strong>됩니다.
+        </p>
+      </div>
+    </section>
+
+    <section id="overseas">
+      <h2>6. 개인정보의 국외 이전</h2>
+      <p>
+        이용자가 선택한 AI 제공자(OpenAI/Google/Anthropic 등)의 서버 위치에 따라,
+        AI 기능 실행 시 요청 데이터가 <strong>국외로 이전(전송)</strong>될 수 있습니다.
+      </p>
+
+      <table aria-label="국외 이전">
+        <thead>
+          <tr>
+            <th>이전 항목</th>
+            <th>이전 국가/수신자</th>
+            <th>이전 시기·방법</th>
+            <th>이용 목적</th>
+            <th>거부 방법·효과</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>이용자 입력 프롬프트, 선택 텍스트, 페이지 본문("@페이지" 사용 시), URL 등</td>
+            <td>이용자가 선택한 AI 제공자(각 제공자의 서버 운영 국가)</td>
+            <td>AI 기능 실행 시점에 HTTPS API 통신으로 전송</td>
+            <td>AI 응답 생성 및 서비스 제공</td>
+            <td>
+              거부 방법: AI 기능을 사용하지 않거나, "@페이지" 기능을 사용하지 않고 프롬프트를 최소화하여 전송 범위를 조절할 수 있습니다.<br/>
+              거부 효과: AI 기반 요약/번역/채팅/변환/AI 노드 기능의 이용이 제한됩니다.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="muted">
+        ※ AI 제공자가 수신한 데이터의 처리(보관/삭제/재학습 사용 여부 등)는 각 제공자의 개인정보 처리방침 및 이용약관에 따릅니다.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>7. 개인정보의 안전성 확보조치</h2>
+      <p>확장프로그램은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취합니다.</p>
+      <ul>
+        <li><strong>로컬 저장 원칙</strong>: 요약/채팅/설정/그래프 등 대부분의 데이터는 이용자 브라우저 로컬에만 저장</li>
+        <li><strong>전송 구간 보호</strong>: AI 제공자 API 통신 시 HTTPS 사용</li>
+        <li><strong>접근 제한</strong>: 브라우저/확장프로그램 권한 범위 내에서만 접근하도록 설계</li>
+        <li><strong>최소 권한</strong>: 기능 제공에 필요한 범위에서 권한을 사용(예: 본문 추출, 선택 텍스트 처리 등)</li>
+      </ul>
+      <p class="muted">
+        ※ 이용자의 PC/브라우저 환경(악성코드 감염, 계정 탈취 등)으로 인한 위험은 이용자 환경에 좌우될 수 있으므로,
+        운영체제/브라우저 보안 업데이트 및 계정 보안을 권장합니다.
+      </p>
+    </section>
+
+    <section id="cookies">
+      <h2>8. 개인정보 자동 수집 장치의 설치·운영 및 거부</h2>
+      <p>
+        확장프로그램은 자체적으로 "쿠키"를 발급·운영하지 않습니다.
+        다만, 웹페이지 본문 추출/요약 등 기능 수행 과정에서 사용자가 방문 중인 웹사이트가 쿠키 등 자동 수집 장치를 사용할 수 있으며,
+        이는 해당 웹사이트의 정책에 따릅니다.
+      </p>
+      <p class="muted">
+        또한 AI 제공자의 SDK/쿠키를 확장프로그램이 임의로 설치·운영하지 않습니다(직접 API 호출 방식).
+      </p>
+    </section>
+
+    <section id="rights">
+      <h2>9. 정보주체의 권리·의무 및 행사방법</h2>
+      <p>이용자는 언제든지 다음과 같은 방법으로 본 확장프로그램의 로컬 저장 데이터를 관리할 수 있습니다.</p>
+      <ul>
+        <li><strong>설정값/기록 삭제</strong>: 확장프로그램 내 제공되는 설정/관리 화면에서 삭제(또는 초기화) 기능을 이용</li>
+        <li><strong>확장프로그램 제거</strong>: Chrome 확장프로그램 관리 화면에서 제거 시 로컬 저장 데이터가 삭제될 수 있음</li>
+        <li><strong>AI 전송 범위 통제</strong>: "@페이지" 기능 미사용, 선택 텍스트 최소화 등으로 전송 데이터 범위 조절</li>
+      </ul>
+      <p class="muted">
+        ※ AI 제공자에게 전송된 데이터에 대한 권리 행사는 각 제공자의 정책 및 절차에 따라 별도로 진행해야 할 수 있습니다.
+      </p>
+    </section>
+
+    <section id="dpo">
+      <h2>10. 개인정보 보호책임자 및 고충처리</h2>
+      <p>개인정보 관련 문의, 불만처리, 피해구제 요청은 아래 연락처로 문의하실 수 있습니다.</p>
+
+      <table aria-label="연락처">
+        <tbody>
+          <tr>
+            <th style="width:220px;">개인정보 보호책임자</th>
+            <td>담당자명: <strong>김태우</strong> / 연락처: <strong>tedkim.developer@gmail.com</strong></td>
+          </tr>
+          <tr>
+            <th>개인정보 관련 문의처</th>
+            <td><strong>tedkim.developer@gmail.com</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="muted">
+        ※ 확장프로그램이 별도 서버를 운영하지 않더라도, 이용자 문의 대응을 위해 연락처 표기는 권장됩니다.
+      </p>
+    </section>
+
+    <section id="remedy">
+      <h2>11. 권익침해 구제방법</h2>
+      <p>
+        개인정보 침해로 인한 상담 및 구제를 받기 위해 아래 기관에 문의하실 수 있습니다.
+        (기관명/연락처는 변동될 수 있습니다.)
+      </p>
+      <ul>
+        <li>개인정보 분쟁조정위원회: (국번없이) 1833-6972</li>
+        <li>개인정보침해 신고센터: (국번없이) 118</li>
+        <li>경찰청: (국번없이) 182</li>
+      </ul>
+    </section>
+
+    <section id="changes">
+      <h2>12. 개인정보 처리방침의 변경</h2>
+      <p>본 개인정보 처리방침의 내용이 추가·삭제·수정될 경우, 변경 사항을 본 페이지에 공지합니다.</p>
+      <ul>
+        <li>시행일: 2025-12-18</li>
+        <li>이전 버전: 없음 (최초 시행)</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2025 I am your AI. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
